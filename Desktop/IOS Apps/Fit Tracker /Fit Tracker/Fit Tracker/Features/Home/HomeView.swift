@@ -75,6 +75,10 @@ struct HomeView: View {
                         viewModel?.updateWeight(newWeight)
                     }
                 }
+                // Trigger weekly digest generation on app launch (Sun-Tue)
+                if WeeklyDigestService.isDigestWindow, !WeeklyDigestService.hasDigestThisWeek {
+                    weeklyDigestCoachVM?.generateWeeklyDigest()
+                }
             }
             .onChange(of: scenePhase) { _, newPhase in
                 if newPhase == .active {
@@ -230,6 +234,9 @@ struct HomeView: View {
                 user: user,
                 nutritionService: container.nutritionService
             )
+        }
+        if weeklyDigestCoachVM == nil, let user = appState.currentUser {
+            weeklyDigestCoachVM = AICoachViewModel(user: user)
         }
     }
 
@@ -472,6 +479,7 @@ struct HomeView: View {
 
     @State private var showCoach = false
     @State private var showCoachPaywall = false
+    @State private var weeklyDigestCoachVM: AICoachViewModel?
     @State private var showAnalytics = false
     @State private var showAnalyticsPaywall = false
 
@@ -493,7 +501,9 @@ struct HomeView: View {
         }
         .buttonStyle(PremiumCardButtonStyle())
         .fullScreenCover(isPresented: $showCoach) {
-            if let user = appState.currentUser {
+            if let vm = weeklyDigestCoachVM {
+                AICoachView(viewModel: vm)
+            } else if let user = appState.currentUser {
                 AICoachView(viewModel: AICoachViewModel(user: user))
             }
         }

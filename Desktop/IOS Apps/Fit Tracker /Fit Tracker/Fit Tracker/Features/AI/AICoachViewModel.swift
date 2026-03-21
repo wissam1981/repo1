@@ -21,6 +21,9 @@ final class AICoachViewModel {
     /// Weekly digest pinned message (survives daily chat resets)
     var weeklyDigestMessage: ChatMessage?
 
+    /// Set to true to request the view scroll to the digest at the top
+    var shouldScrollToDigest: Bool = false
+
     // MARK: - Suggested Quick Prompts
 
     nonisolated static let suggestedPrompts: [(icon: String, text: String)] = [
@@ -298,6 +301,13 @@ final class AICoachViewModel {
     }
 
     func showWeeklyDigest() {
-        // The digest is shown as weeklyDigestMessage in the view
+        // Ensure digest is loaded, then signal view to scroll to it
+        if weeklyDigestMessage == nil, let digest = WeeklyDigestService.loadSavedDigest() {
+            weeklyDigestMessage = ChatMessage(
+                role: .assistant,
+                content: WeeklyDigestService.formatAsMessage(digest)
+            )
+        }
+        shouldScrollToDigest = true
     }
 }

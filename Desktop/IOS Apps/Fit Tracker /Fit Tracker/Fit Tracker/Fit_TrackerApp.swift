@@ -21,6 +21,23 @@ class AppDelegate: NSObject, UIApplicationDelegate, UNUserNotificationCenterDele
     func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
         completionHandler([.banner, .sound, .badge])
     }
+
+    // Handle notification tap
+    func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
+        let identifier = response.notification.request.identifier
+        if identifier == "weekly_digest_reminder" {
+            Task { @MainActor in
+                if let appState = AppDelegate.sharedAppState {
+                    appState.pendingAIAction = .weeklyDigest
+                    appState.showAICoach = true
+                }
+            }
+        }
+        completionHandler()
+    }
+
+    /// Shared reference to AppState for notification handling
+    @MainActor static var sharedAppState: AppState?
 }
 #else
 class AppDelegate: NSObject, UIApplicationDelegate {
@@ -64,6 +81,9 @@ struct AppRootView: View {
             .environment(DependencyContainer.shared)
             .id(appTheme) // Redraw everything when theme changes
             .task {
+                // Wire up AppState for notification tap handling
+                AppDelegate.sharedAppState = appState
+
                 // Setup daily reminders FIRST (or concurrently)
                 let granted = try? await NotificationManager.shared.requestAuthorization()
                 if granted == true {

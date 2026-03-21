@@ -45,9 +45,12 @@ struct FoodFrequencyTracker {
             map[key] = FoodFrequency(count: 1, lastLogged: Date())
         }
 
-        // Prune if over limit — remove the least frequent entry
+        // Prune if over limit — remove the least frequent entry (excluding the one just recorded)
         if map.count > maxEntries {
-            if let leastFrequent = map.min(by: { $0.value.count < $1.value.count })?.key {
+            if let leastFrequent = map
+                .filter({ $0.key != key })
+                .min(by: { $0.value.count < $1.value.count || ($0.value.count == $1.value.count && $0.value.lastLogged < $1.value.lastLogged) })?
+                .key {
                 map.removeValue(forKey: leastFrequent)
             }
         }
