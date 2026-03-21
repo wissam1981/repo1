@@ -15,6 +15,8 @@ private struct PremiumCardButtonStyle: ButtonStyle {
 // Main dashboard showing calorie ring, macro progress, weight snapshot, and workout card.
 
 struct HomeView: View {
+    let sharedNutritionVM: NutritionViewModel?
+
     @Environment(AppState.self) private var appState
     @Environment(AppRouter.self) private var router
     @Environment(DependencyContainer.self) private var container
@@ -26,6 +28,10 @@ struct HomeView: View {
     @State private var dailyChallengeVM: DailyChallengeViewModel?
     @State private var workoutVM: WorkoutViewModel?
     @State private var nutritionVM: NutritionViewModel?
+
+    init(sharedNutritionVM: NutritionViewModel? = nil) {
+        self.sharedNutritionVM = sharedNutritionVM
+    }
     @State private var showEditProfile = false
     @State private var showPaywall = false
     @State private var showWeeklyReport = false
@@ -229,11 +235,15 @@ struct HomeView: View {
                 await workoutVM?.loadPlans()
             }
         }
-        if nutritionVM == nil, let user = appState.currentUser {
-            nutritionVM = NutritionViewModel(
-                user: user,
-                nutritionService: container.nutritionService
-            )
+        if nutritionVM == nil {
+            if let shared = sharedNutritionVM {
+                nutritionVM = shared
+            } else if let user = appState.currentUser {
+                nutritionVM = NutritionViewModel(
+                    user: user,
+                    nutritionService: container.nutritionService
+                )
+            }
         }
         if weeklyDigestCoachVM == nil, let user = appState.currentUser {
             weeklyDigestCoachVM = AICoachViewModel(user: user)
@@ -322,6 +332,7 @@ struct HomeView: View {
                 set: { newDate in
                     vm.changeDate(to: newDate)
                     dailyChallengeVM?.changeDate(to: newDate)
+                    nutritionVM?.selectedDate = newDate
                 }
             ))
             .padding(.horizontal, 20)

@@ -48,7 +48,7 @@ struct MainTabView: View {
                 switch router.selectedTab {
                 case .home:
                     NavigationStack {
-                        HomeView()
+                        HomeView(sharedNutritionVM: nutritionViewModel)
                     }
                 case .nutrition:
                     NavigationStack(path: $router.nutritionPath) {
@@ -77,7 +77,7 @@ struct MainTabView: View {
         }
         .preferredColorScheme(.dark)
         .onChange(of: router.selectedTab) { oldTab, newTab in
-            if newTab == .nutrition {
+            if newTab == .home || newTab == .nutrition {
                 initViewModelsIfNeeded()
             }
             if newTab == .scan {
