@@ -15,9 +15,24 @@ Share a single `NutritionViewModel` instance between MainTabView and NutritionDa
 
 ### `Navigation/MainTabView.swift` (Modify)
 
-Already has `@State private var nutritionViewModel: NutritionViewModel?` (line 25) and creates it in `initViewModelsIfNeeded()` (line 232). No changes needed to MainTabView's VM creation.
+Already has `@State private var nutritionViewModel: NutritionViewModel?` (line 25) and creates it in `initViewModelsIfNeeded()` (line 232).
 
-Pass the shared VM to NutritionDashboardView:
+**Change 1:** Call `initViewModelsIfNeeded()` when the Nutrition tab is selected, so the shared VM is ready before the user taps "+":
+
+```swift
+.onChange(of: router.selectedTab) { oldTab, newTab in
+    if newTab == .nutrition {
+        initViewModelsIfNeeded()
+    }
+    if newTab == .scan {
+        router.selectedTab = oldTab
+        initViewModelsIfNeeded()
+        showQuickActions = true
+    }
+}
+```
+
+**Change 2:** Pass the shared VM to NutritionDashboardView:
 
 ```swift
 case .nutrition:
@@ -30,10 +45,10 @@ case .nutrition:
 
 Currently creates its own `@State private var viewModel: NutritionViewModel?` and initializes it in `initViewModelIfNeeded()`.
 
-Change to accept an optional shared VM:
+Add a plain `let` parameter for the shared VM (reference type, no `@State` needed):
 
 ```swift
-var sharedViewModel: NutritionViewModel?
+let sharedViewModel: NutritionViewModel?
 ```
 
 In `initViewModelIfNeeded()`, prefer the shared VM:
@@ -52,12 +67,19 @@ private func initViewModelIfNeeded() {
 
 This preserves backward compatibility — if `NutritionDashboardView` is used without a shared VM (standalone), it creates its own as before.
 
+### Scope: Food Logging Only
+
+The shared `selectedDate` applies only to **food logging** via the floating "+" button's "Log Food", "Barcode", "Meal Scan", and "Custom Food" actions.
+
+**Water and weight always log to today.** The QuickWaterSheet and WeightEntrySheet use their own logic that writes to today's date, independent of `selectedDate`. No changes needed for these flows.
+
 ## Behavior
 
 - User on Nutrition tab, navigates to March 18 → `selectedDate` is March 18
-- User taps floating "+" → opens FoodSearchView with the **same** VM → `selectedDate` is March 18
+- User taps floating "+" → Log Food → opens FoodSearchView with the **same** VM → `selectedDate` is March 18
 - Food gets logged to March 18's `NutritionLog`
 - If user never visits Nutrition tab, floating "+" creates a VM with `selectedDate = .now` — unchanged behavior
+- Water and weight logging always target today regardless of `selectedDate`
 
 ## Edge Cases
 
@@ -69,5 +91,5 @@ This preserves backward compatibility — if `NutritionDashboardView` is used wi
 
 | File | Action |
 |------|--------|
-| `Navigation/MainTabView.swift` | Modify — pass `nutritionViewModel` to `NutritionDashboardView` |
-| `Features/Nutrition/NutritionDashboardView.swift` | Modify — accept optional `sharedViewModel` parameter |
+| `Navigation/MainTabView.swift` | Modify — init VM on nutrition tab selection, pass `nutritionViewModel` to `NutritionDashboardView` |
+| `Features/Nutrition/NutritionDashboardView.swift` | Modify — accept `let sharedViewModel: NutritionViewModel?` parameter |
