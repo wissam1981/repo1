@@ -60,7 +60,7 @@ struct NutritionDashboardView: View {
                 HStack {
                     Text("Nutrition")
                         .font(.system(size: 34, weight: .bold))
-                        .foregroundStyle(.white)
+                        .foregroundStyle(ThemeColors.textPrimary)
                     Spacer()
                 }
 
@@ -88,20 +88,20 @@ struct NutritionDashboardView: View {
 
                         Text("Nutrition Breakdown")
                             .font(.system(size: 16, weight: .bold))
-                            .foregroundStyle(.white)
+                            .foregroundStyle(ThemeColors.textPrimary)
 
                         Spacer()
 
                         Text("Total / Goal / Left")
                             .font(.system(size: 12, weight: .medium))
-                            .foregroundStyle(.white.opacity(0.35))
+                            .foregroundStyle(ThemeColors.textSecondary)
 
                         Image(systemName: "chevron.right")
                             .font(.system(size: 13, weight: .bold))
-                            .foregroundStyle(.white.opacity(0.3))
+                            .foregroundStyle(ThemeColors.textSecondary)
                     }
                     .padding(14)
-                    .glassStyle(cornerRadius: 12, color: .white.opacity(0.08))
+                    .glassStyle(cornerRadius: 12, color: ThemeColors.surfaceColor)
                 }
                 .buttonStyle(.plain)
 
@@ -122,7 +122,7 @@ struct NutritionDashboardView: View {
                                         .foregroundStyle(ThemeColors.primary)
                                     Text("Log your usual: \(pattern.entries.map(\.foodName).joined(separator: ", "))?")
                                         .font(.system(size: 13, weight: .semibold))
-                                        .foregroundStyle(.white.opacity(0.7))
+                                        .foregroundStyle(ThemeColors.textSecondary)
                                         .lineLimit(1)
                                     Spacer()
                                     Image(systemName: "plus.circle.fill")
@@ -187,6 +187,22 @@ struct NutritionDashboardView: View {
         )) {
             NutritionAnalyticsView(viewModel: vm)
         }
+        .sheet(isPresented: Binding(
+            get: { vm.showGeneratedPlanSheet },
+            set: { vm.showGeneratedPlanSheet = $0 }
+        )) {
+            SmartMealPlanView(meals: vm.generatedPlan) { mealsToLog in
+                vm.logGeneratedPlan(mealsToLog)
+            }
+        }
+        .alert("Plan Generation Failed", isPresented: Binding(
+            get: { vm.planGenerationError != nil },
+            set: { _ in vm.planGenerationError = nil }
+        )) {
+            Button("OK", role: .cancel) { }
+        } message: {
+            Text(vm.planGenerationError ?? "")
+        }
     }
 
     // MARK: - Date Navigator
@@ -246,11 +262,26 @@ struct NutritionDashboardView: View {
             }
 
             Button {
-                vm.selectedMealType = .snack
-                vm.showQuickAdd = true
+                vm.generateFullDayPlan()
             } label: {
-                nutritionActionTile(icon: "bolt.fill", title: "Quick Add", color: ThemeColors.primary)
+                if vm.isGeneratingPlan {
+                    VStack(spacing: 10) {
+                        ProgressView()
+                            .frame(width: 56, height: 56)
+                            .background(ThemeColors.surfaceColor)
+                            .clipShape(Circle())
+                        Text("Planning...")
+                            .font(.system(size: 15, weight: .bold))
+                            .foregroundStyle(ThemeColors.textSecondary)
+                    }
+                    .frame(maxWidth: .infinity)
+                    .padding(.vertical, 14)
+                    .glassStyle(cornerRadius: 18, color: ThemeColors.surfaceColor)
+                } else {
+                    nutritionActionTile(icon: "wand.and.stars", title: "Auto-Plan", color: ThemeColors.primary)
+                }
             }
+            .disabled(vm.isGeneratingPlan)
         }
         .padding(.horizontal)
     }
@@ -280,11 +311,11 @@ struct NutritionDashboardView: View {
 
             Text(title)
                 .font(.system(size: 15, weight: .bold))
-                .foregroundStyle(.white.opacity(0.8))
+                .foregroundStyle(ThemeColors.textSecondary)
         }
         .frame(maxWidth: .infinity)
         .padding(.vertical, 14)
-        .glassStyle(cornerRadius: 18, color: .white.opacity(0.06))
+        .glassStyle(cornerRadius: 18, color: ThemeColors.surfaceColor)
     }
 
     // MARK: - Daily Summary
@@ -341,7 +372,7 @@ struct NutritionDashboardView: View {
             }
         }
         .padding(16)
-        .glassStyle(cornerRadius: 16, color: .white.opacity(0.1))
+        .glassStyle(cornerRadius: 16, color: ThemeColors.surfaceColor)
     }
 
     private func miniMacro(label: String, consumed: Int, target: Int, color: Color) -> some View {
@@ -372,7 +403,7 @@ struct NutritionDashboardView: View {
         let remaining = goal - food + exercise
 
         return HStack(spacing: 0) {
-            equationColumn(value: goal, label: "Goal", color: .white)
+            equationColumn(value: goal, label: "Goal", color: ThemeColors.textPrimary)
             equationOp("−")
             equationColumn(value: food, label: "Food", color: ThemeColors.info)
             equationOp("+")
@@ -386,7 +417,7 @@ struct NutritionDashboardView: View {
         }
         .padding(.vertical, 14)
         .padding(.horizontal, 8)
-        .glassStyle(cornerRadius: 16, color: .white.opacity(0.05))
+        .glassStyle(cornerRadius: 16, color: ThemeColors.surfaceColor)
     }
 
     private func equationColumn(value: Int, label: String, color: Color) -> some View {
@@ -398,7 +429,7 @@ struct NutritionDashboardView: View {
                 .minimumScaleFactor(0.7)
             Text(label)
                 .font(.system(size: 11, weight: .medium))
-                .foregroundStyle(.white.opacity(0.4))
+                .foregroundStyle(ThemeColors.textSecondary)
         }
         .frame(maxWidth: .infinity)
     }
@@ -406,7 +437,7 @@ struct NutritionDashboardView: View {
     private func equationOp(_ symbol: String) -> some View {
         Text(symbol)
             .font(.system(size: 14, weight: .bold))
-            .foregroundStyle(.white.opacity(0.25))
+            .foregroundStyle(ThemeColors.textSecondary)
             .frame(width: 16)
     }
 
@@ -464,7 +495,7 @@ private struct WeeklyCalorieSparkline: View {
                 }
                 .padding(.horizontal, 12)
                 .padding(.vertical, 10)
-                .glassStyle(cornerRadius: 12, color: .white.opacity(0.08))
+                .glassStyle(cornerRadius: 12, color: ThemeColors.surfaceColor)
             }
         }
         .task {

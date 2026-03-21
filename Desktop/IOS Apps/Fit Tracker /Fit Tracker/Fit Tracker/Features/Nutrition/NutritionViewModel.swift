@@ -42,6 +42,12 @@ final class NutritionViewModel {
     var aiParseError: String?
     var showAIParseLimitPaywall = false
     private var aiParseTask: Task<Void, Never>?
+    
+    // Smart Meal Plan state
+    var isGeneratingPlan = false
+    var generatedPlan: [GeneratedMeal] = []
+    var showGeneratedPlanSheet = false
+    var planGenerationError: String?
 
     // Quick Add Form State
     var quickAddName: String = ""
@@ -85,6 +91,7 @@ final class NutritionViewModel {
     var targetProteinG: Int { user.targetProteinG }
     var targetCarbsG: Int { user.targetCarbsG }
     var targetFatG: Int { user.targetFatG }
+    var targetWaterMl: Int { user.targetWaterMl }
 
     // MARK: - Progress
 
@@ -110,6 +117,7 @@ final class NutritionViewModel {
 
     func refresh() {
         loadLog(for: selectedDate)
+        Task { await evaluateProactiveNudges() }
     }
 
     // MARK: - Meal Patterns
@@ -173,6 +181,7 @@ final class NutritionViewModel {
 
         // Notify other ViewModels (like HomeViewModel) to refresh
         NotificationCenter.default.post(name: .nutritionLogDidChange, object: nil)
+        Task { await evaluateProactiveNudges() }
     }
 
     func logRecipe(_ recipe: Recipe, mealType: MealType) async {
@@ -189,6 +198,7 @@ final class NutritionViewModel {
         Task {
             await nutritionService.syncToFirestore(log, userId: user.uid)
         }
+        Task { await evaluateProactiveNudges() }
     }
 
     // MARK: - Analytics
@@ -264,6 +274,7 @@ final class NutritionViewModel {
         }
         
         NotificationCenter.default.post(name: .nutritionLogDidChange, object: nil)
+        Task { await evaluateProactiveNudges() }
     }
 
     // MARK: - Update Entry
@@ -288,6 +299,7 @@ final class NutritionViewModel {
         Task {
             await nutritionService.syncToFirestore(log, userId: user.uid)
         }
+        Task { await evaluateProactiveNudges() }
     }
 
     // MARK: - Water
@@ -303,6 +315,7 @@ final class NutritionViewModel {
         Task {
             await nutritionService.syncToFirestore(log, userId: user.uid)
         }
+        Task { await evaluateProactiveNudges() }
     }
 
     // MARK: - Debounced Search
@@ -418,6 +431,50 @@ final class NutritionViewModel {
         showParsedMealSheet = false
     }
 
+    // MARK: - Smart Meal Plan
+
+    func generateFullDayPlan() {
+        // Prevent concurrent generation
+        guard !isGeneratingPlan else { return }
+        
+        isGeneratingPlan = true
+        planGenerationError = nil
+        
+        Task { @MainActor in
+            do {
+                let service = MealPlanService.shared
+                let rawPlan = try await service.generateDayPlan(
+                    targetCalories: targetCalories,
+                    targetProtein: targetProteinG,
+                    targetCarbs: targetCarbsG,
+                    targetFat: targetFatG
+                )
+                
+                // Optional: Ensure meals match the defined app meal types
+                self.generatedPlan = rawPlan.filter { $0.appMealType != .snack || $0.mealType.lowercased() == "snack" }
+                self.isGeneratingPlan = false
+                self.showGeneratedPlanSheet = true
+            } catch {
+                self.planGenerationError = error.localizedDescription
+                self.isGeneratingPlan = false
+            }
+        }
+    }
+    
+    func logGeneratedPlan(_ plan: [GeneratedMeal]) {
+        Task { @MainActor in
+            for meal in plan {
+                let appMealType = meal.appMealType
+                for item in meal.items {
+                    let food = item.toFoodItem()
+                    await addEntry(food: food, quantity: item.servingSizeG, mealType: appMealType)
+                }
+            }
+            self.showGeneratedPlanSheet = false
+            self.generatedPlan = []
+        }
+    }
+
     // MARK: - Barcode Scanner Handling
     
     func handleBarcodeScan(code: String, isPremium: Bool = false) {
@@ -499,7 +556,27 @@ final class NutritionViewModel {
         todayLog = log
         Task { await nutritionService.syncToFirestore(log, userId: user.uid) }
         NotificationCenter.default.post(name: .nutritionLogDidChange, object: nil)
+        Task { await evaluateProactiveNudges() }
     }
 
     // MARK: - Presentation Helpers
+
+    // MARK: - Notifications / Nudges
+    
+    /// Evaluates current logged data (water, lunch, dinner) and updates scheduled local notifications
+    func evaluateProactiveNudges() async {
+        guard Calendar.current.isDateInToday(selectedDate) else { return }
+        
+        let hasLunch = !todayLog.lunchEntries.isEmpty
+        let hasDinner = !todayLog.dinnerEntries.isEmpty
+        let currentWater = todayLog.waterMl
+        let targetWater = Double(user.targetWaterMl)
+        
+        await ProactiveNudgeService.shared.scheduleDailyNudges(
+            lunchLogged: hasLunch,
+            dinnerLogged: hasDinner,
+            waterMl: currentWater,
+            targetWaterMl: targetWater
+        )
+    }
 }
