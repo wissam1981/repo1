@@ -25,13 +25,13 @@ struct CalorieBudgetSheet: View {
     var body: some View {
         VStack(spacing: 24) {
             Capsule()
-                .fill(Color.white.opacity(0.3))
+                .fill(ThemeColors.textSecondary)
                 .frame(width: 36, height: 4)
                 .padding(.top, 12)
 
             Text("Today's Budget")
                 .font(.system(size: 22, weight: .bold))
-                .foregroundStyle(.white)
+                .foregroundStyle(ThemeColors.textPrimary)
 
             VStack(spacing: 4) {
                 Text("\(remaining)")
@@ -39,7 +39,7 @@ struct CalorieBudgetSheet: View {
                     .foregroundStyle(ThemeColors.primary)
                 Text("kcal remaining")
                     .font(.system(size: 15, weight: .medium))
-                    .foregroundStyle(.white.opacity(0.5))
+                    .foregroundStyle(ThemeColors.textSecondary)
             }
 
             VStack(spacing: 16) {
@@ -82,11 +82,11 @@ struct CalorieBudgetSheet: View {
             HStack {
                 Text(label)
                     .font(.system(size: 15, weight: .semibold))
-                    .foregroundStyle(.white)
+                    .foregroundStyle(ThemeColors.textPrimary)
                 Spacer()
                 Text("\(consumed)g / \(target)g")
                     .font(.system(size: 14, weight: .medium))
-                    .foregroundStyle(.white.opacity(0.5))
+                    .foregroundStyle(ThemeColors.textSecondary)
                 Text("(\(remaining)g left)")
                     .font(.system(size: 12, weight: .semibold))
                     .foregroundStyle(color)
@@ -95,7 +95,7 @@ struct CalorieBudgetSheet: View {
             GeometryReader { geo in
                 ZStack(alignment: .leading) {
                     RoundedRectangle(cornerRadius: 4)
-                        .fill(Color.white.opacity(0.1))
+                        .fill(ThemeColors.surfaceColor)
                         .frame(height: 8)
                     RoundedRectangle(cornerRadius: 4)
                         .fill(color)

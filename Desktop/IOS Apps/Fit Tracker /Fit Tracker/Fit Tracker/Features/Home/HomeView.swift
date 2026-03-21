@@ -179,29 +179,29 @@ struct HomeView: View {
                             let days = subscriptionManager.trialDaysRemaining
                             Text("Free Trial · \(days) day\(days == 1 ? "" : "s") left")
                                 .font(.system(size: 15, weight: .bold))
-                                .foregroundStyle(.white)
+                                .foregroundStyle(ThemeColors.textPrimary)
                         } else {
                             Text("Trial Ended · Upgrade Now")
                                 .font(.system(size: 15, weight: .bold))
-                                .foregroundStyle(.white)
+                                .foregroundStyle(ThemeColors.textPrimary)
                         }
                         Text("AI Coach · Analytics · AI Plans")
                             .font(.system(size: 13, weight: .medium))
-                            .foregroundStyle(.white.opacity(0.5))
+                            .foregroundStyle(ThemeColors.textSecondary)
                     }
 
                     Spacer()
 
                     Text("See Plans")
                         .font(.system(size: 12, weight: .bold))
-                        .foregroundStyle(.white)
+                        .foregroundStyle(ThemeColors.textPrimary)
                         .padding(.horizontal, 12)
                         .padding(.vertical, 6)
-                        .background(Capsule().fill(Color.white.opacity(0.12)))
+                        .background(Capsule().fill(ThemeColors.surfaceColor))
                 }
                 .padding(.horizontal, 16)
                 .padding(.vertical, 14)
-                .glassStyle(cornerRadius: 18, color: .white.opacity(0.15))
+                .glassStyle(cornerRadius: 18, color: ThemeColors.surfaceColor)
             }
             .buttonStyle(.plain)
             .padding(.horizontal, 16)
@@ -292,22 +292,22 @@ struct HomeView: View {
                         VStack(alignment: .leading, spacing: 3) {
                             Text("Your Weekly Report is Ready")
                                 .font(.system(size: 16, weight: .bold))
-                                .foregroundStyle(.white)
+                                .foregroundStyle(ThemeColors.textPrimary)
                             Text("Tap to see your AI analysis")
                                 .font(.system(size: 13, weight: .medium))
-                                .foregroundStyle(.white.opacity(0.5))
+                                .foregroundStyle(ThemeColors.textSecondary)
                         }
 
                         Spacer()
 
                         Image(systemName: "chevron.right")
                             .font(.system(size: 13, weight: .bold))
-                            .foregroundStyle(.white.opacity(0.3))
+                            .foregroundStyle(ThemeColors.textSecondary)
                     }
                     .padding(16)
                     .background(
                         RoundedRectangle(cornerRadius: 20)
-                            .fill(Color.white.opacity(0.05))
+                            .fill(ThemeColors.surfaceColor)
                             .overlay(
                                 RoundedRectangle(cornerRadius: 20)
                                     .stroke(ThemeColors.primary.opacity(0.2), lineWidth: 1)
@@ -604,11 +604,11 @@ struct HomeView: View {
             VStack(alignment: .leading, spacing: 3) {
                 Text(title)
                     .font(.system(size: 18, weight: .bold))
-                    .foregroundStyle(.white)
+                    .foregroundStyle(ThemeColors.textPrimary)
 
                 Text(subtitle)
                     .font(.system(size: 12, weight: .medium))
-                    .foregroundStyle(.white.opacity(0.5))
+                    .foregroundStyle(ThemeColors.textSecondary)
             }
 
             // Arrow indicator
@@ -621,7 +621,7 @@ struct HomeView: View {
         }
         .frame(maxWidth: .infinity, alignment: .leading)
         .padding(16)
-        .glassStyle(cornerRadius: 18, color: .white.opacity(0.1))
+        .glassStyle(cornerRadius: 18, color: ThemeColors.surfaceColor)
     }
 
     // MARK: - Health Stats Widget
@@ -642,15 +642,15 @@ struct HomeView: View {
                     VStack(alignment: .leading, spacing: 3) {
                         Text("\(vm.stepsToday)")
                             .font(.system(size: 20, weight: .bold, design: .rounded))
-                            .foregroundStyle(.white)
+                            .foregroundStyle(ThemeColors.textPrimary)
                         Text("Steps Today")
                             .font(.system(size: 13, weight: .medium))
-                            .foregroundStyle(.white.opacity(0.5))
+                            .foregroundStyle(ThemeColors.textSecondary)
                     }
                     Spacer()
                 }
                 .padding(16)
-                .glassStyle(cornerRadius: 18, color: .white.opacity(0.08))
+                .glassStyle(cornerRadius: 18, color: ThemeColors.surfaceColor)
 
                 // Active Calories
                 HStack(spacing: 14) {
@@ -665,10 +665,10 @@ struct HomeView: View {
                     VStack(alignment: .leading, spacing: 3) {
                         Text("\(vm.activeCaloriesBurned)")
                             .font(.system(size: 20, weight: .bold, design: .rounded))
-                            .foregroundStyle(.white)
+                            .foregroundStyle(ThemeColors.textPrimary)
                         Text("Active Cals")
                             .font(.system(size: 13, weight: .medium))
-                            .foregroundStyle(.white.opacity(0.5))
+                            .foregroundStyle(ThemeColors.textSecondary)
                     }
                     Spacer()
                 }
@@ -678,7 +678,7 @@ struct HomeView: View {
                         .fill(ThemeColors.surfaceColor)
                         .overlay(
                             RoundedRectangle(cornerRadius: 18, style: .continuous)
-                                .stroke(Color.white.opacity(0.06), lineWidth: 1)
+                                .stroke(ThemeColors.surfaceBorder, lineWidth: 1)
                         )
                 )
             }
@@ -692,7 +692,7 @@ struct HomeView: View {
             } else if vm.stepsToday == 0 && vm.activeCaloriesBurned == 0 {
                 Text("Stats remaining 0? Check iOS Settings > Health > Data Access > BiteBrain")
                     .font(.system(size: 12, weight: .medium))
-                    .foregroundStyle(.white.opacity(0.4))
+                    .foregroundStyle(ThemeColors.textSecondary)
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .padding(.horizontal, 4)
             }
@@ -721,7 +721,7 @@ struct HomeView: View {
                 }
                 Text("Weight Progress")
                     .font(.system(size: 20, weight: .bold))
-                    .foregroundStyle(.white)
+                    .foregroundStyle(ThemeColors.textPrimary)
                 Spacer()
             }
 
@@ -758,7 +758,7 @@ struct HomeView: View {
             .frame(height: 260)
         }
         .padding(16)
-        .glassStyle(cornerRadius: 16, color: .white.opacity(0.08))
+        .glassStyle(cornerRadius: 16, color: ThemeColors.surfaceColor)
         .sheet(isPresented: Binding(
             get: { pvm.showAddWeight },
             set: { pvm.showAddWeight = $0 }
@@ -805,14 +805,14 @@ struct HomeView: View {
                     VStack(alignment: .leading, spacing: 5) {
                         Text("LATEST LOG")
                             .font(.system(size: 12, weight: .black))
-                            .foregroundStyle(.white.opacity(0.45))
+                            .foregroundStyle(ThemeColors.textSecondary)
                         HStack(alignment: .lastTextBaseline, spacing: 4) {
                             Text(String(format: "%.1f", pvm.latestWeight ?? pvm.startWeight))
                                  .font(.system(size: 38, weight: .bold, design: .rounded))
-                                 .foregroundStyle(.white)
+                                 .foregroundStyle(ThemeColors.textPrimary)
                             Text("kg")
                                 .font(.system(size: 18, weight: .medium, design: .rounded))
-                                .foregroundStyle(.white.opacity(0.4))
+                                .foregroundStyle(ThemeColors.textSecondary)
                         }
                     }
 
@@ -821,7 +821,7 @@ struct HomeView: View {
                     VStack(alignment: .trailing, spacing: 5) {
                         Text("CHANGE")
                             .font(.system(size: 12, weight: .black))
-                            .foregroundStyle(.white.opacity(0.45))
+                            .foregroundStyle(ThemeColors.textSecondary)
                         Text(pvm.weightChangeText)
                             .font(.system(size: 22, weight: .bold, design: .rounded))
                             .foregroundStyle(progressChangeColor(pvm))
@@ -830,7 +830,7 @@ struct HomeView: View {
                 
                 if pvm.latestNote != nil || pvm.nextLogDateText != nil {
                     Divider()
-                        .background(Color.white.opacity(0.05))
+                        .background(ThemeColors.surfaceBorder)
                     
                     VStack(alignment: .leading, spacing: 10) {
                         if let note = pvm.latestNote {
@@ -852,19 +852,19 @@ struct HomeView: View {
                                 Image(systemName: "calendar")
                                     .font(.caption2)
                             }
-                            .foregroundStyle(.white.opacity(0.4))
+                            .foregroundStyle(ThemeColors.textSecondary)
                         }
                     }
                 }
             }
             .padding(20)
-            .background(Color.white.opacity(0.03))
+            .background(ThemeColors.surfaceColor)
         }
         .clipShape(RoundedRectangle(cornerRadius: 20))
         .overlay(
             RoundedRectangle(cornerRadius: 20)
                 .strokeBorder(
-                    LinearGradient(colors: [.white.opacity(0.1), .clear], startPoint: .topLeading, endPoint: .bottomTrailing),
+                    LinearGradient(colors: [ThemeColors.surfaceBorder, .clear], startPoint: .topLeading, endPoint: .bottomTrailing),
                     lineWidth: 1
                 )
         )
@@ -875,19 +875,19 @@ struct HomeView: View {
         VStack(spacing: 4) {
             Text(label)
                 .font(.system(size: 12, weight: .semibold))
-                .foregroundStyle(.white.opacity(0.45))
+                .foregroundStyle(ThemeColors.textSecondary)
             Text(value)
                 .font(.system(size: 18, weight: .bold, design: .rounded))
-                .foregroundStyle(.white)
+                .foregroundStyle(ThemeColors.textPrimary)
             Text("kg")
                 .font(.system(size: 12, weight: .medium))
-                .foregroundStyle(.white.opacity(0.35))
+                .foregroundStyle(ThemeColors.textSecondary)
         }
         .frame(maxWidth: .infinity)
         .padding(.vertical, 12)
         .background(
             RoundedRectangle(cornerRadius: 14, style: .continuous)
-                .fill(Color.white.opacity(0.04))
+                .fill(ThemeColors.surfaceColor)
         )
     }
 
@@ -908,16 +908,16 @@ struct HomeView: View {
                     .foregroundStyle(ThemeColors.primary)
                 Text("Your usual \(pattern.mealType.displayName)?")
                     .font(.system(size: 17, weight: .bold))
-                    .foregroundStyle(.white)
+                    .foregroundStyle(ThemeColors.textPrimary)
                 Spacer()
                 Text("\(Int(pattern.totalCalories)) kcal")
                     .font(.system(size: 14, weight: .semibold))
-                    .foregroundStyle(.white.opacity(0.5))
+                    .foregroundStyle(ThemeColors.textSecondary)
             }
 
             Text(pattern.entries.map(\.foodName).joined(separator: ", "))
                 .font(.system(size: 14, weight: .medium))
-                .foregroundStyle(.white.opacity(0.6))
+                .foregroundStyle(ThemeColors.textSecondary)
                 .lineLimit(2)
 
             Button {
@@ -942,7 +942,7 @@ struct HomeView: View {
         .padding(16)
         .background(
             RoundedRectangle(cornerRadius: 20)
-                .fill(Color.white.opacity(0.05))
+                .fill(ThemeColors.surfaceColor)
                 .overlay(
                     RoundedRectangle(cornerRadius: 20)
                         .stroke(ThemeColors.primary.opacity(0.15), lineWidth: 1)
@@ -965,7 +965,7 @@ struct CustomHeader: View {
                     .foregroundColor(.gray)
                 Text(name)
                     .font(.system(.title, design: .rounded).weight(.black))
-                    .foregroundColor(.white)
+                    .foregroundColor(ThemeColors.textPrimary)
             }
 
             Spacer()
@@ -979,11 +979,11 @@ struct CustomHeader: View {
                             .foregroundStyle(streakGradient)
                         Text("\(streak)")
                             .font(.system(.subheadline, design: .rounded).bold())
-                            .foregroundStyle(.white)
+                            .foregroundStyle(ThemeColors.textPrimary)
                     }
                     .padding(.horizontal, 12)
                     .padding(.vertical, 8)
-                    .background(Color.white.opacity(0.08), in: Capsule())
+                    .background(ThemeColors.surfaceColor, in: Capsule())
                     .overlay(Capsule().stroke(streakBorderColor, lineWidth: 1))
                 }
 
@@ -1019,7 +1019,7 @@ struct CustomHeader: View {
     }
 
     private var streakBorderColor: Color {
-        streak >= 7 ? .orange.opacity(0.4) : .white.opacity(0.1)
+        streak >= 7 ? .orange.opacity(0.4) : ThemeColors.surfaceBorder
     }
 }
 
