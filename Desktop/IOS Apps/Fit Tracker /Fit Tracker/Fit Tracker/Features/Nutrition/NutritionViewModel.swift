@@ -51,6 +51,9 @@ final class NutritionViewModel {
     // Recent foods (Option 1)
     var recentFoods: [FoodItem] = []
 
+    // Meal pattern suggestions
+    var mealPatterns: [MealType: MealPattern] = [:]
+
     // MARK: - Dependencies
 
     private let nutritionService: NutritionService
@@ -62,6 +65,7 @@ final class NutritionViewModel {
         self.user = user
         self.nutritionService = nutritionService
         self.todayLog = nutritionService.fetchTodayLog()
+        loadMealPatterns()
 
         // Listen for external changes (e.g. recipe logging from RecipeDetailViewModel)
         logChangeObserver = NotificationCenter.default.addObserver(
@@ -106,6 +110,33 @@ final class NutritionViewModel {
 
     func refresh() {
         loadLog(for: selectedDate)
+    }
+
+    // MARK: - Meal Patterns
+
+    func loadMealPatterns() {
+        let calendar = Calendar.current
+        let today = calendar.startOfDay(for: .now)
+        let fourteenDaysAgo = calendar.date(byAdding: .day, value: -14, to: today)!
+        let endOfDay = calendar.date(byAdding: .day, value: 1, to: today)!
+        let logs = nutritionService.fetchLogs(from: fourteenDaysAgo, to: endOfDay)
+        mealPatterns = MealPatternService.detectPatterns(from: logs)
+    }
+
+    func logMealPattern(_ pattern: MealPattern) async {
+        for entry in pattern.entries {
+            var newEntry = entry
+            newEntry.id = UUID().uuidString
+            newEntry.loggedAt = Date()
+            var log = todayLog
+            await nutritionService.addEntry(newEntry, to: &log)
+            todayLog = log
+        }
+        refresh()
+        Task {
+            await nutritionService.syncToFirestore(todayLog, userId: user.uid)
+        }
+        NotificationCenter.default.post(name: .nutritionLogDidChange, object: nil)
     }
 
     func openAddFood(for mealType: MealType) {
