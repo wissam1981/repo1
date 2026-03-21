@@ -32,7 +32,7 @@ struct AICoachView: View {
                             .foregroundStyle(ThemeColors.primary)
                         Text("What should I eat?")
                             .font(.system(size: 14, weight: .semibold))
-                            .foregroundStyle(.white.opacity(0.9))
+                            .foregroundStyle(ThemeColors.textSecondary)
                     }
                     .padding(.horizontal, 16)
                     .padding(.vertical, 11)
@@ -74,11 +74,11 @@ struct AICoachView: View {
             Button { dismiss() } label: {
                 ZStack {
                     Circle()
-                        .fill(Color.white.opacity(0.08))
+                        .fill(ThemeColors.surfaceColor)
                         .frame(width: 36, height: 36)
                     Image(systemName: "xmark")
                         .font(.system(size: 14, weight: .bold))
-                        .foregroundStyle(.white.opacity(0.6))
+                        .foregroundStyle(ThemeColors.textSecondary)
                 }
             }
 
@@ -105,7 +105,7 @@ struct AICoachView: View {
                 VStack(alignment: .leading, spacing: 1) {
                     Text("AI Fit Coach")
                         .font(.system(size: 17, weight: .bold))
-                        .foregroundStyle(.white)
+                        .foregroundStyle(ThemeColors.textPrimary)
 
                     HStack(spacing: 4) {
                         Circle()
@@ -128,7 +128,7 @@ struct AICoachView: View {
         .padding(.vertical, 12)
         .background(
             Rectangle()
-                .fill(Color.white.opacity(0.03))
+                .fill(ThemeColors.surfaceColor)
                 .shadow(color: .black.opacity(0.2), radius: 4, y: 2)
         )
     }
@@ -143,22 +143,22 @@ struct AICoachView: View {
 
             Text(error)
                 .font(.system(size: 14, weight: .medium))
-                .foregroundStyle(.white.opacity(0.9))
+                .foregroundStyle(ThemeColors.textSecondary)
                 .lineLimit(2)
 
             Spacer()
 
             Button("Retry") { viewModel.retryLastMessage() }
                 .font(.system(size: 13, weight: .bold))
-                .foregroundStyle(.white)
+                .foregroundStyle(ThemeColors.textPrimary)
                 .padding(.horizontal, 14)
                 .padding(.vertical, 6)
-                .background(Capsule().fill(Color.white.opacity(0.15)))
+                .background(Capsule().fill(ThemeColors.surfaceColor))
 
             Button { viewModel.clearError() } label: {
                 Image(systemName: "xmark")
                     .font(.system(size: 12, weight: .bold))
-                    .foregroundStyle(.white.opacity(0.5))
+                    .foregroundStyle(ThemeColors.textSecondary)
             }
         }
         .padding(.horizontal, 16)
@@ -232,7 +232,7 @@ struct AICoachView: View {
             }
             .padding(.horizontal, 18)
             .padding(.vertical, 16)
-            .background(Color.white.opacity(0.08))
+            .background(ThemeColors.surfaceColor)
             .clipShape(RoundedRectangle(cornerRadius: 20))
 
             Spacer()
@@ -260,18 +260,18 @@ struct AICoachView: View {
                                 .foregroundStyle(ThemeColors.primary)
                             Text(prompt.text)
                                 .font(.system(size: 14, weight: .semibold))
-                                .foregroundStyle(.white.opacity(0.9))
+                                .foregroundStyle(ThemeColors.textSecondary)
                         }
                         .padding(.horizontal, 16)
                         .padding(.vertical, 11)
                         .background(
                             Capsule()
-                                .fill(Color.white.opacity(0.07))
+                                .fill(ThemeColors.surfaceColor)
                                 .overlay(
                                     Capsule()
                                         .stroke(
                                             LinearGradient(
-                                                colors: [ThemeColors.primary.opacity(0.3), Color.white.opacity(0.08)],
+                                                colors: [ThemeColors.primary.opacity(0.3), ThemeColors.surfaceBorder],
                                                 startPoint: .topLeading,
                                                 endPoint: .bottomTrailing
                                             ),
@@ -294,7 +294,7 @@ struct AICoachView: View {
     private var coachInputBar: some View {
         VStack(spacing: 0) {
             Rectangle()
-                .fill(Color.white.opacity(0.06))
+                .fill(ThemeColors.surfaceBorder)
                 .frame(height: 1)
 
             HStack(alignment: .bottom, spacing: 12) {
@@ -304,14 +304,14 @@ struct AICoachView: View {
                     .padding(.vertical, 13)
                     .background(
                         RoundedRectangle(cornerRadius: 24, style: .continuous)
-                            .fill(Color.white.opacity(0.07))
+                            .fill(ThemeColors.surfaceColor)
                             .overlay(
                                 RoundedRectangle(cornerRadius: 24, style: .continuous)
-                                    .stroke(Color.white.opacity(0.1), lineWidth: 1)
+                                    .stroke(ThemeColors.surfaceBorder, lineWidth: 1)
                             )
                     )
                     .font(.system(size: 16, weight: .regular))
-                    .foregroundStyle(.white)
+                    .foregroundStyle(ThemeColors.textPrimary)
                     .disabled(viewModel.isTyping)
 
                 coachSendButton
@@ -319,7 +319,7 @@ struct AICoachView: View {
             .padding(.horizontal, 16)
             .padding(.vertical, 12)
         }
-        .background(Color.white.opacity(0.03))
+        .background(ThemeColors.surfaceColor)
     }
 
     private var coachSendButton: some View {
@@ -333,7 +333,7 @@ struct AICoachView: View {
                     .fill(
                         canSend
                         ? LinearGradient(colors: [ThemeColors.primary, .cyan], startPoint: .topLeading, endPoint: .bottomTrailing)
-                        : LinearGradient(colors: [Color.white.opacity(0.08)], startPoint: .top, endPoint: .bottom)
+                        : LinearGradient(colors: [ThemeColors.surfaceColor], startPoint: .top, endPoint: .bottom)
                     )
                     .frame(width: 46, height: 46)
                     .shadow(color: canSend ? ThemeColors.primary.opacity(0.4) : .clear, radius: 8, x: 0, y: 2)
@@ -353,7 +353,7 @@ struct AICoachView: View {
     }
 }
 
-// MARK: - Message Bubble (Redesigned)
+// MARK: - Message Bubble (Redesigned with Styled Text)
 
 private struct CoachBubble: View {
     let message: ChatMessage
@@ -385,36 +385,77 @@ private struct CoachBubble: View {
             }
 
             VStack(alignment: isUser ? .trailing : .leading, spacing: 6) {
-                Text(message.content)
-                    .font(.system(size: 17, weight: .regular))
-                    .lineSpacing(6)
-                    .foregroundStyle(.white)
-                    .padding(.horizontal, 18)
+                HStack(spacing: 0) {
+                    // Gradient accent bar for coach messages
+                    if !isUser {
+                        RoundedRectangle(cornerRadius: 2)
+                            .fill(
+                                LinearGradient(
+                                    colors: [
+                                        NutrientColor.protein,
+                                        NutrientColor.carbs,
+                                        NutrientColor.calories
+                                    ],
+                                    startPoint: .top,
+                                    endPoint: .bottom
+                                )
+                            )
+                            .frame(width: 3)
+                            .padding(.vertical, 8)
+                    }
+
+                    // Message content
+                    Group {
+                        if isUser {
+                            Text(message.content)
+                                .font(.system(size: 17, weight: .regular))
+                                .lineSpacing(6)
+                                .foregroundStyle(.white)
+                        } else {
+                            StyledCoachText(text: message.content)
+                        }
+                    }
+                    .padding(.horizontal, 16)
                     .padding(.vertical, 14)
-                    .background(
-                        isUser
-                        ? AnyShapeStyle(
+                }
+                .background(
+                    isUser
+                    ? AnyShapeStyle(
+                        LinearGradient(
+                            colors: [ThemeColors.primary, .cyan.opacity(0.7)],
+                            startPoint: .topLeading,
+                            endPoint: .bottomTrailing
+                        )
+                    )
+                    : AnyShapeStyle(ThemeColors.surfaceColor)
+                )
+                .clipShape(
+                    .rect(
+                        topLeadingRadius: isUser ? 22 : 4,
+                        bottomLeadingRadius: 22,
+                        bottomTrailingRadius: isUser ? 4 : 22,
+                        topTrailingRadius: 22
+                    )
+                )
+                .overlay(
+                    // Subtle border glow for coach bubbles
+                    !isUser ?
+                    RoundedRectangle(cornerRadius: 16)
+                        .stroke(
                             LinearGradient(
-                                colors: [ThemeColors.primary, .cyan.opacity(0.7)],
+                                colors: [ThemeColors.primary.opacity(0.2), ThemeColors.surfaceBorder],
                                 startPoint: .topLeading,
                                 endPoint: .bottomTrailing
-                            )
+                            ),
+                            lineWidth: 0.5
                         )
-                        : AnyShapeStyle(Color.white.opacity(0.1))
-                    )
-                    .clipShape(
-                        .rect(
-                            topLeadingRadius: isUser ? 22 : 4,
-                            bottomLeadingRadius: 22,
-                            bottomTrailingRadius: isUser ? 4 : 22,
-                            topTrailingRadius: 22
-                        )
-                    )
-                    .shadow(color: isUser ? ThemeColors.primary.opacity(0.15) : .clear, radius: 8, x: 0, y: 4)
+                    : nil
+                )
+                .shadow(color: isUser ? ThemeColors.primary.opacity(0.15) : .clear, radius: 8, x: 0, y: 4)
 
                 Text(message.timestamp, style: .time)
                     .font(.system(size: 12, weight: .medium))
-                    .foregroundStyle(.white.opacity(0.3))
+                    .foregroundStyle(ThemeColors.textSecondary)
                     .padding(.horizontal, 6)
             }
 
