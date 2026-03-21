@@ -300,15 +300,24 @@ final class NutritionViewModel {
 
         do {
             guard !Task.isCancelled else { return }
-            
+
             // Perform the offline, bilingual database search
             let results = try await nutritionService.searchFoods(query: query)
-            
+
             guard !Task.isCancelled else { return }
-            
-            searchResults = results
+
+            // Smart rank results based on user habits and remaining macros
+            searchResults = SmartSearchRanker.rank(
+                results,
+                frequencyMap: FoodFrequencyTracker.frequencyMap(),
+                remainingCalories: caloriesRemaining,
+                remainingProteinG: targetProteinG - Int(todayLog.totalProteinG),
+                remainingCarbsG: targetCarbsG - Int(todayLog.totalCarbsG),
+                remainingFatG: targetFatG - Int(todayLog.totalFatG),
+                query: query
+            )
             isSearching = false
-            
+
         } catch is CancellationError {
             // Ignore cancellation
         } catch {
