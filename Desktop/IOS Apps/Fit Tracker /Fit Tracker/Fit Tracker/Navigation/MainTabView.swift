@@ -266,7 +266,7 @@ private struct QuickActionsSheet: View {
             HStack {
                 Text("Quick Actions")
                     .font(.system(size: 18, weight: .bold))
-                    .foregroundStyle(.white)
+                    .foregroundStyle(ThemeColors.textPrimary)
                 Spacer()
             }
             .padding(.bottom, 2)
@@ -276,10 +276,10 @@ private struct QuickActionsSheet: View {
                 HStack {
                     Image(systemName: "viewfinder")
                         .font(.system(size: 12, weight: .semibold))
-                        .foregroundStyle(.white.opacity(0.5))
+                        .foregroundStyle(ThemeColors.textSecondary)
                     Text("SCAN & LOG")
                         .font(.system(size: 11, weight: .bold))
-                        .foregroundStyle(.white.opacity(0.5))
+                        .foregroundStyle(ThemeColors.textSecondary)
                         .tracking(0.8)
                 }
 
@@ -327,7 +327,7 @@ private struct QuickActionsSheet: View {
 
                     Text("Trial: \(barcodeScansLeft) barcode · \(mealScansLeft) meal scans left")
                         .font(.system(size: 12, weight: .medium))
-                        .foregroundStyle(.white.opacity(0.7))
+                        .foregroundStyle(ThemeColors.textSecondary)
 
                     Spacer()
 
@@ -349,7 +349,7 @@ private struct QuickActionsSheet: View {
 
             // Divider
             Rectangle()
-                .fill(Color.white.opacity(0.06))
+                .fill(ThemeColors.surfaceBorder)
                 .frame(height: 1)
                 .padding(.vertical, 2)
 
@@ -358,10 +358,10 @@ private struct QuickActionsSheet: View {
                 HStack {
                     Image(systemName: "bolt.fill")
                         .font(.system(size: 12, weight: .semibold))
-                        .foregroundStyle(.white.opacity(0.5))
+                        .foregroundStyle(ThemeColors.textSecondary)
                     Text("QUICK TRACK")
                         .font(.system(size: 11, weight: .bold))
-                        .foregroundStyle(.white.opacity(0.5))
+                        .foregroundStyle(ThemeColors.textSecondary)
                         .tracking(0.8)
                 }
 
@@ -400,7 +400,7 @@ private struct QuickActionsSheet: View {
 
                 Text(title)
                     .font(.system(size: 12, weight: .semibold))
-                    .foregroundStyle(.white)
+                    .foregroundStyle(ThemeColors.textPrimary)
 
                 // Scan limit badge
                 if let remaining = scansLeft {
@@ -427,10 +427,10 @@ private struct QuickActionsSheet: View {
             .padding(.vertical, 14)
             .background(
                 RoundedRectangle(cornerRadius: 14, style: .continuous)
-                    .fill(Color.white.opacity(0.04))
+                    .fill(ThemeColors.surfaceColor)
                     .overlay(
                         RoundedRectangle(cornerRadius: 14, style: .continuous)
-                            .stroke(Color.white.opacity(0.06), lineWidth: 1)
+                            .stroke(ThemeColors.surfaceBorder, lineWidth: 1)
                     )
             )
         }
@@ -453,16 +453,16 @@ private struct QuickActionsSheet: View {
 
                 Text(title)
                     .font(.system(size: 11, weight: .semibold))
-                    .foregroundStyle(.white.opacity(0.8))
+                    .foregroundStyle(ThemeColors.textSecondary)
             }
             .frame(maxWidth: .infinity)
             .padding(.vertical, 12)
             .background(
                 RoundedRectangle(cornerRadius: 14, style: .continuous)
-                    .fill(Color.white.opacity(0.03))
+                    .fill(ThemeColors.surfaceColor)
                     .overlay(
                         RoundedRectangle(cornerRadius: 14, style: .continuous)
-                            .stroke(Color.white.opacity(0.05), lineWidth: 1)
+                            .stroke(ThemeColors.surfaceBorder, lineWidth: 1)
                     )
             )
         }
@@ -488,12 +488,12 @@ private struct QuickWaterSheet: View {
             HStack {
                 Text("Log Water")
                     .font(.title3.bold())
-                    .foregroundStyle(.white)
+                    .foregroundStyle(ThemeColors.textPrimary)
                 Spacer()
                 Button { dismiss() } label: {
                     Image(systemName: "xmark.circle.fill")
                         .font(.title3)
-                        .foregroundStyle(.white.opacity(0.3))
+                        .foregroundStyle(ThemeColors.textSecondary)
                 }
             }
 
@@ -506,7 +506,7 @@ private struct QuickWaterSheet: View {
                 GeometryReader { geo in
                     ZStack(alignment: .leading) {
                         Capsule()
-                            .fill(Color.white.opacity(0.06))
+                            .fill(ThemeColors.surfaceBorder)
                             .frame(height: 8)
                         Capsule()
                             .fill(.cyan)
@@ -518,7 +518,7 @@ private struct QuickWaterSheet: View {
 
                 Text("of \(Int(dailyTarget)) ml")
                     .font(.caption)
-                    .foregroundStyle(.white.opacity(0.35))
+                    .foregroundStyle(ThemeColors.textSecondary)
             }
 
             // Quick add buttons
@@ -541,7 +541,7 @@ private struct QuickWaterSheet: View {
                     .foregroundStyle(.cyan)
                 Text("+\(amount)ml")
                     .font(.system(size: 13, weight: .semibold))
-                    .foregroundStyle(.white)
+                    .foregroundStyle(ThemeColors.textPrimary)
             }
             .frame(maxWidth: .infinity)
             .padding(.vertical, 14)
