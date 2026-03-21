@@ -108,6 +108,12 @@ struct HomeView: View {
                     WeeklyReportSheet(report: vm.weeklyReport)
                 }
             }
+            .onChange(of: appState.showAICoach) { _, newValue in
+                if newValue {
+                    showCoach = true
+                    appState.showAICoach = false
+                }
+            }
         }
     }
 
@@ -222,6 +228,57 @@ struct HomeView: View {
 
             // Trial banner
             trialBanner
+
+            // Weekly AI Digest Card (Sunday through Tuesday)
+            if WeeklyDigestService.isDigestWindow, WeeklyDigestService.hasDigestThisWeek {
+                Button {
+                    appState.pendingAIAction = .weeklyDigest
+                    appState.showAICoach = true
+                } label: {
+                    HStack(spacing: 14) {
+                        ZStack {
+                            Circle()
+                                .fill(
+                                    LinearGradient(
+                                        colors: [ThemeColors.primary, ThemeColors.primary.opacity(0.6)],
+                                        startPoint: .topLeading,
+                                        endPoint: .bottomTrailing
+                                    )
+                                )
+                                .frame(width: 44, height: 44)
+                            Image(systemName: "sparkles")
+                                .font(.system(size: 18, weight: .bold))
+                                .foregroundStyle(.white)
+                        }
+
+                        VStack(alignment: .leading, spacing: 3) {
+                            Text("Your Weekly Report is Ready")
+                                .font(.system(size: 16, weight: .bold))
+                                .foregroundStyle(.white)
+                            Text("Tap to see your AI analysis")
+                                .font(.system(size: 13, weight: .medium))
+                                .foregroundStyle(.white.opacity(0.5))
+                        }
+
+                        Spacer()
+
+                        Image(systemName: "chevron.right")
+                            .font(.system(size: 13, weight: .bold))
+                            .foregroundStyle(.white.opacity(0.3))
+                    }
+                    .padding(16)
+                    .background(
+                        RoundedRectangle(cornerRadius: 20)
+                            .fill(Color.white.opacity(0.05))
+                            .overlay(
+                                RoundedRectangle(cornerRadius: 20)
+                                    .stroke(ThemeColors.primary.opacity(0.2), lineWidth: 1)
+                            )
+                    )
+                }
+                .buttonStyle(.plain)
+                .padding(.horizontal, 20)
+            }
 
             // Meal Suggestion Card
             if let nvm = nutritionVM,
