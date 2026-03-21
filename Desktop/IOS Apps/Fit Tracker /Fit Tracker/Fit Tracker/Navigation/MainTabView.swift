@@ -75,7 +75,7 @@ struct MainTabView: View {
             }
             .padding(.bottom, 16) // Detach from bottom
         }
-        .preferredColorScheme(.dark)
+        .preferredColorScheme(ThemeManager.shared.currentTheme.isLightTheme ? .light : .dark)
         .onChange(of: router.selectedTab) { oldTab, newTab in
             if newTab == .home || newTab == .nutrition {
                 initViewModelsIfNeeded()
