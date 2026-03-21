@@ -5,10 +5,16 @@ import Charts
 // Main nutrition tracking screen with meal sections and daily summary.
 
 struct NutritionDashboardView: View {
+    let sharedViewModel: NutritionViewModel?
+
     @Environment(AppState.self) private var appState
     @Environment(DependencyContainer.self) private var container
     @State private var viewModel: NutritionViewModel?
     @State private var exerciseCalories: Int = 0
+
+    init(sharedViewModel: NutritionViewModel? = nil) {
+        self.sharedViewModel = sharedViewModel
+    }
 
     var body: some View {
         ZStack {
@@ -36,7 +42,12 @@ struct NutritionDashboardView: View {
     // MARK: - Init
 
     private func initViewModelIfNeeded() {
-        guard viewModel == nil, let user = appState.currentUser else { return }
+        guard viewModel == nil else { return }
+        if let shared = sharedViewModel {
+            viewModel = shared
+            return
+        }
+        guard let user = appState.currentUser else { return }
         viewModel = NutritionViewModel(user: user, nutritionService: container.nutritionService)
     }
 
