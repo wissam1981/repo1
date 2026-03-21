@@ -29,6 +29,7 @@ struct HomeView: View {
     @State private var showEditProfile = false
     @State private var showPaywall = false
     @State private var showWeeklyReport = false
+    @State private var showBudgetSheet = false
 
     var body: some View {
         @Bindable var router = router
@@ -106,6 +107,26 @@ struct HomeView: View {
             .sheet(isPresented: $showWeeklyReport) {
                 if let vm = viewModel {
                     WeeklyReportSheet(report: vm.weeklyReport)
+                }
+            }
+            .sheet(isPresented: $showBudgetSheet) {
+                if let vm = viewModel {
+                    CalorieBudgetSheet(
+                        consumed: vm.caloriesConsumed,
+                        target: vm.targetCalories,
+                        proteinConsumed: vm.proteinConsumed,
+                        proteinTarget: vm.targetProteinG,
+                        carbsConsumed: vm.carbsConsumed,
+                        carbsTarget: vm.targetCarbsG,
+                        fatConsumed: vm.fatConsumed,
+                        fatTarget: vm.targetFatG,
+                        onGetAISuggestions: {
+                            appState.pendingAIAction = .budgetAdvisor
+                            appState.showAICoach = true
+                        }
+                    )
+                    .presentationDetents([.medium])
+                    .presentationDragIndicator(.hidden)
                 }
             }
             .onChange(of: appState.showAICoach) { _, newValue in
@@ -308,6 +329,7 @@ struct HomeView: View {
                     remaining: max(0, vm.targetCalories - vm.caloriesConsumed),
                     fitnessGoal: vm.fitnessGoal
                 )
+                .onTapGesture { showBudgetSheet = true }
                 .padding(.horizontal, 20)
                 .tag(0)
                 // Slide 2: Macro Breakdown

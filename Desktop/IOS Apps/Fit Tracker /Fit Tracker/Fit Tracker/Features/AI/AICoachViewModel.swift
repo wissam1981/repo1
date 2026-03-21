@@ -236,6 +236,30 @@ final class AICoachViewModel {
         sendMessage()
     }
 
+    // MARK: - Budget Advisor
+
+    func askBudgetAdvisor() {
+        let todayLog = coreDataService.fetchNutritionLogDomain(for: .now) ?? NutritionLog(date: .now)
+        let remaining = max(0, user.targetCalories - Int(todayLog.totalCalories))
+        let proteinLeft = max(0, user.targetProteinG - Int(todayLog.totalProteinG))
+        let carbsLeft = max(0, user.targetCarbsG - Int(todayLog.totalCarbsG))
+        let fatLeft = max(0, user.targetFatG - Int(todayLog.totalFatG))
+
+        let question = "What should I eat? I have \(remaining) kcal left, need \(proteinLeft)g protein, \(carbsLeft)g carbs, \(fatLeft)g fat"
+        inputText = question
+        sendMessage()
+    }
+
+    /// Handle pending AI actions from other parts of the app
+    func handlePendingAction(_ action: AIAction) {
+        switch action {
+        case .budgetAdvisor:
+            askBudgetAdvisor()
+        case .weeklyDigest:
+            showWeeklyDigest()
+        }
+    }
+
     func clearError() {
         errorMessage = nil
     }
