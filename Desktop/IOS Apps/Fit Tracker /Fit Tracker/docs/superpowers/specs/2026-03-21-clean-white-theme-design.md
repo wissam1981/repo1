@@ -22,9 +22,13 @@ Add a 5th theme — "Clean White" — to the existing theme system. Pure white c
 | `backgroundDark` | `#F5F7FA` | Cool light gray (name stays `backgroundDark` for compatibility) |
 | `secondary` | `#E8F4FD` | Light blue tint |
 | `surfaceColor` | Special — see Surface Effect section | White card with shadow + border |
-| `success` | `#10b981` | Emerald green (darker than dark-theme mint, readable on white) |
-| `error` | `#ef4444` | Standard red (darker than dark-theme rose, readable on white) |
-| `info` | `#06b6d4` | Darker cyan (readable on white) |
+| `success` | `#10b981` | Emerald green (readable at bold/large sizes on white) |
+| `error` | `#ef4444` | Standard red (readable at bold/large sizes on white) |
+| `info` | `#06b6d4` | Darker cyan (readable at bold/large sizes on white) |
+
+**Note on semantic colors:** The `success`, `error`, and `info` values achieve ~3-4:1 contrast on white. This is acceptable because these colors are used exclusively for bold indicators, badges, and progress rings — never for small body text. The derived `successBackground`, `errorBackground`, and `infoBackground` properties (computed via `.opacity(0.15)`) automatically inherit from the corrected base values.
+
+**`backgroundLight` cleanup:** The existing `static let backgroundLight = Color(hex: "#f8f8f5")` in ThemeColors is unused across the entire codebase. It remains as-is — no relation to the new Clean White theme's `backgroundDark` value.
 
 ## New Text Color Tokens
 
@@ -42,7 +46,7 @@ static var textPrimary: Color {
 
 static var textSecondary: Color {
     switch ThemeManager.shared.currentTheme {
-    case .cleanWhite: return Color(hex: "#999999")
+    case .cleanWhite: return Color(hex: "#767676")  // 4.5:1 contrast on white (WCAG AA)
     default: return .white.opacity(0.5)
     }
 }
@@ -52,13 +56,9 @@ Views that currently hardcode `.foregroundStyle(.white)` must be updated to use 
 
 ## Surface Effect
 
-The current `surfaceColor = Color.white.opacity(0.1)` creates a frosted glass look on dark backgrounds. On white, this is invisible.
+The current `surfaceColor` is `static let surfaceColor = Color.white.opacity(0.1)` — a stored constant. This creates a frosted glass look on dark backgrounds but is invisible on white.
 
-For the white theme, `surfaceColor` becomes `Color.white` — but views must also apply:
-- Shadow: `0 1px 3px rgba(0,0,0,0.06)`
-- Border: `1px solid #0ea5e9 @ 8% opacity`
-
-Add a helper modifier or new ThemeColors properties:
+Change it to a computed property with a theme switch. The `default` branch preserves the existing `Color.white.opacity(0.1)` for all 4 dark themes — no behavioral change for them.
 
 ```swift
 static var surfaceColor: Color {
@@ -83,6 +83,45 @@ static var surfaceShadow: Color {
 }
 ```
 
+Views using inline `Color.white.opacity(0.04/0.06/0.08/0.1/0.12)` for card backgrounds and borders must migrate to `ThemeColors.surfaceColor` / `ThemeColors.surfaceBorder` — these inline values are invisible on white.
+
+## GlassView / Frosted Glass Effect
+
+`Common/Components/GlassView.swift` contains a `GlassModifier` that uses `UIBlurEffect(style: .systemThinMaterialDark)` — this is hardcoded and ignores `preferredColorScheme`. It must be made theme-aware:
+
+```swift
+let blurStyle: UIBlurEffect.Style = ThemeManager.shared.currentTheme.isLightTheme
+    ? .systemThinMaterial
+    : .systemThinMaterialDark
+```
+
+The border stroke in `GlassModifier` (`Color.white.opacity(0.1)`) must switch to `ThemeColors.surfaceBorder`.
+
+**`AuraFloatingNavBar.swift`** uses `.glassStyle(cornerRadius: 32, color: .white.opacity(0.12))` — on a white background this is invisible. For Clean White, the nav bar should use a white fill with shadow instead. The nav bar's inactive tab icons (`.white.opacity(0.4)`) must use `ThemeColors.textSecondary`.
+
+## Primary Gradient
+
+The existing `primaryGradient` hardcodes `Color(hex: "#2E7D32")` (forest green) as the gradient end, which is wrong for most themes. For Clean White:
+
+```swift
+static var primaryGradient: LinearGradient {
+    switch ThemeManager.shared.currentTheme {
+    case .cleanWhite:
+        return LinearGradient(
+            colors: [Color(hex: "#0ea5e9"), Color(hex: "#0284c7")],
+            startPoint: .topLeading,
+            endPoint: .bottomTrailing
+        )
+    default:
+        return LinearGradient(
+            colors: [primary, Color(hex: "#2E7D32")],
+            startPoint: .topLeading,
+            endPoint: .bottomTrailing
+        )
+    }
+}
+```
+
 ## Preferred Color Scheme
 
 Add a computed property to `AppTheme`:
@@ -96,12 +135,14 @@ var isLightTheme: Bool {
 }
 ```
 
-In `MainTabView.swift`, change:
+Apply in **both** locations:
+
+1. `Navigation/MainTabView.swift`:
 ```swift
 .preferredColorScheme(ThemeManager.shared.currentTheme.isLightTheme ? .light : .dark)
 ```
 
-This ensures the system status bar, keyboard, and other system UI elements match the theme.
+2. `Features/Onboarding/OnboardingContainerView.swift` — also has `.preferredColorScheme(.dark)`, must be updated to match.
 
 ## Implementation Scope
 
@@ -111,22 +152,40 @@ This ensures the system status bar, keyboard, and other system UI elements match
 
 ### `Common/Theme/ThemeColors.swift` (Modify)
 - Add `case .cleanWhite:` to every existing switch statement (`primary`, `primaryDark`, `backgroundDark`, `secondary`)
-- Override semantic colors (`success`, `error`, `info`) to use darker, white-readable variants for `.cleanWhite`
-- Change `surfaceColor` from a fixed `let` to a computed `var` with theme switch
+- Change semantic colors (`success`, `error`, `info`) from fixed `let` to computed `var` with theme switch — darker variants for `.cleanWhite`
+- Change `surfaceColor` from `static let` to computed `static var` with theme switch
 - Add `surfaceBorder` and `surfaceShadow` computed properties
 - Add `textPrimary` and `textSecondary` computed properties
+- Update `primaryGradient` to be theme-aware
+
+### `Common/Components/GlassView.swift` (Modify)
+- Switch `UIBlurEffect(style:)` based on `isLightTheme`
+- Update border stroke to use `ThemeColors.surfaceBorder`
+
+### `Navigation/AuraFloatingNavBar.swift` (Modify)
+- Update `.glassStyle` call for Clean White (white fill with shadow instead of transparent glass)
+- Update inactive tab icon color from `.white.opacity(0.4)` to `ThemeColors.textSecondary`
 
 ### `Navigation/MainTabView.swift` (Modify)
-- Change `.preferredColorScheme(.dark)` to use `ThemeManager.shared.currentTheme.isLightTheme`
+- Change `.preferredColorScheme(.dark)` to theme-aware
+- Update `QuickActionsSheet` and `QuickWaterSheet` (private structs in this file) — replace hardcoded `.white` text with `ThemeColors.textPrimary`/`textSecondary`
 
-### All view files using hardcoded white text (Modify)
-- Replace `.foregroundStyle(.white)` with `.foregroundStyle(ThemeColors.textPrimary)` where the text is on a themed background
-- Replace `.foregroundStyle(.white.opacity(0.4))` / `.foregroundStyle(.white.opacity(0.5))` with `.foregroundStyle(ThemeColors.textSecondary)`
-- Replace `.white.opacity(0.06)` borders with `ThemeColors.surfaceBorder`
-- **Exception:** White text on colored/gradient fills (e.g., buttons with `ThemeColors.primary` background) should stay white — it's on a colored surface, not on the background
+### `Features/Onboarding/OnboardingContainerView.swift` (Modify)
+- Change `.preferredColorScheme(.dark)` to theme-aware
 
-### Theme Picker UI in ProfileView (Modify)
+### All view files with hardcoded white text (~46 files) (Modify)
+- Replace `.foregroundStyle(.white)` with `.foregroundStyle(ThemeColors.textPrimary)` where text is on a themed background
+- Replace `.foregroundStyle(.white.opacity(0.4))` / `.white.opacity(0.5)` with `.foregroundStyle(ThemeColors.textSecondary)`
+- Replace inline `Color.white.opacity(0.04-0.12)` card backgrounds with `ThemeColors.surfaceColor`
+- Replace inline `Color.white.opacity(0.06)` borders with `ThemeColors.surfaceBorder`
+- **Exception:** White text on colored/gradient fills (e.g., buttons with `ThemeColors.primary` background) stays white — it's on a colored surface, not the background
+- Charts using `.foregroundStyle(.white)` for labels need `textPrimary`
+
+### Theme Picker UI in ProfileView
 - No changes needed — the picker iterates `AppTheme.allCases`, so "Clean White" automatically appears
+
+### Out of Scope
+- **Auth views** (LoginView, SignUpView, WelcomeView, SplashView) — theme selection happens post-login, so these views are always seen in the default Ocean Blue dark theme. Not worth migrating.
 
 ## What Does NOT Change
 
@@ -140,6 +199,6 @@ This ensures the system status bar, keyboard, and other system UI elements match
 
 - **New users:** Default theme remains Ocean Blue (dark). Clean White is opt-in.
 - **Existing users:** Their saved theme continues working. Clean White only activates if they select it.
-- **Charts and graphs:** Charts using `.foregroundStyle(.white)` for labels need to switch to `textPrimary`. Chart grid lines using `.white.opacity(0.1)` should use a computed theme-aware value.
+- **Charts and graphs:** Charts using `.foregroundStyle(.white)` for labels need `textPrimary`. Chart grid lines using `.white.opacity(0.1)` should use a computed theme-aware value.
 - **Images and icons:** SF Symbols using `.foregroundStyle(.white)` on themed backgrounds need `textPrimary`. Icons on colored buttons (primary background) stay white.
 - **Navigation bar:** Hidden in most views (`.toolbar(.hidden)`), so no system-level nav bar color issues.
