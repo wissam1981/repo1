@@ -85,6 +85,10 @@ struct HomeView: View {
                 if WeeklyDigestService.isDigestWindow, !WeeklyDigestService.hasDigestThisWeek {
                     weeklyDigestCoachVM?.generateWeeklyDigest()
                 }
+                // Fetch recovery advice
+                if let wvm = workoutVM {
+                    viewModel?.fetchRecoveryAdvice(workoutVM: wvm)
+                }
             }
             .onChange(of: scenePhase) { _, newPhase in
                 if newPhase == .active {
@@ -267,6 +271,91 @@ struct HomeView: View {
             // Trial banner
             trialBanner
 
+            // Context-Aware Insight
+            if !vm.contextualInsight.isEmpty {
+                HStack(spacing: 10) {
+                    Text(vm.contextualInsight)
+                        .font(.system(size: 14, weight: .semibold))
+                        .foregroundStyle(ThemeColors.textPrimary)
+                        .lineLimit(2)
+                    Spacer()
+                }
+                .padding(14)
+                .background(
+                    RoundedRectangle(cornerRadius: 14, style: .continuous)
+                        .fill(ThemeColors.primary.opacity(0.08))
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 14, style: .continuous)
+                                .stroke(ThemeColors.primary.opacity(0.15), lineWidth: 1)
+                        )
+                )
+                .padding(.horizontal, 20)
+            }
+
+            // Goal Auto-Adjust Suggestion
+            if let suggestion = vm.goalSuggestion {
+                VStack(alignment: .leading, spacing: 12) {
+                    HStack(spacing: 10) {
+                        Image(systemName: suggestion.icon)
+                            .font(.system(size: 20, weight: .bold))
+                            .foregroundStyle(suggestion.severity == .warning ? .orange : ThemeColors.primary)
+
+                        Text("Goal Adjustment")
+                            .font(.system(size: 16, weight: .bold))
+                            .foregroundStyle(ThemeColors.textPrimary)
+
+                        Spacer()
+
+                        Button {
+                            vm.dismissGoalSuggestion()
+                        } label: {
+                            Image(systemName: "xmark")
+                                .font(.system(size: 12, weight: .bold))
+                                .foregroundStyle(ThemeColors.textSecondary)
+                                .frame(width: 24, height: 24)
+                                .background(Circle().fill(Color.white.opacity(0.08)))
+                        }
+                    }
+
+                    Text(suggestion.reason)
+                        .font(.system(size: 13, weight: .medium))
+                        .foregroundStyle(ThemeColors.textSecondary)
+
+                    HStack(spacing: 8) {
+                        Text("New target: \(suggestion.newCalories) cal")
+                            .font(.system(size: 14, weight: .bold))
+                            .foregroundStyle(ThemeColors.textPrimary)
+
+                        Spacer()
+
+                        Button {
+                            vm.applyGoalSuggestion()
+                            Task {
+                                await container.coreDataService.saveUserProfile(vm.user)
+                                try? await container.firestoreService.saveUserProfile(vm.user)
+                            }
+                        } label: {
+                            Text("Accept")
+                                .font(.system(size: 13, weight: .bold))
+                                .foregroundStyle(.white)
+                                .padding(.horizontal, 16)
+                                .padding(.vertical, 8)
+                                .background(Capsule().fill(ThemeColors.primary))
+                        }
+                    }
+                }
+                .padding(16)
+                .background(
+                    RoundedRectangle(cornerRadius: 18, style: .continuous)
+                        .fill(ThemeColors.surfaceColor)
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 18, style: .continuous)
+                                .stroke(suggestion.severity == .warning ? Color.orange.opacity(0.25) : ThemeColors.primary.opacity(0.15), lineWidth: 1)
+                        )
+                )
+                .padding(.horizontal, 20)
+            }
+
             // Weekly AI Digest Card (Sunday through Tuesday)
             if WeeklyDigestService.isDigestWindow, WeeklyDigestService.hasDigestThisWeek {
                 Button {
@@ -413,6 +502,12 @@ struct HomeView: View {
                 habits: vm.weeklyHabits
             )
             .padding(.horizontal, 20)
+            
+            // ── Recovery Advisor ──
+            if subscriptionManager.isSubscribed || subscriptionManager.isTrialActive {
+                recoveryAdvisorCard(vm)
+                    .padding(.horizontal, 20)
+            }
 
             // ── Workout Carousel ──
             if let wvm = workoutVM {
@@ -434,6 +529,104 @@ struct HomeView: View {
             .padding(.horizontal, 20)
         }
         .padding(.bottom, 100)
+    }
+    
+    // MARK: - Recovery Advisor Card
+    
+    @ViewBuilder
+    private func recoveryAdvisorCard(_ vm: HomeViewModel) -> some View {
+        VStack(spacing: 12) {
+            HStack(spacing: 10) {
+                ZStack {
+                    Circle()
+                        .fill(
+                            LinearGradient(
+                                colors: [.purple, .purple.opacity(0.5)],
+                                startPoint: .topLeading,
+                                endPoint: .bottomTrailing
+                            )
+                        )
+                        .frame(width: 40, height: 40)
+                        .shadow(color: .purple.opacity(0.3), radius: 6, x: 0, y: 3)
+                    Image(systemName: "battery.100.bolt")
+                        .font(.system(size: 17, weight: .semibold))
+                        .foregroundStyle(.white)
+                }
+                Text("Recovery Advisor")
+                    .font(.system(size: 20, weight: .bold))
+                    .foregroundStyle(ThemeColors.textPrimary)
+                Spacer()
+                
+                if vm.isLoadingRecovery {
+                    ProgressView()
+                }
+            }
+            
+            if let advice = vm.recoveryAdvice {
+                HStack(spacing: 16) {
+                    // Score
+                    VStack(spacing: 4) {
+                        ZStack {
+                            Circle()
+                                .stroke(ThemeColors.textSecondary.opacity(0.2), lineWidth: 6)
+                            Circle()
+                                .trim(from: 0, to: CGFloat(advice.readinessScore) / 100.0)
+                                .stroke(
+                                    advice.level == .heavy ? ThemeColors.success :
+                                    advice.level == .rest ? ThemeColors.error : .orange,
+                                    style: StrokeStyle(lineWidth: 6, lineCap: .round)
+                                )
+                                .rotationEffect(.degrees(-90))
+                            Text("\(advice.readinessScore)")
+                                .font(.system(size: 22, weight: .bold, design: .rounded))
+                                .foregroundStyle(ThemeColors.textPrimary)
+                        }
+                        .frame(width: 60, height: 60)
+                        
+                        Text("Score")
+                            .font(.system(size: 12, weight: .medium))
+                            .foregroundStyle(ThemeColors.textSecondary)
+                    }
+                    
+                    // Message
+                    VStack(alignment: .leading, spacing: 6) {
+                        HStack {
+                            Circle()
+                                .fill(
+                                    advice.level == .heavy ? ThemeColors.success :
+                                    advice.level == .rest ? ThemeColors.error : .orange
+                                )
+                                .frame(width: 8, height: 8)
+                            Text(advice.status.uppercased())
+                                .font(.system(size: 13, weight: .black))
+                                .foregroundStyle(
+                                    advice.level == .heavy ? ThemeColors.success :
+                                    advice.level == .rest ? ThemeColors.error : .orange
+                                )
+                        }
+                        Text(advice.message)
+                            .font(.system(size: 14, weight: .medium))
+                            .foregroundStyle(ThemeColors.textSecondary)
+                            .lineLimit(.max)
+                            .fixedSize(horizontal: false, vertical: true)
+                    }
+                    Spacer(minLength: 0)
+                }
+                .padding(16)
+                .background(Color.white.opacity(0.04))
+                .clipShape(RoundedRectangle(cornerRadius: 16))
+            } else if !vm.isLoadingRecovery {
+                Text("Complete a workout and log some food to get your recovery score.")
+                    .font(.system(size: 14, weight: .medium))
+                    .foregroundStyle(ThemeColors.textSecondary)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .padding(16)
+                    .background(Color.white.opacity(0.04))
+                    .clipShape(RoundedRectangle(cornerRadius: 16))
+            }
+        }
+        .padding(16)
+        .glassStyle(cornerRadius: 16, color: ThemeColors.surfaceColor)
     }
 
     // MARK: - Workout Carousel
