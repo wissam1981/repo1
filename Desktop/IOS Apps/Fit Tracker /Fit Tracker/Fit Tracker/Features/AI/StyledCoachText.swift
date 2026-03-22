@@ -1,5 +1,76 @@
 import SwiftUI
 
+// MARK: - Flow Layout (wraps child views across lines)
+
+struct CoachFlowLayout: Layout {
+    var horizontalSpacing: CGFloat = 0
+    var verticalSpacing: CGFloat = 6
+
+    func sizeThatFits(proposal: ProposedViewSize, subviews: Subviews, cache: inout ()) -> CGSize {
+        let result = arrange(proposal: proposal, subviews: subviews)
+        return result.size
+    }
+
+    func placeSubviews(in bounds: CGRect, proposal: ProposedViewSize, subviews: Subviews, cache: inout ()) {
+        let result = arrange(proposal: proposal, subviews: subviews)
+        for (index, position) in result.positions.enumerated() {
+            subviews[index].place(
+                at: CGPoint(x: bounds.minX + position.x, y: bounds.minY + position.y),
+                proposal: ProposedViewSize(result.sizes[index])
+            )
+        }
+    }
+
+    private struct ArrangeResult {
+        var size: CGSize
+        var positions: [CGPoint]
+        var sizes: [CGSize]
+    }
+
+    private func arrange(proposal: ProposedViewSize, subviews: Subviews) -> ArrangeResult {
+        let maxWidth = proposal.width ?? .infinity
+        var positions: [CGPoint] = []
+        var sizes: [CGSize] = []
+        var x: CGFloat = 0
+        var y: CGFloat = 0
+        var rowHeight: CGFloat = 0
+
+        for subview in subviews {
+            let size = subview.sizeThatFits(.unspecified)
+            sizes.append(size)
+
+            // Check if this is a line-break view (width >= maxWidth)
+            if size.width >= maxWidth {
+                if x > 0 {
+                    y += rowHeight + verticalSpacing
+                }
+                positions.append(CGPoint(x: 0, y: y))
+                y += verticalSpacing
+                x = 0
+                rowHeight = 0
+                continue
+            }
+
+            if x + size.width > maxWidth && x > 0 {
+                y += rowHeight + verticalSpacing
+                x = 0
+                rowHeight = 0
+            }
+
+            positions.append(CGPoint(x: x, y: y))
+            x += size.width + horizontalSpacing
+            rowHeight = max(rowHeight, size.height)
+        }
+
+        let totalHeight = y + rowHeight
+        return ArrangeResult(
+            size: CGSize(width: maxWidth, height: totalHeight),
+            positions: positions,
+            sizes: sizes
+        )
+    }
+}
+
 // MARK: - Styled Coach Text
 // Parses AI coach responses and highlights nutrition/fitness keywords with semantic colors.
 // Protein → Green, Carbs → Cyan, Fat → Orange, Calories → Rose, Water → Blue.
@@ -9,21 +80,68 @@ struct StyledCoachText: View {
     let text: String
 
     var body: some View {
-        styledText()
-            .font(.system(size: 17, weight: .regular))
-            .lineSpacing(6)
+        CoachFlowLayout(horizontalSpacing: 0, verticalSpacing: 6) {
+            ForEach(Array(tokenize(text).enumerated()), id: \.offset) { _, token in
+                tokenView(token)
+            }
+        }
+        .font(.system(size: 17, weight: .regular))
     }
 
-    // MARK: - Build Attributed Text
+    // MARK: - Token View
 
-    private func styledText() -> Text {
-        let words = tokenize(text)
-        var result = Text("")
+    @ViewBuilder
+    private func tokenView(_ token: String) -> some View {
+        let stripped = token.lowercased().trimmingCharacters(in: .punctuationCharacters)
 
-        for token in words {
-            result = result + styledToken(token)
+        if token == " " {
+            Text(" ")
+        } else if token == "\n" {
+            Color.clear.frame(maxWidth: .infinity, maxHeight: 0)
+        } else if token.hasPrefix("**") && token.hasSuffix("**") && token.count > 4 {
+            let inner = String(token.dropFirst(2).dropLast(2))
+            Text(inner)
+                .bold()
+                .foregroundColor(ThemeColors.textPrimary)
+        } else if isNumberWithUnit(stripped) {
+            let color = colorForUnit(stripped)
+            pillView(token: token, color: color)
+        } else if isStandaloneNumber(stripped) {
+            Text(token)
+                .bold()
+                .foregroundColor(ThemeColors.textPrimary)
+        } else if let color = keywordColor(for: stripped) {
+            pillView(token: token, color: color)
+        } else {
+            Text(token)
+                .foregroundColor(ThemeColors.textPrimary)
         }
-        return result
+    }
+
+    // MARK: - Pill View
+
+    private func pillView(token: String, color: Color) -> some View {
+        Text(token)
+            .bold()
+            .foregroundColor(color)
+            .padding(.horizontal, 4)
+            .padding(.vertical, 2)
+            .background(
+                Capsule()
+                    .fill(color.opacity(0.15))
+            )
+    }
+
+    // MARK: - Keyword Color Lookup
+
+    private func keywordColor(for stripped: String) -> Color? {
+        if proteinKeywords.contains(stripped) { return NutrientColor.protein }
+        if carbsKeywords.contains(stripped) { return NutrientColor.carbs }
+        if fatKeywords.contains(stripped) { return NutrientColor.fat }
+        if calorieKeywords.contains(stripped) { return NutrientColor.calories }
+        if waterKeywords.contains(stripped) { return NutrientColor.water }
+        if fitnessKeywords.contains(stripped) { return NutrientColor.fitness }
+        return nil
     }
 
     // MARK: - Tokenizer
@@ -50,86 +168,6 @@ struct StyledCoachText: View {
         return tokens
     }
 
-    // MARK: - Style Each Token
-
-    private func styledToken(_ token: String) -> Text {
-        let stripped = token.lowercased().trimmingCharacters(in: .punctuationCharacters)
-
-        // Whitespace passthrough
-        if token == " " || token == "\n" {
-            return Text(token)
-        }
-
-        // Markdown bold: **word**
-        if token.hasPrefix("**") && token.hasSuffix("**") && token.count > 4 {
-            let inner = String(token.dropFirst(2).dropLast(2))
-            return Text(inner)
-                .bold()
-                .foregroundColor(ThemeColors.textPrimary)
-        }
-
-        // Numbers with units (e.g. "150g", "2000kcal", "85%", "2500ml")
-        if isNumberWithUnit(stripped) {
-            let color = colorForUnit(stripped)
-            return Text(token)
-                .bold()
-                .foregroundColor(color)
-        }
-
-        // Standalone numbers (like "150" before "g")
-        if isStandaloneNumber(stripped) {
-            return Text(token)
-                .bold()
-                .foregroundColor(ThemeColors.textPrimary)
-        }
-
-        // Protein keywords
-        if proteinKeywords.contains(stripped) {
-            return Text(token)
-                .bold()
-                .foregroundColor(NutrientColor.protein)
-        }
-
-        // Carbs keywords
-        if carbsKeywords.contains(stripped) {
-            return Text(token)
-                .bold()
-                .foregroundColor(NutrientColor.carbs)
-        }
-
-        // Fat keywords
-        if fatKeywords.contains(stripped) {
-            return Text(token)
-                .bold()
-                .foregroundColor(NutrientColor.fat)
-        }
-
-        // Calories keywords
-        if calorieKeywords.contains(stripped) {
-            return Text(token)
-                .bold()
-                .foregroundColor(NutrientColor.calories)
-        }
-
-        // Water keywords
-        if waterKeywords.contains(stripped) {
-            return Text(token)
-                .bold()
-                .foregroundColor(NutrientColor.water)
-        }
-
-        // Fitness keywords
-        if fitnessKeywords.contains(stripped) {
-            return Text(token)
-                .bold()
-                .foregroundColor(NutrientColor.fitness)
-        }
-
-        // Default
-        return Text(token)
-            .foregroundColor(ThemeColors.textPrimary)
-    }
-
     // MARK: - Number Detection
 
     private func isNumberWithUnit(_ s: String) -> Bool {
@@ -154,7 +192,7 @@ struct StyledCoachText: View {
     private let proteinKeywords: Set<String> = [
         "protein", "proteins", "whey", "casein", "bcaa", "amino",
         "leucine", "chicken", "turkey", "salmon", "tuna", "eggs",
-        "greek yogurt", "cottage cheese"
+        "yogurt", "cottage"
     ]
 
     private let carbsKeywords: Set<String> = [
@@ -184,7 +222,7 @@ struct StyledCoachText: View {
         "reps", "sets", "volume", "progressive", "overload",
         "bench", "squat", "deadlift", "push-ups", "pull-ups",
         "hiit", "cardio", "strength", "muscle", "muscles",
-        "gains", "pr", "personal record"
+        "gains", "pr"
     ]
 }
 
