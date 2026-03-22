@@ -31,7 +31,7 @@ struct RecipeCardView: View {
                     HStack(spacing: 3) {
                         Image(systemName: "flame.fill")
                             .font(.system(size: 9))
-                        Text("\(Int(nutrition.perServingCalories)) kcal")
+                        Text(String(localized: "\(Int(nutrition.perServingCalories)) kcal"))
                             .font(.system(size: 10, weight: .bold))
                     }
                     .foregroundStyle(.white)
@@ -47,7 +47,7 @@ struct RecipeCardView: View {
                     HStack(spacing: 3) {
                         Image(systemName: "clock.fill")
                             .font(.system(size: 9))
-                        Text("\(mins) min")
+                        Text(String(localized: "\(mins) min"))
                             .font(.system(size: 10, weight: .bold))
                     }
                     .foregroundStyle(.white)

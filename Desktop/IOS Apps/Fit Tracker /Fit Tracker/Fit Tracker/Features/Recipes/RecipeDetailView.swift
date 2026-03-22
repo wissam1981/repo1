@@ -87,10 +87,10 @@ struct RecipeDetailView: View {
             }
             await vm?.loadNutrition() 
         }
-        .alert("Recipe Logged! 🎉", isPresented: $showingLogConfirm) {
+        .alert(String(localized: "Recipe Logged!"), isPresented: $showingLogConfirm) {
             Button("OK", role: .cancel) {}
         } message: {
-            Text("One serving of \(meal.name) has been added to today's nutrition log.")
+            Text(String(localized: "One serving of \(meal.name) has been added to today's nutrition log."))
         }
     }
 
@@ -137,7 +137,7 @@ struct RecipeDetailView: View {
                     badge(area, icon: "globe", color: ThemeColors.primary)
                 }
                 if let mins = vm.meal.readyInMinutes {
-                    badge("\(mins) min", icon: "clock.fill", color: .secondary)
+                    badge(String(localized: "\(mins) min"), icon: "clock.fill", color: .secondary)
                 }
             }
 
@@ -171,7 +171,7 @@ struct RecipeDetailView: View {
                         Image(systemName: "minus.circle.fill")
                             .foregroundStyle(ThemeColors.primary.opacity(0.7))
                     }
-                    Text("\(vm.servings) serving\(vm.servings == 1 ? "" : "s")")
+                    Text(String(localized: "\(vm.servings) serving\(vm.servings == 1 ? "" : "s")"))
                         .font(.caption.bold())
                     Button { vm.updateServings(vm.servings + 1) } label: {
                         Image(systemName: "plus.circle.fill")
@@ -219,7 +219,7 @@ struct RecipeDetailView: View {
 
     private func ingredientsSection(_ vm: RecipeDetailViewModel) -> some View {
         VStack(alignment: .leading, spacing: 12) {
-            Text("Ingredients (\(vm.meal.ingredients.count))")
+            Text(String(localized: "Ingredients (\(vm.meal.ingredients.count))"))
                 .font(.headline)
 
             VStack(spacing: 0) {
@@ -319,7 +319,7 @@ struct RecipeDetailView: View {
                 Text("Log 1 Serving to Today")
                     .font(.subheadline.bold())
                 Spacer()
-                Text("\(Int(vm.perServingCalories)) kcal")
+                Text(String(localized: "\(Int(vm.perServingCalories)) kcal"))
                     .font(.caption.bold())
                     .padding(.horizontal, 10)
                     .padding(.vertical, 4)

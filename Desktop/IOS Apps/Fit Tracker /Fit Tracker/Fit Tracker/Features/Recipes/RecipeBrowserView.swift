@@ -268,7 +268,7 @@ struct RecipeBrowserView: View {
                     Image(systemName: diet.icon)
                         .font(.system(size: 48))
                         .foregroundStyle(diet.iconColor.opacity(0.5))
-                    Text("No \(diet.displayName) recipes found")
+                    Text(String(localized: "No \(diet.displayName) recipes found"))
                         .font(.headline)
                     Text("Try searching for a specific dish or selecting a different cuisine.")
                         .font(.caption)

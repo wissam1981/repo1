@@ -36,7 +36,7 @@ struct FastingWidgetView: View {
                         .foregroundStyle(.primary) // override link color
                     
                     if viewModel.isActive {
-                        Text("\(viewModel.elapsedText) elapsed")
+                        Text(String(localized: "\(viewModel.elapsedText) elapsed"))
                             .font(.subheadline.monospacedDigit())
                             .foregroundStyle(ThemeColors.primary)
                     } else {

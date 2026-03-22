@@ -55,7 +55,7 @@ struct EditProfileView: View {
                     HStack {
                         Text("Height")
                         Spacer()
-                        Text("\(Int(heightCm)) cm")
+                        Text(String(localized: "\(Int(heightCm)) cm"))
                             .foregroundStyle(.secondary)
                     }
                     Slider(value: $heightCm, in: 120...230, step: 1)

@@ -450,7 +450,7 @@ struct AdvancedAnalyticsView: View {
                 // Data point count
                 let count = selectedTab == 2 ? workoutData.count : nutritionData.count
                 if count > 0 {
-                    Text("\(count) days")
+                    Text(String(localized: "\(count) days"))
                         .font(.system(size: 11, weight: .medium))
                         .foregroundStyle(ThemeColors.textSecondary)
                         .padding(.horizontal, 8)

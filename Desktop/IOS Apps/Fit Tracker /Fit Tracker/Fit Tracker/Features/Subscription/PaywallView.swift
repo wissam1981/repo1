@@ -295,7 +295,7 @@ struct PaywallView: View {
                         }
                     }
 
-                    Text(product.displayPrice + (isYearly ? " / year" : " / month"))
+                    Text(product.displayPrice + (isYearly ? String(localized: " / year") : String(localized: " / month")))
                         .font(.system(size: 14, weight: .medium))
                         .foregroundStyle(.white.opacity(0.6))
                 }

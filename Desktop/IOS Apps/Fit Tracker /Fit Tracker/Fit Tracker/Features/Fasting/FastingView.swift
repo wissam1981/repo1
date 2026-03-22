@@ -84,7 +84,7 @@ struct FastingView: View {
                         .font(.system(size: 46, weight: .black, design: .rounded))
                         .contentTransition(.numericText())
 
-                    Text("remaining: \(vm.remainingText)")
+                    Text(String(localized: "remaining: \(vm.remainingText)"))
                         .font(.system(size: 16, weight: .bold))
                         .foregroundStyle(.secondary)
                 } else {
@@ -270,7 +270,7 @@ struct FastingView: View {
                     VStack(alignment: .leading, spacing: 2) {
                         Text(session.startedAt, style: .date)
                             .font(.subheadline)
-                        Text("\(Int(session.targetHours))h \(session.type.displayName)")
+                        Text(String(localized: "\(Int(session.targetHours))h \(session.type.displayName)"))
                             .font(.caption)
                             .foregroundStyle(.secondary)
                     }

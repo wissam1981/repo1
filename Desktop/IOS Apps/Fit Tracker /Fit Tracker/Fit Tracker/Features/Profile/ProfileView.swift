@@ -183,7 +183,7 @@ struct ProfileView: View {
                             .foregroundStyle(ThemeColors.textSecondary)
                     } else if subscriptionManager.isTrialActive {
                         let days = subscriptionManager.trialDaysRemaining
-                        Text("Free Trial · \(days) day\(days == 1 ? "" : "s") remaining")
+                        Text(String(localized: "Free Trial · \(days) day\(days == 1 ? "" : "s") remaining"))
                             .font(.system(size: 16, weight: .bold))
                             .foregroundStyle(ThemeColors.textPrimary)
                         Text("Subscribe to unlock AI Coach, Analytics & AI Plans")
@@ -852,7 +852,7 @@ private struct TimePickerSheet: View {
 
             VStack(spacing: 20) {
                 HStack {
-                    Text("Set \(label) Time")
+                    Text(String(localized: "Set \(label) Time"))
                         .font(.headline)
                         .foregroundStyle(ThemeColors.textPrimary)
                     Spacer()
