@@ -265,6 +265,20 @@ struct ProfileView: View {
                 }
                 Divider().background(ThemeColors.surfaceBorder).padding(.leading, 48)
 
+                Button {
+                    withAnimation(.spring(response: 0.3)) {
+                        LanguageManager.shared.currentLanguage =
+                            LanguageManager.shared.isArabic ? .english : .arabic
+                    }
+                } label: {
+                    settingsRow(
+                        icon: "globe",
+                        title: "Language",
+                        trailing: "\(LanguageManager.shared.currentLanguage.flag) \(LanguageManager.shared.currentLanguage.displayName)"
+                    )
+                }
+                Divider().background(ThemeColors.surfaceBorder).padding(.leading, 48)
+
                 NavigationLink {
                     NotificationSettingsView()
                 } label: {
@@ -290,18 +304,24 @@ struct ProfileView: View {
         }
     }
 
-    private func settingsRow(icon: String, title: String, showArrow: Bool = true) -> some View {
+    private func settingsRow(icon: String, title: String, trailing: String? = nil, showArrow: Bool = true) -> some View {
         HStack(spacing: 16) {
             Image(systemName: icon)
                 .font(.body)
                 .foregroundStyle(ThemeColors.primary)
                 .frame(width: 24)
-            
+
             Text(title)
                 .font(.system(size: 16, weight: .medium))
                 .foregroundStyle(ThemeColors.textPrimary)
 
             Spacer()
+
+            if let trailing {
+                Text(trailing)
+                    .font(.system(size: 14, weight: .medium))
+                    .foregroundStyle(ThemeColors.textSecondary)
+            }
 
             if showArrow {
                 Image(systemName: "chevron.right")
