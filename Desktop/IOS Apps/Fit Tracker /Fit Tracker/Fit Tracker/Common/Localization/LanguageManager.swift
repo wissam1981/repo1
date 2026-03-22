@@ -1,5 +1,6 @@
 import SwiftUI
 import Observation
+import ObjectiveC
 
 // MARK: - App Language
 
@@ -22,6 +23,35 @@ enum AppLanguage: String, CaseIterable {
     }
 }
 
+// MARK: - Bundle Swizzling for In-App Language Switching
+
+/// Overrides Bundle.main's string lookup to use the selected language's .lproj,
+/// so that `String(localized:)` in ViewModels picks up the correct translation
+/// without relying on SwiftUI's environment locale.
+private var associatedBundleKey: UInt8 = 0
+
+private final class LocalizedBundle: Bundle, @unchecked Sendable {
+    override func localizedString(forKey key: String, value: String?, table tableName: String?) -> String {
+        guard let path = objc_getAssociatedObject(Bundle.main, &associatedBundleKey) as? String,
+              let bundle = Bundle(path: path) else {
+            return super.localizedString(forKey: key, value: value, table: tableName)
+        }
+        return bundle.localizedString(forKey: key, value: value, table: tableName)
+    }
+}
+
+extension Bundle {
+    /// Swizzle Bundle.main so all localized-string lookups route through the
+    /// selected language's .lproj directory.
+    static func setLanguage(_ language: String) {
+        object_setClass(Bundle.main, LocalizedBundle.self)
+
+        if let path = Bundle.main.path(forResource: language, ofType: "lproj") {
+            objc_setAssociatedObject(Bundle.main, &associatedBundleKey, path, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
+        }
+    }
+}
+
 // MARK: - Language Manager
 
 @Observable
@@ -33,13 +63,11 @@ final class LanguageManager {
 
     private let languageKey = "appLanguage"
 
+    /// Stored property so @Observable can track changes and notify SwiftUI.
     var currentLanguage: AppLanguage {
-        get {
-            let saved = defaults.string(forKey: languageKey) ?? AppLanguage.english.rawValue
-            return AppLanguage(rawValue: saved) ?? .english
-        }
-        set {
-            defaults.set(newValue.rawValue, forKey: languageKey)
+        didSet {
+            defaults.set(currentLanguage.rawValue, forKey: languageKey)
+            Bundle.setLanguage(currentLanguage.rawValue)
         }
     }
 
@@ -51,5 +79,10 @@ final class LanguageManager {
 
     var isArabic: Bool { currentLanguage == .arabic }
 
-    private init() {}
+    private init() {
+        let saved = defaults.string(forKey: languageKey) ?? AppLanguage.english.rawValue
+        self.currentLanguage = AppLanguage(rawValue: saved) ?? .english
+        // Apply bundle swizzle on init so the first render uses the correct language
+        Bundle.setLanguage(currentLanguage.rawValue)
+    }
 }
