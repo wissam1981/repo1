@@ -1050,6 +1050,1566 @@
           }
         }
       }
+    },
+    "Home" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الرئيسية"
+          }
+        }
+      }
+    },
+    "Nutrition" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "التغذية"
+          }
+        }
+      }
+    },
+    "Workout" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "التمرين"
+          }
+        }
+      }
+    },
+    "Profile" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الملف الشخصي"
+          }
+        }
+      }
+    },
+    "Good Morning, %@" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "صباح الخير، %@"
+          }
+        }
+      }
+    },
+    "Good Afternoon, %@" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "مساء الخير، %@"
+          }
+        }
+      }
+    },
+    "Good Evening, %@" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "مساء الخير، %@"
+          }
+        }
+      }
+    },
+    "Good Night, %@" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تصبح على خير، %@"
+          }
+        }
+      }
+    },
+    "No data" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "لا توجد بيانات"
+          }
+        }
+      }
+    },
+    "%@ kg from start" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ كغ من البداية"
+          }
+        }
+      }
+    },
+    "Hit protein goal" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تحقيق هدف البروتين"
+          }
+        }
+      }
+    },
+    "Stay in calorie range" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "البقاء ضمن نطاق السعرات"
+          }
+        }
+      }
+    },
+    "Log your meals" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "سجّل وجباتك"
+          }
+        }
+      }
+    },
+    "Mon" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "إث"
+          }
+        }
+      }
+    },
+    "Tue" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ثل"
+          }
+        }
+      }
+    },
+    "Wed" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "أر"
+          }
+        }
+      }
+    },
+    "Thu" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "خم"
+          }
+        }
+      }
+    },
+    "Fri" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "جم"
+          }
+        }
+      }
+    },
+    "Sat" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "سب"
+          }
+        }
+      }
+    },
+    "Sun" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "أح"
+          }
+        }
+      }
+    },
+    "You averaged %lld calories over your goal. Try trimming snacks." : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تجاوزت هدفك بمعدل %lld سعرة حرارية. حاول تقليل الوجبات الخفيفة."
+          }
+        }
+      }
+    },
+    "Great job staying within your calorie goal this week!" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "عمل رائع في الالتزام بهدف السعرات هذا الأسبوع!"
+          }
+        }
+      }
+    },
+    "Your protein intake averaged %lld g below target. Add more lean protein." : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "معدل البروتين أقل من الهدف بـ %lld غ. أضف المزيد من البروتين."
+          }
+        }
+      }
+    },
+    "You hit your protein target on average — keep it up!" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "حققت هدف البروتين في المتوسط — استمر!"
+          }
+        }
+      }
+    },
+    "You only logged %lld days. Consistency is key — aim for 5+ days." : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "سجّلت %lld أيام فقط. الاستمرارية مهمة — حاول تسجيل ٥ أيام أو أكثر."
+          }
+        }
+      }
+    },
+    "Solid logging consistency with %lld/7 days tracked." : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تسجيل ممتاز بمعدل %lld/٧ أيام."
+          }
+        }
+      }
+    },
+    "You lost %@ kg this week — great progress!" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "خسرت %@ كغ هذا الأسبوع — تقدم رائع!"
+          }
+        }
+      }
+    },
+    "Weight went up %@ kg. Check your calorie balance." : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "زاد الوزن %@ كغ. تحقق من توازن السعرات."
+          }
+        }
+      }
+    },
+    "Daily Intake" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "المدخول اليومي"
+          }
+        }
+      }
+    },
+    "Remaining" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "المتبقي"
+          }
+        }
+      }
+    },
+    "Eaten" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "المستهلك"
+          }
+        }
+      }
+    },
+    "kcal" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "سعرة"
+          }
+        }
+      }
+    },
+    "Recovery Advisor" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "مستشار الاستشفاء"
+          }
+        }
+      }
+    },
+    "Score" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "النتيجة"
+          }
+        }
+      }
+    },
+    "Weekly Habits" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "العادات الأسبوعية"
+          }
+        }
+      }
+    },
+    "Weekly Report" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "التقرير الأسبوعي"
+          }
+        }
+      }
+    },
+    "Goal Adjustment" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تعديل الهدف"
+          }
+        }
+      }
+    },
+    "Accept" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "قبول"
+          }
+        }
+      }
+    },
+    "AI Coach" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "المدرب الذكي"
+          }
+        }
+      }
+    },
+    "Analytics" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "التحليلات"
+          }
+        }
+      }
+    },
+    "Water" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ماء"
+          }
+        }
+      }
+    },
+    "Burned" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "محروق"
+          }
+        }
+      }
+    },
+    "Steps" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "خطوات"
+          }
+        }
+      }
+    },
+    "Daily Calorie Goal" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "هدف السعرات اليومي"
+          }
+        }
+      }
+    },
+    "Macros" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "العناصر الغذائية"
+          }
+        }
+      }
+    },
+    "Your Plan" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "خطتك"
+          }
+        }
+      }
+    },
+    "Balance" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "توازن"
+          }
+        }
+      }
+    },
+    "Meals" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الوجبات"
+          }
+        }
+      }
+    },
+    "Breakfast" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "فطور"
+          }
+        }
+      }
+    },
+    "Lunch" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "غداء"
+          }
+        }
+      }
+    },
+    "Dinner" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "عشاء"
+          }
+        }
+      }
+    },
+    "Snacks" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "وجبات خفيفة"
+          }
+        }
+      }
+    },
+    "Weekly Activity" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "النشاط الأسبوعي"
+          }
+        }
+      }
+    },
+    "Today's Budget" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ميزانية اليوم"
+          }
+        }
+      }
+    },
+    "kcal remaining" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "سعرة متبقية"
+          }
+        }
+      }
+    },
+    "Get AI Suggestions" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "احصل على اقتراحات ذكية"
+          }
+        }
+      }
+    },
+    "Goal Progress" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تقدم الهدف"
+          }
+        }
+      }
+    },
+    "Goal Reached" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تم تحقيق الهدف"
+          }
+        }
+      }
+    },
+    "Track your progress toward a target weight" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تابع تقدمك نحو الوزن المستهدف"
+          }
+        }
+      }
+    },
+    "Start" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "البداية"
+          }
+        }
+      }
+    },
+    "Current" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الحالي"
+          }
+        }
+      }
+    },
+    "Deadline" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الموعد النهائي"
+          }
+        }
+      }
+    },
+    "Build consistency, see results" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ابنِ الاستمرارية، شاهد النتائج"
+          }
+        }
+      }
+    },
+    "Add a Workout" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "أضف تمريناً"
+          }
+        }
+      }
+    },
+    "Keep your streak going" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "حافظ على تتابعك"
+          }
+        }
+      }
+    },
+    "Fast" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "صيام"
+          }
+        }
+      }
+    },
+    "Manage Timer" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "إدارة المؤقت"
+          }
+        }
+      }
+    },
+    "Get personalized fitness & nutrition advice" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "احصل على نصائح لياقة وتغذية مخصصة"
+          }
+        }
+      }
+    },
+    "Today's Session" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "جلسة اليوم"
+          }
+        }
+      }
+    },
+    "Ready for a sweat?" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "مستعد للتمرين؟"
+          }
+        }
+      }
+    },
+    "Rest day or new plan?" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يوم راحة أو خطة جديدة؟"
+          }
+        }
+      }
+    },
+    "PLANNED" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "مخطط"
+          }
+        }
+      }
+    },
+    "NO PLAN" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "لا خطة"
+          }
+        }
+      }
+    },
+    "No Workout Planned" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "لا يوجد تمرين مخطط"
+          }
+        }
+      }
+    },
+    "Consistency is key to results" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الاستمرارية هي مفتاح النتائج"
+          }
+        }
+      }
+    },
+    "Start Session" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ابدأ الجلسة"
+          }
+        }
+      }
+    },
+    "View Plans" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "عرض الخطط"
+          }
+        }
+      }
+    },
+    "Weekly Consistency" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الاستمرارية الأسبوعية"
+          }
+        }
+      }
+    },
+    "Don't break the chain" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "لا تكسر السلسلة"
+          }
+        }
+      }
+    },
+    "Workout Library" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "مكتبة التمارين"
+          }
+        }
+      }
+    },
+    "CURRENT PLAN" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الخطة الحالية"
+          }
+        }
+      }
+    },
+    "Decide your path" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "حدد مسارك"
+          }
+        }
+      }
+    },
+    "Following closely" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "متابعة عن كثب"
+          }
+        }
+      }
+    },
+    "Pick a plan to start" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اختر خطة للبدء"
+          }
+        }
+      }
+    },
+    "Explore Library" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "استكشف المكتبة"
+          }
+        }
+      }
+    },
+    "AI Plans" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "خطط ذكية"
+          }
+        }
+      }
+    },
+    "Custom" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "مخصص"
+          }
+        }
+      }
+    },
+    "Daily Meals" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "وجبات اليوم"
+          }
+        }
+      }
+    },
+    "Macronutrients" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "العناصر الغذائية الكبرى"
+          }
+        }
+      }
+    },
+    "Carbohydrates" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "كربوهيدرات"
+          }
+        }
+      }
+    },
+    "Healthy Fats" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "دهون صحية"
+          }
+        }
+      }
+    },
+    "Energy Balance" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "توازن الطاقة"
+          }
+        }
+      }
+    },
+    "On Track" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "على المسار"
+          }
+        }
+      }
+    },
+    "Adjusting" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تعديل"
+          }
+        }
+      }
+    },
+    "Weekly Summary" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ملخص الأسبوع"
+          }
+        }
+      }
+    },
+    "Weekly Score" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "نتيجة الأسبوع"
+          }
+        }
+      }
+    },
+    "Average Macros" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "متوسط العناصر الغذائية"
+          }
+        }
+      }
+    },
+    "Total Calories" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "إجمالي السعرات"
+          }
+        }
+      }
+    },
+    "Days Logged" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "أيام التسجيل"
+          }
+        }
+      }
+    },
+    "Avg Calories" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "متوسط السعرات"
+          }
+        }
+      }
+    },
+    "Avg Protein" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "متوسط البروتين"
+          }
+        }
+      }
+    },
+    "Avg Water" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "متوسط الماء"
+          }
+        }
+      }
+    },
+    "Weight Progress" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تقدم الوزن"
+          }
+        }
+      }
+    },
+    "End" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "النهاية"
+          }
+        }
+      }
+    },
+    "Change" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "التغيير"
+          }
+        }
+      }
+    },
+    "Insights" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "رؤى"
+          }
+        }
+      }
+    },
+    "Done" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تم"
+          }
+        }
+      }
+    },
+    "Instructions" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "التعليمات"
+          }
+        }
+      }
+    },
+    "Total burned" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "إجمالي المحروق"
+          }
+        }
+      }
+    },
+    "Total consumed" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "إجمالي المستهلك"
+          }
+        }
+      }
+    },
+    "Active" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "نشط"
+          }
+        }
+      }
+    },
+    "Resting" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "راحة"
+          }
+        }
+      }
+    },
+    "Diet log" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "سجل الغذاء"
+          }
+        }
+      }
+    },
+    "Calorie deficit" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "عجز السعرات"
+          }
+        }
+      }
+    },
+    "Calorie" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "سعرة"
+          }
+        }
+      }
+    },
+    "Quick Actions" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "إجراءات سريعة"
+          }
+        }
+      }
+    },
+    "SCAN & LOG" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "مسح وتسجيل"
+          }
+        }
+      }
+    },
+    "Log Food" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تسجيل طعام"
+          }
+        }
+      }
+    },
+    "Barcode" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "باركود"
+          }
+        }
+      }
+    },
+    "Meal Scan" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "مسح وجبة"
+          }
+        }
+      }
+    },
+    "Upgrade" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ترقية"
+          }
+        }
+      }
+    },
+    "QUICK TRACK" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تتبع سريع"
+          }
+        }
+      }
+    },
+    "Exercise" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تمرين"
+          }
+        }
+      }
+    },
+    "Log Water" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تسجيل الماء"
+          }
+        }
+      }
+    },
+    "Welcome back," : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "أهلاً بعودتك،"
+          }
+        }
+      }
+    },
+    "Steps Today" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "خطوات اليوم"
+          }
+        }
+      }
+    },
+    "Active Cals" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "سعرات نشطة"
+          }
+        }
+      }
+    },
+    "Update Weight" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تحديث الوزن"
+          }
+        }
+      }
+    },
+    "Consistency is key" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الاستمرارية هي المفتاح"
+          }
+        }
+      }
+    },
+    "LATEST LOG" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "آخر تسجيل"
+          }
+        }
+      }
+    },
+    "CHANGE" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "التغيير"
+          }
+        }
+      }
+    },
+    "kg" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "كغ"
+          }
+        }
+      }
+    },
+    "Low" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "أقل"
+          }
+        }
+      }
+    },
+    "Avg" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "متوسط"
+          }
+        }
+      }
+    },
+    "High" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "أعلى"
+          }
+        }
+      }
+    },
+    "Get personalized advice" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "احصل على نصائح مخصصة"
+          }
+        }
+      }
+    },
+    "Track your trends" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تابع اتجاهاتك"
+          }
+        }
+      }
+    },
+    "Your Weekly Report is Ready" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تقريرك الأسبوعي جاهز"
+          }
+        }
+      }
+    },
+    "Tap to see your AI analysis" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اضغط لرؤية تحليلك الذكي"
+          }
+        }
+      }
+    },
+    "Log All" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تسجيل الكل"
+          }
+        }
+      }
+    },
+    "See Plans" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "عرض الخطط"
+          }
+        }
+      }
+    },
+    "AI Coach · Analytics · AI Plans" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "المدرب الذكي · التحليلات · خطط ذكية"
+          }
+        }
+      }
+    },
+    "Complete a workout and log some food to get your recovery score." : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "أكمل تمريناً وسجّل بعض الطعام للحصول على نتيجة الاستشفاء."
+          }
+        }
+      }
+    },
+    "%lld kcal remaining" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld سعرة متبقية"
+          }
+        }
+      }
+    },
+    "Select Date" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اختر التاريخ"
+          }
+        }
+      }
+    },
+    "BETA" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تجريبي"
+          }
+        }
+      }
+    },
+    "PRO" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "PRO"
+          }
+        }
+      }
+    },
+    "Start your week strong today!" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ابدأ أسبوعك بقوة اليوم!"
+          }
+        }
+      }
+    },
+    "Great start! Keep pushing." : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "بداية رائعة! استمر."
+          }
+        }
+      }
+    },
+    "You're on a roll!" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "أنت في تقدم مذهل!"
+          }
+        }
+      }
+    },
+    "Elite consistency this week!" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "استمرارية مثالية هذا الأسبوع!"
+          }
+        }
+      }
+    },
+    "Stats remaining 0? Check iOS Settings > Health > Data Access > BiteBrain" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الإحصائيات صفر؟ تحقق من إعدادات iOS > الصحة > الوصول للبيانات > BiteBrain"
+          }
+        }
+      }
+    },
+    "Trial Ended · Upgrade Now" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "انتهت الفترة التجريبية · ترقّ الآن"
+          }
+        }
+      }
+    },
+    "New target: %lld cal" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الهدف الجديد: %lld سعرة"
+          }
+        }
+      }
+    },
+    "DAY STREAK" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يوم تتابع"
+          }
+        }
+      }
+    },
+    "Active Plans" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "خطط نشطة"
+          }
+        }
+      }
     }
   },
   "version" : "1.0"

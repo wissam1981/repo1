@@ -189,10 +189,11 @@ final class HomeViewModel {
     }
 
     var weightChangeText: String {
-        guard let latest = latestWeight else { return "No data" }
+        guard let latest = latestWeight else { return String(localized: "No data") }
         let diff = latest.weightKg - user.weightKg
         let sign = diff >= 0 ? "+" : ""
-        return "\(sign)\(String(format: "%.1f", diff)) kg from start"
+        let formatted = "\(sign)\(String(format: "%.1f", diff))"
+        return String(localized: "\(formatted) kg from start")
     }
 
     // MARK: - Refresh
@@ -327,7 +328,7 @@ final class HomeViewModel {
             weekStart = calendar.date(byAdding: .day, value: -1, to: weekStart)!
         }
 
-        let dayNames = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
+        let dayNames = [String(localized: "Mon"), String(localized: "Tue"), String(localized: "Wed"), String(localized: "Thu"), String(localized: "Fri"), String(localized: "Sat"), String(localized: "Sun")]
         return (0..<7).map { offset in
             let date = calendar.date(byAdding: .day, value: offset, to: weekStart)!
             let log = coreDataService.fetchNutritionLogDomain(for: date)
@@ -378,9 +379,9 @@ final class HomeViewModel {
         }
 
         return [
-            HabitTracker(title: "Hit protein goal", icon: "bolt.fill", color: ThemeColors.primary, completedDays: proteinDays, targetDays: 5),
-            HabitTracker(title: "Stay in calorie range", icon: "flame.fill", color: ThemeColors.info, completedDays: calorieDays, targetDays: 5),
-            HabitTracker(title: "Log your meals", icon: "fork.knife", color: ThemeColors.success, completedDays: loggedDays, targetDays: 7)
+            HabitTracker(title: String(localized: "Hit protein goal"), icon: "bolt.fill", color: ThemeColors.primary, completedDays: proteinDays, targetDays: 5),
+            HabitTracker(title: String(localized: "Stay in calorie range"), icon: "flame.fill", color: ThemeColors.info, completedDays: calorieDays, targetDays: 5),
+            HabitTracker(title: String(localized: "Log your meals"), icon: "fork.knife", color: ThemeColors.success, completedDays: loggedDays, targetDays: 7)
         ]
     }
 
@@ -438,27 +439,31 @@ final class HomeViewModel {
         var insights: [String] = []
         let avgCal = Int(totalCal / Double(divisor))
         if avgCal > targetCalories {
-            insights.append("You averaged \(avgCal - targetCalories) calories over your goal. Try trimming snacks.")
+            let over = avgCal - targetCalories
+            insights.append(String(localized: "You averaged \(over) calories over your goal. Try trimming snacks."))
         } else if avgCal > 0 {
-            insights.append("Great job staying within your calorie goal this week!")
+            insights.append(String(localized: "Great job staying within your calorie goal this week!"))
         }
         let avgProt = Int(totalProtein / Double(divisor))
         if avgProt < targetProteinG {
-            insights.append("Your protein intake averaged \(targetProteinG - avgProt)g below target. Add more lean protein.")
+            let below = targetProteinG - avgProt
+            insights.append(String(localized: "Your protein intake averaged \(below)g below target. Add more lean protein."))
         } else {
-            insights.append("You hit your protein target on average — keep it up!")
+            insights.append(String(localized: "You hit your protein target on average — keep it up!"))
         }
         if daysLogged < 5 {
-            insights.append("You only logged \(daysLogged) days. Consistency is key — aim for 5+ days.")
+            insights.append(String(localized: "You only logged \(daysLogged) days. Consistency is key — aim for 5+ days."))
         } else {
-            insights.append("Solid logging consistency with \(daysLogged)/7 days tracked.")
+            insights.append(String(localized: "Solid logging consistency with \(daysLogged)/7 days tracked."))
         }
         if endW > 0 && startW > 0 {
             let diff = endW - startW
             if diff < -0.2 {
-                insights.append("You lost \(String(format: "%.1f", abs(diff))) kg this week — great progress!")
+                let lost = String(format: "%.1f", abs(diff))
+                insights.append(String(localized: "You lost \(lost) kg this week — great progress!"))
             } else if diff > 0.3 {
-                insights.append("Weight went up \(String(format: "%.1f", diff)) kg. Check your calorie balance.")
+                let gained = String(format: "%.1f", diff)
+                insights.append(String(localized: "Weight went up \(gained) kg. Check your calorie balance."))
             }
         }
 
@@ -489,10 +494,10 @@ final class HomeViewModel {
         let hour = Calendar.current.component(.hour, from: .now)
         let firstName = name.components(separatedBy: " ").first ?? name
         switch hour {
-        case 5..<12:  return "Good Morning, \(firstName)"
-        case 12..<17: return "Good Afternoon, \(firstName)"
-        case 17..<21: return "Good Evening, \(firstName)"
-        default:      return "Good Night, \(firstName)"
+        case 5..<12:  return String(localized: "Good Morning, \(firstName)")
+        case 12..<17: return String(localized: "Good Afternoon, \(firstName)")
+        case 17..<21: return String(localized: "Good Evening, \(firstName)")
+        default:      return String(localized: "Good Night, \(firstName)")
         }
     }
 }
