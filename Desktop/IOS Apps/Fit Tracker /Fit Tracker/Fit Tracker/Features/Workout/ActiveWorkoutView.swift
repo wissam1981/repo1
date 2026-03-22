@@ -103,7 +103,7 @@ struct ActiveWorkoutView: View {
                             .foregroundStyle(ThemeColors.textSecondary)
                             .tracking(1)
                         
-                        Text("\(done)/\(total) SETS")
+                        Text(String(localized: "\(done)/\(total) SETS"))
                             .font(.system(size: 14, weight: .black))
                             .foregroundStyle(ThemeColors.primary)
                     }

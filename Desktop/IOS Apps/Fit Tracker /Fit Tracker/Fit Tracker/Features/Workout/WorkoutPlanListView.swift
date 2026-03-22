@@ -23,7 +23,7 @@ struct WorkoutDaySelectionSheet: View {
                                 .multilineTextAlignment(.center)
                             
                             HStack(spacing: 12) {
-                                Text("\(plan.days.count) DAYS")
+                                Text(String(localized: "\(plan.days.count) DAYS"))
                                 Text("•")
                                 Text(plan.category.displayName.uppercased())
                                 Text("•")
@@ -60,7 +60,7 @@ struct WorkoutDaySelectionSheet: View {
                                                 .foregroundStyle(ThemeColors.textPrimary)
 
                                             HStack(spacing: 8) {
-                                                Text("\(day.exercises.count) EXERCISES")
+                                                Text(String(localized: "\(day.exercises.count) EXERCISES"))
                                                     .font(.system(size: 10, weight: .black))
                                                     .foregroundStyle(ThemeColors.textSecondary)
 

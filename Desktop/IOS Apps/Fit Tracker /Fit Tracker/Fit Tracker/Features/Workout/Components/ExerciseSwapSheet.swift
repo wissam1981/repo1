@@ -45,7 +45,7 @@ struct ExerciseSwapSheet: View {
                         Text("Swap Exercise")
                             .font(.system(size: 18, weight: .bold))
                             .foregroundStyle(ThemeColors.textPrimary)
-                        Text("Replace \(exerciseLog.exerciseName)")
+                        Text(String(localized: "Replace \(exerciseLog.exerciseName)"))
                             .font(.system(size: 13, weight: .medium))
                             .foregroundStyle(ThemeColors.textSecondary)
                             .lineLimit(1)

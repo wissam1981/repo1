@@ -117,8 +117,8 @@ struct WorkoutImageCard: View {
                     
                     // Stats indicators
                     HStack(spacing: 16) {
-                        dataPill(icon: "calendar", text: "\(plan.daysPerWeek) days/wk")
-                        dataPill(icon: "clock", text: "\(plan.estimatedDurationMin) min")
+                        dataPill(icon: "calendar", text: String(localized: "\(plan.daysPerWeek) days/wk"))
+                        dataPill(icon: "clock", text: String(localized: "\(plan.estimatedDurationMin) min"))
                     }
                     .padding(.top, 4)
                 }

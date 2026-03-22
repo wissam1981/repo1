@@ -1,2616 +1,4666 @@
 {
-  "sourceLanguage" : "en",
-  "strings" : {
-    "AI Fit Coach" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "مدرب اللياقة الذكي"
+  "sourceLanguage": "en",
+  "strings": {
+    "AI Fit Coach": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "مدرب اللياقة الذكي"
           }
         }
       }
     },
-    "Online" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "متصل"
+    "Online": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "متصل"
           }
         }
       }
     },
-    "FuelIQ" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "FuelIQ"
+    "FuelIQ": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "FuelIQ"
           }
         }
       }
     },
-    "Eat Smart · Train Hard" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "كُل بذكاء · تمرّن بقوة"
+    "Eat Smart · Train Hard": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "كُل بذكاء · تمرّن بقوة"
           }
         }
       }
     },
-    "FUELIQ" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "FUELIQ"
+    "FUELIQ": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "FUELIQ"
           }
         }
       }
     },
-    "ELITE" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "ELITE"
+    "ELITE": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ELITE"
           }
         }
       }
     },
-    "AI-POWERED PERFORMANCE" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "أداء مدعوم بالذكاء الاصطناعي"
+    "AI-POWERED PERFORMANCE": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "أداء مدعوم بالذكاء الاصطناعي"
           }
         }
       }
     },
-    "YOUR AI COACH IS READY" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "مدربك الذكي جاهز"
+    "YOUR AI COACH IS READY": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "مدربك الذكي جاهز"
           }
         }
       }
     },
-    "Smart Plans · AI Coach · Real Results" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "خطط ذكية · مدرب ذكي · نتائج حقيقية"
+    "Smart Plans · AI Coach · Real Results": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "خطط ذكية · مدرب ذكي · نتائج حقيقية"
           }
         }
       }
     },
-    "START YOUR JOURNEY" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "ابدأ رحلتك"
+    "START YOUR JOURNEY": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ابدأ رحلتك"
           }
         }
       }
     },
-    "AI COACH · SMART PLANS · ELITE RESULTS" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "مدرب ذكي · خطط ذكية · نتائج متميّزة"
+    "AI COACH · SMART PLANS · ELITE RESULTS": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "مدرب ذكي · خطط ذكية · نتائج متميّزة"
           }
         }
       }
     },
-    "SIGN IN" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "تسجيل الدخول"
+    "SIGN IN": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تسجيل الدخول"
           }
         }
       }
     },
-    "Unlock Your AI-Powered Fitness Coach" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "افتح مدرب اللياقة المدعوم بالذكاء الاصطناعي"
+    "Unlock Your AI-Powered Fitness Coach": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "افتح مدرب اللياقة المدعوم بالذكاء الاصطناعي"
           }
         }
       }
     },
-    "Continue with Google" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "المتابعة بحساب Google"
+    "Continue with Google": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "المتابعة بحساب Google"
           }
         }
       }
     },
-    "FUELIQ™ ELITE" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "FUELIQ™ ELITE"
+    "FUELIQ™ ELITE": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "FUELIQ™ ELITE"
           }
         }
       }
     },
-    "Create Account" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "إنشاء حساب"
+    "Create Account": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "إنشاء حساب"
           }
         }
       }
     },
-    "Start your fitness transformation" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "ابدأ تحولك في اللياقة"
+    "Start your fitness transformation": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ابدأ تحولك في اللياقة"
           }
         }
       }
     },
-    "Full Name" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "الاسم الكامل"
+    "Full Name": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الاسم الكامل"
           }
         }
       }
     },
-    "Your name" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "اسمك"
+    "Your name": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "اسمك"
           }
         }
       }
     },
-    "Email" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "البريد الإلكتروني"
+    "Email": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "البريد الإلكتروني"
           }
         }
       }
     },
-    "you@example.com" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "you@example.com"
+    "you@example.com": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "you@example.com"
           }
         }
       }
     },
-    "Password" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "كلمة المرور"
+    "Password": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "كلمة المرور"
           }
         }
       }
     },
-    "At least 6 characters" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "٦ أحرف على الأقل"
+    "At least 6 characters": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "٦ أحرف على الأقل"
           }
         }
       }
     },
-    "Confirm Password" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "تأكيد كلمة المرور"
+    "Confirm Password": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تأكيد كلمة المرور"
           }
         }
       }
     },
-    "Re-enter password" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "أعد إدخال كلمة المرور"
+    "Re-enter password": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "أعد إدخال كلمة المرور"
           }
         }
       }
     },
-    "Passwords match" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "كلمتا المرور متطابقتان"
+    "Passwords match": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "كلمتا المرور متطابقتان"
           }
         }
       }
     },
-    "Passwords don't match" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "كلمتا المرور غير متطابقتين"
+    "Passwords don't match": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "كلمتا المرور غير متطابقتين"
           }
         }
       }
     },
-    "or" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "أو"
+    "or": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "أو"
           }
         }
       }
     },
-    "Already have an account?" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "لديك حساب بالفعل؟"
+    "Already have an account?": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "لديك حساب بالفعل؟"
           }
         }
       }
     },
-    "Sign In" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "تسجيل الدخول"
+    "Sign In": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تسجيل الدخول"
           }
         }
       }
     },
-    "Step %lld of %lld" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "الخطوة %lld من %lld"
+    "Step %lld of %lld": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الخطوة %lld من %lld"
           }
         }
       }
     },
-    "Analyzing your results…" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "جارٍ تحليل نتائجك…"
+    "Analyzing your results…": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "جارٍ تحليل نتائجك…"
           }
         }
       }
     },
-    "Start Your Journey" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "ابدأ رحلتك"
+    "Start Your Journey": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ابدأ رحلتك"
           }
         }
       }
     },
-    "Continue" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "متابعة"
+    "Continue": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "متابعة"
           }
         }
       }
     },
-    "What's your gender?" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "ما هو جنسك؟"
+    "What's your gender?": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ما هو جنسك؟"
           }
         }
       }
     },
-    "This helps us calculate your daily calorie needs accurately." : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "يساعدنا هذا في حساب احتياجاتك اليومية من السعرات بدقة."
+    "This helps us calculate your daily calorie needs accurately.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "يساعدنا هذا في حساب احتياجاتك اليومية من السعرات بدقة."
           }
         }
       }
     },
-    "Higher baseline metabolism" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "معدل أيض أساسي أعلى"
+    "Higher baseline metabolism": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "معدل أيض أساسي أعلى"
           }
         }
       }
     },
-    "Adjusted for female physiology" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "معدّل وفقاً للفسيولوجيا الأنثوية"
+    "Adjusted for female physiology": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "معدّل وفقاً للفسيولوجيا الأنثوية"
           }
         }
       }
     },
-    "Averaged calculation" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "حساب متوسط"
+    "Averaged calculation": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "حساب متوسط"
           }
         }
       }
     },
-    "When were you born?" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "متى وُلدت؟"
+    "When were you born?": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "متى وُلدت؟"
           }
         }
       }
     },
-    "Age affects your metabolism and daily calorie requirements." : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "يؤثر العمر على عملية الأيض واحتياجاتك اليومية من السعرات."
+    "Age affects your metabolism and daily calorie requirements.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "يؤثر العمر على عملية الأيض واحتياجاتك اليومية من السعرات."
           }
         }
       }
     },
-    "years old" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "سنة"
+    "years old": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "سنة"
           }
         }
       }
     },
-    "Date of Birth" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "تاريخ الميلاد"
+    "Date of Birth": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تاريخ الميلاد"
           }
         }
       }
     },
-    "Your Body Metrics" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "قياسات جسمك"
+    "Your Body Metrics": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "قياسات جسمك"
           }
         }
       }
     },
-    "We use these to calculate your BMR and daily calorie needs." : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "نستخدم هذه البيانات لحساب معدل الأيض واحتياجاتك اليومية من السعرات."
+    "We use these to calculate your BMR and daily calorie needs.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "نستخدم هذه البيانات لحساب معدل الأيض واحتياجاتك اليومية من السعرات."
           }
         }
       }
     },
-    "Metric (kg/cm)" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "متري (كغ/سم)"
+    "Metric (kg/cm)": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "متري (كغ/سم)"
           }
         }
       }
     },
-    "Imperial (lbs/ft)" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "إمبراطوري (رطل/قدم)"
+    "Imperial (lbs/ft)": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "إمبراطوري (رطل/قدم)"
           }
         }
       }
     },
-    "Height" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "الطول"
+    "Height": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الطول"
           }
         }
       }
     },
-    "Weight" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "الوزن"
+    "Weight": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الوزن"
           }
         }
       }
     },
-    "BMI" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "مؤشر كتلة الجسم"
+    "BMI": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "مؤشر كتلة الجسم"
           }
         }
       }
     },
-    "How active are you?" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "ما مستوى نشاطك؟"
+    "How active are you?": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ما مستوى نشاطك؟"
           }
         }
       }
     },
-    "Be honest — this directly affects your daily calorie target." : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "كن صريحاً — هذا يؤثر مباشرة على هدفك اليومي من السعرات."
+    "Be honest — this directly affects your daily calorie target.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "كن صريحاً — هذا يؤثر مباشرة على هدفك اليومي من السعرات."
           }
         }
       }
     },
-    "What's your goal?" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "ما هو هدفك؟"
+    "What's your goal?": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ما هو هدفك؟"
           }
         }
       }
     },
-    "We'll adjust your calorie and macro targets based on this." : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "سنعدّل أهداف السعرات والماكرو بناءً على هذا."
+    "We'll adjust your calorie and macro targets based on this.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "سنعدّل أهداف السعرات والماكرو بناءً على هذا."
           }
         }
       }
     },
-    "Protein" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "البروتين"
+    "Protein": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "البروتين"
           }
         }
       }
     },
-    "Calories" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "السعرات"
+    "Calories": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "السعرات"
           }
         }
       }
     },
-    "High (1.8g/kg)" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "عالي (١.٨غ/كغ)"
+    "High (1.8g/kg)": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "عالي (١.٨غ/كغ)"
           }
         }
       }
     },
-    "Moderate (1.4g/kg)" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "متوسط (١.٤غ/كغ)"
+    "Moderate (1.4g/kg)": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "متوسط (١.٤غ/كغ)"
           }
         }
       }
     },
-    "High (2.0g/kg)" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "عالي (٢.٠غ/كغ)"
+    "High (2.0g/kg)": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "عالي (٢.٠غ/كغ)"
           }
         }
       }
     },
-    "Deficit" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "عجز"
+    "Deficit": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "عجز"
           }
         }
       }
     },
-    "Maintenance" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "ثبات"
+    "Maintenance": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ثبات"
           }
         }
       }
     },
-    "Surplus" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "فائض"
+    "Surplus": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "فائض"
           }
         }
       }
     },
-    "How fast?" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "ما السرعة؟"
+    "How fast?": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ما السرعة؟"
           }
         }
       }
     },
-    "A moderate pace helps preserve muscle while losing fat." : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "الوتيرة المعتدلة تساعد في الحفاظ على العضلات أثناء خسارة الدهون."
+    "A moderate pace helps preserve muscle while losing fat.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الوتيرة المعتدلة تساعد في الحفاظ على العضلات أثناء خسارة الدهون."
           }
         }
       }
     },
-    "A moderate pace minimizes unwanted fat gain." : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "الوتيرة المعتدلة تقلل من اكتساب الدهون غير المرغوب فيه."
+    "A moderate pace minimizes unwanted fat gain.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الوتيرة المعتدلة تقلل من اكتساب الدهون غير المرغوب فيه."
           }
         }
       }
     },
-    "This is approximately %lld kcal/day %@" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "هذا يعادل تقريباً %lld سعرة/يوم %@"
+    "This is approximately %lld kcal/day %@": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "هذا يعادل تقريباً %lld سعرة/يوم %@"
           }
         }
       }
     },
-    "Aggressive goals may impact energy and performance" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "الأهداف القوية قد تؤثر على الطاقة والأداء"
+    "Aggressive goals may impact energy and performance": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الأهداف القوية قد تؤثر على الطاقة والأداء"
           }
         }
       }
     },
-    "deficit" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "عجز"
+    "deficit": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "عجز"
           }
         }
       }
     },
-    "surplus" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "فائض"
+    "surplus": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "فائض"
           }
         }
       }
     },
-    "Set Your Goal Weight" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "حدد وزنك المستهدف"
+    "Set Your Goal Weight": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "حدد وزنك المستهدف"
           }
         }
       }
     },
-    "How much do you want to %@ ? We'll build your plan around this." : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "كم تريد أن %@؟ سنبني خطتك حول هذا."
+    "How much do you want to %@ ? We'll build your plan around this.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "كم تريد أن %@؟ سنبني خطتك حول هذا."
           }
         }
       }
     },
-    "lose" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "تخسر"
+    "lose": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تخسر"
           }
         }
       }
     },
-    "gain" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "تكسب"
+    "gain": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تكسب"
           }
         }
       }
     },
-    "Current weight" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "الوزن الحالي"
+    "Current weight": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الوزن الحالي"
           }
         }
       }
     },
-    "Target Weight" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "الوزن المستهدف"
+    "Target Weight": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الوزن المستهدف"
           }
         }
       }
     },
-    "Target Weight (lbs)" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "الوزن المستهدف (رطل)"
+    "Target Weight (lbs)": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الوزن المستهدف (رطل)"
           }
         }
       }
     },
-    "Target Date (Optional)" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "التاريخ المستهدف (اختياري)"
+    "Target Date (Optional)": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "التاريخ المستهدف (اختياري)"
           }
         }
       }
     },
-    "By when?" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "بحلول متى؟"
+    "By when?": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "بحلول متى؟"
           }
         }
       }
     },
-    "Estimated %lld weeks at current pace" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "يُقدّر بـ %lld أسبوع بالوتيرة الحالية"
+    "Estimated %lld weeks at current pace": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "يُقدّر بـ %lld أسبوع بالوتيرة الحالية"
           }
         }
       }
     },
-    "You've got this!" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "يمكنك تحقيق ذلك!"
+    "You've got this!": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "يمكنك تحقيق ذلك!"
           }
         }
       }
     },
-    "Consistent daily tracking is the #1 predictor of success." : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "التتبع اليومي المنتظم هو المؤشر الأول للنجاح."
+    "Consistent daily tracking is the #1 predictor of success.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "التتبع اليومي المنتظم هو المؤشر الأول للنجاح."
           }
         }
       }
     },
-    "Meal Reminders" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "تذكيرات الوجبات"
+    "Meal Reminders": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تذكيرات الوجبات"
           }
         }
       }
     },
-    "How often and when would you like to be reminded to log your meals?" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "كم مرة ومتى تريد أن نذكّرك بتسجيل وجباتك؟"
+    "How often and when would you like to be reminded to log your meals?": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "كم مرة ومتى تريد أن نذكّرك بتسجيل وجباتك؟"
           }
         }
       }
     },
-    "Reminder Time" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "وقت التذكير"
+    "Reminder Time": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "وقت التذكير"
           }
         }
       }
     },
-    "Your Personalized Plan" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "خطتك المخصصة"
+    "Your Personalized Plan": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "خطتك المخصصة"
           }
         }
       }
     },
-    "Based on your body metrics and goals, here's your daily targets." : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "بناءً على قياسات جسمك وأهدافك، إليك أهدافك اليومية."
+    "Based on your body metrics and goals, here's your daily targets.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "بناءً على قياسات جسمك وأهدافك، إليك أهدافك اليومية."
           }
         }
       }
     },
-    "Daily Calories" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "السعرات اليومية"
+    "Daily Calories": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "السعرات اليومية"
           }
         }
       }
     },
-    "kcal / day" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "سعرة / يوم"
+    "kcal / day": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "سعرة / يوم"
           }
         }
       }
     },
-    "Daily Macro Targets" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "أهداف الماكرو اليومية"
+    "Daily Macro Targets": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "أهداف الماكرو اليومية"
           }
         }
       }
     },
-    "%lldg" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%lldغ"
+    "%lldg": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lldغ"
           }
         }
       }
     },
-    "Carbs" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "الكربوهيدرات"
+    "Carbs": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الكربوهيدرات"
           }
         }
       }
     },
-    "Fat" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "الدهون"
+    "Fat": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الدهون"
           }
         }
       }
     },
-    "Gender" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "الجنس"
+    "Gender": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الجنس"
           }
         }
       }
     },
-    "Age" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "العمر"
+    "Age": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "العمر"
           }
         }
       }
     },
-    "Activity" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "النشاط"
+    "Activity": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "النشاط"
           }
         }
       }
     },
-    "Goal" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "الهدف"
+    "Goal": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الهدف"
           }
         }
       }
     },
-    "Goal Weight" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "الوزن المستهدف"
+    "Goal Weight": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الوزن المستهدف"
           }
         }
       }
     },
-    "Est. Time" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "الوقت المقدّر"
+    "Est. Time": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الوقت المقدّر"
           }
         }
       }
     },
-    "Target Date" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "التاريخ المستهدف"
+    "Target Date": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "التاريخ المستهدف"
           }
         }
       }
     },
-    "Pace" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "الوتيرة"
+    "Pace": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الوتيرة"
           }
         }
       }
     },
-    "BMR" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "معدل الأيض"
+    "BMR": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "معدل الأيض"
           }
         }
       }
     },
-    "TDEE" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "إجمالي الطاقة"
+    "TDEE": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "إجمالي الطاقة"
           }
         }
       }
     },
-    "Target" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "الهدف"
+    "Target": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الهدف"
           }
         }
       }
     },
-    "Units" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "الوحدات"
+    "Units": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الوحدات"
           }
         }
       }
     },
-    "(%@)" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "(%@)"
+    "(%@)": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "(%@)"
           }
         }
       }
     },
-    "Home" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "الرئيسية"
+    "Home": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الرئيسية"
           }
         }
       }
     },
-    "Nutrition" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "التغذية"
+    "Nutrition": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "التغذية"
           }
         }
       }
     },
-    "Workout" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "التمرين"
+    "Workout": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "التمرين"
           }
         }
       }
     },
-    "Profile" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "الملف الشخصي"
+    "Profile": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الملف الشخصي"
           }
         }
       }
     },
-    "Good Morning, %@" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "صباح الخير، %@"
+    "Good Morning, %@": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "صباح الخير، %@"
           }
         }
       }
     },
-    "Good Afternoon, %@" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "مساء الخير، %@"
+    "Good Afternoon, %@": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "مساء الخير، %@"
           }
         }
       }
     },
-    "Good Evening, %@" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "مساء الخير، %@"
+    "Good Evening, %@": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "مساء الخير، %@"
           }
         }
       }
     },
-    "Good Night, %@" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "تصبح على خير، %@"
+    "Good Night, %@": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تصبح على خير، %@"
           }
         }
       }
     },
-    "No data" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "لا توجد بيانات"
+    "No data": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "لا توجد بيانات"
           }
         }
       }
     },
-    "%@ kg from start" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%@ كغ من البداية"
+    "%@ kg from start": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ كغ من البداية"
           }
         }
       }
     },
-    "Hit protein goal" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "تحقيق هدف البروتين"
+    "Hit protein goal": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تحقيق هدف البروتين"
           }
         }
       }
     },
-    "Stay in calorie range" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "البقاء ضمن نطاق السعرات"
+    "Stay in calorie range": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "البقاء ضمن نطاق السعرات"
           }
         }
       }
     },
-    "Log your meals" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "سجّل وجباتك"
+    "Log your meals": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "سجّل وجباتك"
           }
         }
       }
     },
-    "Mon" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "إث"
+    "Mon": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "إث"
           }
         }
       }
     },
-    "Tue" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "ثل"
+    "Tue": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ثل"
           }
         }
       }
     },
-    "Wed" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "أر"
+    "Wed": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "أر"
           }
         }
       }
     },
-    "Thu" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "خم"
+    "Thu": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "خم"
           }
         }
       }
     },
-    "Fri" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "جم"
+    "Fri": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "جم"
           }
         }
       }
     },
-    "Sat" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "سب"
+    "Sat": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "سب"
           }
         }
       }
     },
-    "Sun" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "أح"
+    "Sun": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "أح"
           }
         }
       }
     },
-    "You averaged %lld calories over your goal. Try trimming snacks." : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "تجاوزت هدفك بمعدل %lld سعرة حرارية. حاول تقليل الوجبات الخفيفة."
+    "You averaged %lld calories over your goal. Try trimming snacks.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تجاوزت هدفك بمعدل %lld سعرة حرارية. حاول تقليل الوجبات الخفيفة."
           }
         }
       }
     },
-    "Great job staying within your calorie goal this week!" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "عمل رائع في الالتزام بهدف السعرات هذا الأسبوع!"
+    "Great job staying within your calorie goal this week!": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "عمل رائع في الالتزام بهدف السعرات هذا الأسبوع!"
           }
         }
       }
     },
-    "Your protein intake averaged %lld g below target. Add more lean protein." : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "معدل البروتين أقل من الهدف بـ %lld غ. أضف المزيد من البروتين."
+    "Your protein intake averaged %lld g below target. Add more lean protein.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "معدل البروتين أقل من الهدف بـ %lld غ. أضف المزيد من البروتين."
           }
         }
       }
     },
-    "You hit your protein target on average — keep it up!" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "حققت هدف البروتين في المتوسط — استمر!"
+    "You hit your protein target on average — keep it up!": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "حققت هدف البروتين في المتوسط — استمر!"
           }
         }
       }
     },
-    "You only logged %lld days. Consistency is key — aim for 5+ days." : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "سجّلت %lld أيام فقط. الاستمرارية مهمة — حاول تسجيل ٥ أيام أو أكثر."
+    "You only logged %lld days. Consistency is key — aim for 5+ days.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "سجّلت %lld أيام فقط. الاستمرارية مهمة — حاول تسجيل ٥ أيام أو أكثر."
           }
         }
       }
     },
-    "Solid logging consistency with %lld/7 days tracked." : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "تسجيل ممتاز بمعدل %lld/٧ أيام."
+    "Solid logging consistency with %lld/7 days tracked.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تسجيل ممتاز بمعدل %lld/٧ أيام."
           }
         }
       }
     },
-    "You lost %@ kg this week — great progress!" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "خسرت %@ كغ هذا الأسبوع — تقدم رائع!"
+    "You lost %@ kg this week — great progress!": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "خسرت %@ كغ هذا الأسبوع — تقدم رائع!"
           }
         }
       }
     },
-    "Weight went up %@ kg. Check your calorie balance." : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "زاد الوزن %@ كغ. تحقق من توازن السعرات."
+    "Weight went up %@ kg. Check your calorie balance.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "زاد الوزن %@ كغ. تحقق من توازن السعرات."
           }
         }
       }
     },
-    "Daily Intake" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "المدخول اليومي"
+    "Daily Intake": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "المدخول اليومي"
           }
         }
       }
     },
-    "Remaining" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "المتبقي"
+    "Remaining": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "المتبقي"
           }
         }
       }
     },
-    "Eaten" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "المستهلك"
+    "Eaten": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "المستهلك"
           }
         }
       }
     },
-    "kcal" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "سعرة"
+    "kcal": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "سعرة"
           }
         }
       }
     },
-    "Recovery Advisor" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "مستشار الاستشفاء"
+    "Recovery Advisor": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "مستشار الاستشفاء"
           }
         }
       }
     },
-    "Score" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "النتيجة"
+    "Score": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "النتيجة"
           }
         }
       }
     },
-    "Weekly Habits" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "العادات الأسبوعية"
+    "Weekly Habits": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "العادات الأسبوعية"
           }
         }
       }
     },
-    "Weekly Report" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "التقرير الأسبوعي"
+    "Weekly Report": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "التقرير الأسبوعي"
           }
         }
       }
     },
-    "Goal Adjustment" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "تعديل الهدف"
+    "Goal Adjustment": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تعديل الهدف"
           }
         }
       }
     },
-    "Accept" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "قبول"
+    "Accept": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "قبول"
           }
         }
       }
     },
-    "AI Coach" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "المدرب الذكي"
+    "AI Coach": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "المدرب الذكي"
           }
         }
       }
     },
-    "Analytics" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "التحليلات"
+    "Analytics": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "التحليلات"
           }
         }
       }
     },
-    "Water" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "ماء"
+    "Water": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ماء"
           }
         }
       }
     },
-    "Burned" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "محروق"
+    "Burned": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "محروق"
           }
         }
       }
     },
-    "Steps" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "خطوات"
+    "Steps": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "خطوات"
           }
         }
       }
     },
-    "Daily Calorie Goal" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "هدف السعرات اليومي"
+    "Daily Calorie Goal": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "هدف السعرات اليومي"
           }
         }
       }
     },
-    "Macros" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "العناصر الغذائية"
+    "Macros": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "العناصر الغذائية"
           }
         }
       }
     },
-    "Your Plan" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "خطتك"
+    "Your Plan": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "خطتك"
           }
         }
       }
     },
-    "Balance" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "توازن"
+    "Balance": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "توازن"
           }
         }
       }
     },
-    "Meals" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "الوجبات"
+    "Meals": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الوجبات"
           }
         }
       }
     },
-    "Breakfast" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "فطور"
+    "Breakfast": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "فطور"
           }
         }
       }
     },
-    "Lunch" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "غداء"
+    "Lunch": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "غداء"
           }
         }
       }
     },
-    "Dinner" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "عشاء"
+    "Dinner": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "عشاء"
           }
         }
       }
     },
-    "Snacks" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "وجبات خفيفة"
+    "Snacks": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "وجبات خفيفة"
           }
         }
       }
     },
-    "Weekly Activity" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "النشاط الأسبوعي"
+    "Weekly Activity": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "النشاط الأسبوعي"
           }
         }
       }
     },
-    "Today's Budget" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "ميزانية اليوم"
+    "Today's Budget": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ميزانية اليوم"
           }
         }
       }
     },
-    "kcal remaining" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "سعرة متبقية"
+    "kcal remaining": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "سعرة متبقية"
           }
         }
       }
     },
-    "Get AI Suggestions" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "احصل على اقتراحات ذكية"
+    "Get AI Suggestions": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "احصل على اقتراحات ذكية"
           }
         }
       }
     },
-    "Goal Progress" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "تقدم الهدف"
+    "Goal Progress": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تقدم الهدف"
           }
         }
       }
     },
-    "Goal Reached" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "تم تحقيق الهدف"
+    "Goal Reached": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تم تحقيق الهدف"
           }
         }
       }
     },
-    "Track your progress toward a target weight" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "تابع تقدمك نحو الوزن المستهدف"
+    "Track your progress toward a target weight": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تابع تقدمك نحو الوزن المستهدف"
           }
         }
       }
     },
-    "Start" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "البداية"
+    "Start": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "البداية"
           }
         }
       }
     },
-    "Current" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "الحالي"
+    "Current": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الحالي"
           }
         }
       }
     },
-    "Deadline" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "الموعد النهائي"
+    "Deadline": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الموعد النهائي"
           }
         }
       }
     },
-    "Build consistency, see results" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "ابنِ الاستمرارية، شاهد النتائج"
+    "Build consistency, see results": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ابنِ الاستمرارية، شاهد النتائج"
           }
         }
       }
     },
-    "Add a Workout" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "أضف تمريناً"
+    "Add a Workout": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "أضف تمريناً"
           }
         }
       }
     },
-    "Keep your streak going" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "حافظ على تتابعك"
+    "Keep your streak going": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "حافظ على تتابعك"
           }
         }
       }
     },
-    "Fast" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "صيام"
+    "Fast": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "صيام"
           }
         }
       }
     },
-    "Manage Timer" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "إدارة المؤقت"
+    "Manage Timer": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "إدارة المؤقت"
           }
         }
       }
     },
-    "Get personalized fitness & nutrition advice" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "احصل على نصائح لياقة وتغذية مخصصة"
+    "Get personalized fitness & nutrition advice": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "احصل على نصائح لياقة وتغذية مخصصة"
           }
         }
       }
     },
-    "Today's Session" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "جلسة اليوم"
+    "Today's Session": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "جلسة اليوم"
           }
         }
       }
     },
-    "Ready for a sweat?" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "مستعد للتمرين؟"
+    "Ready for a sweat?": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "مستعد للتمرين؟"
           }
         }
       }
     },
-    "Rest day or new plan?" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "يوم راحة أو خطة جديدة؟"
+    "Rest day or new plan?": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "يوم راحة أو خطة جديدة؟"
           }
         }
       }
     },
-    "PLANNED" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "مخطط"
+    "PLANNED": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "مخطط"
           }
         }
       }
     },
-    "NO PLAN" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "لا خطة"
+    "NO PLAN": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "لا خطة"
           }
         }
       }
     },
-    "No Workout Planned" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "لا يوجد تمرين مخطط"
+    "No Workout Planned": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "لا يوجد تمرين مخطط"
           }
         }
       }
     },
-    "Consistency is key to results" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "الاستمرارية هي مفتاح النتائج"
+    "Consistency is key to results": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الاستمرارية هي مفتاح النتائج"
           }
         }
       }
     },
-    "Start Session" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "ابدأ الجلسة"
+    "Start Session": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ابدأ الجلسة"
           }
         }
       }
     },
-    "View Plans" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "عرض الخطط"
+    "View Plans": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "عرض الخطط"
           }
         }
       }
     },
-    "Weekly Consistency" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "الاستمرارية الأسبوعية"
+    "Weekly Consistency": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الاستمرارية الأسبوعية"
           }
         }
       }
     },
-    "Don't break the chain" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "لا تكسر السلسلة"
+    "Don't break the chain": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "لا تكسر السلسلة"
           }
         }
       }
     },
-    "Workout Library" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "مكتبة التمارين"
+    "Workout Library": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "مكتبة التمارين"
           }
         }
       }
     },
-    "CURRENT PLAN" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "الخطة الحالية"
+    "CURRENT PLAN": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الخطة الحالية"
           }
         }
       }
     },
-    "Decide your path" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "حدد مسارك"
+    "Decide your path": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "حدد مسارك"
           }
         }
       }
     },
-    "Following closely" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "متابعة عن كثب"
+    "Following closely": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "متابعة عن كثب"
           }
         }
       }
     },
-    "Pick a plan to start" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "اختر خطة للبدء"
+    "Pick a plan to start": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "اختر خطة للبدء"
           }
         }
       }
     },
-    "Explore Library" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "استكشف المكتبة"
+    "Explore Library": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "استكشف المكتبة"
           }
         }
       }
     },
-    "AI Plans" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "خطط ذكية"
+    "AI Plans": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "خطط ذكية"
           }
         }
       }
     },
-    "Custom" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "مخصص"
+    "Custom": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "مخصص"
           }
         }
       }
     },
-    "Daily Meals" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "وجبات اليوم"
+    "Daily Meals": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "وجبات اليوم"
           }
         }
       }
     },
-    "Macronutrients" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "العناصر الغذائية الكبرى"
+    "Macronutrients": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "العناصر الغذائية الكبرى"
           }
         }
       }
     },
-    "Carbohydrates" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "كربوهيدرات"
+    "Carbohydrates": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "كربوهيدرات"
           }
         }
       }
     },
-    "Healthy Fats" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "دهون صحية"
+    "Healthy Fats": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "دهون صحية"
           }
         }
       }
     },
-    "Energy Balance" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "توازن الطاقة"
+    "Energy Balance": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "توازن الطاقة"
           }
         }
       }
     },
-    "On Track" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "على المسار"
+    "On Track": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "على المسار"
           }
         }
       }
     },
-    "Adjusting" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "تعديل"
+    "Adjusting": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تعديل"
           }
         }
       }
     },
-    "Weekly Summary" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "ملخص الأسبوع"
+    "Weekly Summary": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ملخص الأسبوع"
           }
         }
       }
     },
-    "Weekly Score" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "نتيجة الأسبوع"
+    "Weekly Score": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "نتيجة الأسبوع"
           }
         }
       }
     },
-    "Average Macros" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "متوسط العناصر الغذائية"
+    "Average Macros": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "متوسط العناصر الغذائية"
           }
         }
       }
     },
-    "Total Calories" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "إجمالي السعرات"
+    "Total Calories": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "إجمالي السعرات"
           }
         }
       }
     },
-    "Days Logged" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "أيام التسجيل"
+    "Days Logged": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "أيام التسجيل"
           }
         }
       }
     },
-    "Avg Calories" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "متوسط السعرات"
+    "Avg Calories": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "متوسط السعرات"
           }
         }
       }
     },
-    "Avg Protein" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "متوسط البروتين"
+    "Avg Protein": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "متوسط البروتين"
           }
         }
       }
     },
-    "Avg Water" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "متوسط الماء"
+    "Avg Water": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "متوسط الماء"
           }
         }
       }
     },
-    "Weight Progress" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "تقدم الوزن"
+    "Weight Progress": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تقدم الوزن"
           }
         }
       }
     },
-    "End" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "النهاية"
+    "End": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "النهاية"
           }
         }
       }
     },
-    "Change" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "التغيير"
+    "Change": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "التغيير"
           }
         }
       }
     },
-    "Insights" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "رؤى"
+    "Insights": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "رؤى"
           }
         }
       }
     },
-    "Done" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "تم"
+    "Done": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تم"
           }
         }
       }
     },
-    "Instructions" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "التعليمات"
+    "Instructions": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "التعليمات"
           }
         }
       }
     },
-    "Total burned" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "إجمالي المحروق"
+    "Total burned": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "إجمالي المحروق"
           }
         }
       }
     },
-    "Total consumed" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "إجمالي المستهلك"
+    "Total consumed": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "إجمالي المستهلك"
           }
         }
       }
     },
-    "Active" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "نشط"
+    "Active": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "نشط"
           }
         }
       }
     },
-    "Resting" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "راحة"
+    "Resting": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "راحة"
           }
         }
       }
     },
-    "Diet log" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "سجل الغذاء"
+    "Diet log": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "سجل الغذاء"
           }
         }
       }
     },
-    "Calorie deficit" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "عجز السعرات"
+    "Calorie deficit": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "عجز السعرات"
           }
         }
       }
     },
-    "Calorie" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "سعرة"
+    "Calorie": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "سعرة"
           }
         }
       }
     },
-    "Quick Actions" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "إجراءات سريعة"
+    "Quick Actions": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "إجراءات سريعة"
           }
         }
       }
     },
-    "SCAN & LOG" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "مسح وتسجيل"
+    "SCAN & LOG": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "مسح وتسجيل"
           }
         }
       }
     },
-    "Log Food" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "تسجيل طعام"
+    "Log Food": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تسجيل طعام"
           }
         }
       }
     },
-    "Barcode" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "باركود"
+    "Barcode": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "باركود"
           }
         }
       }
     },
-    "Meal Scan" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "مسح وجبة"
+    "Meal Scan": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "مسح وجبة"
           }
         }
       }
     },
-    "Upgrade" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "ترقية"
+    "Upgrade": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ترقية"
           }
         }
       }
     },
-    "QUICK TRACK" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "تتبع سريع"
+    "QUICK TRACK": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تتبع سريع"
           }
         }
       }
     },
-    "Exercise" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "تمرين"
+    "Exercise": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تمرين"
           }
         }
       }
     },
-    "Log Water" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "تسجيل الماء"
+    "Log Water": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تسجيل الماء"
           }
         }
       }
     },
-    "Welcome back," : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "أهلاً بعودتك،"
+    "Welcome back,": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "أهلاً بعودتك،"
           }
         }
       }
     },
-    "Steps Today" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "خطوات اليوم"
+    "Steps Today": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "خطوات اليوم"
           }
         }
       }
     },
-    "Active Cals" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "سعرات نشطة"
+    "Active Cals": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "سعرات نشطة"
           }
         }
       }
     },
-    "Update Weight" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "تحديث الوزن"
+    "Update Weight": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تحديث الوزن"
           }
         }
       }
     },
-    "Consistency is key" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "الاستمرارية هي المفتاح"
+    "Consistency is key": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الاستمرارية هي المفتاح"
           }
         }
       }
     },
-    "LATEST LOG" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "آخر تسجيل"
+    "LATEST LOG": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "آخر تسجيل"
           }
         }
       }
     },
-    "CHANGE" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "التغيير"
+    "CHANGE": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "التغيير"
           }
         }
       }
     },
-    "kg" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "كغ"
+    "kg": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "كغ"
           }
         }
       }
     },
-    "Low" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "أقل"
+    "Low": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "أقل"
           }
         }
       }
     },
-    "Avg" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "متوسط"
+    "Avg": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "متوسط"
           }
         }
       }
     },
-    "High" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "أعلى"
+    "High": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "أعلى"
           }
         }
       }
     },
-    "Get personalized advice" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "احصل على نصائح مخصصة"
+    "Get personalized advice": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "احصل على نصائح مخصصة"
           }
         }
       }
     },
-    "Track your trends" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "تابع اتجاهاتك"
+    "Track your trends": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تابع اتجاهاتك"
           }
         }
       }
     },
-    "Your Weekly Report is Ready" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "تقريرك الأسبوعي جاهز"
+    "Your Weekly Report is Ready": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تقريرك الأسبوعي جاهز"
           }
         }
       }
     },
-    "Tap to see your AI analysis" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "اضغط لرؤية تحليلك الذكي"
+    "Tap to see your AI analysis": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "اضغط لرؤية تحليلك الذكي"
           }
         }
       }
     },
-    "Log All" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "تسجيل الكل"
+    "Log All": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تسجيل الكل"
           }
         }
       }
     },
-    "See Plans" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "عرض الخطط"
+    "See Plans": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "عرض الخطط"
           }
         }
       }
     },
-    "AI Coach · Analytics · AI Plans" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "المدرب الذكي · التحليلات · خطط ذكية"
+    "AI Coach · Analytics · AI Plans": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "المدرب الذكي · التحليلات · خطط ذكية"
           }
         }
       }
     },
-    "Complete a workout and log some food to get your recovery score." : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "أكمل تمريناً وسجّل بعض الطعام للحصول على نتيجة الاستشفاء."
+    "Complete a workout and log some food to get your recovery score.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "أكمل تمريناً وسجّل بعض الطعام للحصول على نتيجة الاستشفاء."
           }
         }
       }
     },
-    "%lld kcal remaining" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%lld سعرة متبقية"
+    "%lld kcal remaining": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld سعرة متبقية"
           }
         }
       }
     },
-    "Select Date" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "اختر التاريخ"
+    "Select Date": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "اختر التاريخ"
           }
         }
       }
     },
-    "BETA" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "تجريبي"
+    "BETA": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تجريبي"
           }
         }
       }
     },
-    "PRO" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "PRO"
+    "PRO": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "PRO"
           }
         }
       }
     },
-    "Start your week strong today!" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "ابدأ أسبوعك بقوة اليوم!"
+    "Start your week strong today!": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ابدأ أسبوعك بقوة اليوم!"
           }
         }
       }
     },
-    "Great start! Keep pushing." : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "بداية رائعة! استمر."
+    "Great start! Keep pushing.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "بداية رائعة! استمر."
           }
         }
       }
     },
-    "You're on a roll!" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "أنت في تقدم مذهل!"
+    "You're on a roll!": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "أنت في تقدم مذهل!"
           }
         }
       }
     },
-    "Elite consistency this week!" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "استمرارية مثالية هذا الأسبوع!"
+    "Elite consistency this week!": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "استمرارية مثالية هذا الأسبوع!"
           }
         }
       }
     },
-    "Stats remaining 0? Check iOS Settings > Health > Data Access > BiteBrain" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "الإحصائيات صفر؟ تحقق من إعدادات iOS > الصحة > الوصول للبيانات > BiteBrain"
+    "Stats remaining 0? Check iOS Settings > Health > Data Access > BiteBrain": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الإحصائيات صفر؟ تحقق من إعدادات iOS > الصحة > الوصول للبيانات > BiteBrain"
           }
         }
       }
     },
-    "Trial Ended · Upgrade Now" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "انتهت الفترة التجريبية · ترقّ الآن"
+    "Trial Ended · Upgrade Now": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "انتهت الفترة التجريبية · ترقّ الآن"
           }
         }
       }
     },
-    "New target: %lld cal" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "الهدف الجديد: %lld سعرة"
+    "New target: %lld cal": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الهدف الجديد: %lld سعرة"
           }
         }
       }
     },
-    "DAY STREAK" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "يوم تتابع"
+    "DAY STREAK": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "يوم تتابع"
           }
         }
       }
     },
-    "Active Plans" : {
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "خطط نشطة"
+    "Active Plans": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "خطط نشطة"
+          }
+        }
+      }
+    },
+    "DISCARD": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تجاهل"
+          }
+        }
+      }
+    },
+    "TRAINING": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تمرين"
+          }
+        }
+      }
+    },
+    "ELITE STATUS": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الحالة المتميزة"
+          }
+        }
+      }
+    },
+    "COMPLETED": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "مكتمل"
+          }
+        }
+      }
+    },
+    "SET": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "مجموعة"
+          }
+        }
+      }
+    },
+    "FINISH TRAINING": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "إنهاء التمرين"
+          }
+        }
+      }
+    },
+    "DESIGN": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تصميم"
+          }
+        }
+      }
+    },
+    "EDIT ROUTINE": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تعديل الروتين"
+          }
+        }
+      }
+    },
+    "NEW ROUTINE": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "روتين جديد"
+          }
+        }
+      }
+    },
+    "ROUTINE NAME": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "اسم الروتين"
+          }
+        }
+      }
+    },
+    "E.G. PUSH PULL LEGS": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "مثال: دفع سحب أرجل"
+          }
+        }
+      }
+    },
+    "ADD TRAINING DAY": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "إضافة يوم تدريب"
+          }
+        }
+      }
+    },
+    "CANCEL": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "إلغاء"
+          }
+        }
+      }
+    },
+    "SAVE": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "حفظ"
+          }
+        }
+      }
+    },
+    "DAY NAME": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "اسم اليوم"
+          }
+        }
+      }
+    },
+    "SETS": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "مجموعات"
+          }
+        }
+      }
+    },
+    "REPS": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تكرارات"
+          }
+        }
+      }
+    },
+    "ADD EXERCISE": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "إضافة تمرين"
+          }
+        }
+      }
+    },
+    "Gym Equipment Guide": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "دليل معدات الصالة الرياضية"
+          }
+        }
+      }
+    },
+    "Reference this guide to better understand the machinery and free weights available in your gym.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "استخدم هذا الدليل لفهم الأجهزة والأوزان الحرة المتوفرة في صالتك الرياضية."
+          }
+        }
+      }
+    },
+    "Equipment": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "المعدات"
+          }
+        }
+      }
+    },
+    "Close": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "إغلاق"
+          }
+        }
+      }
+    },
+    "DISCOVER": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "اكتشف"
+          }
+        }
+      }
+    },
+    "EXERCISES": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "التمارين"
+          }
+        }
+      }
+    },
+    "DONE": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تم"
+          }
+        }
+      }
+    },
+    "SEARCH 1500+ EXERCISES...": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ابحث في أكثر من 1500 تمرين..."
+          }
+        }
+      }
+    },
+    "CALIBRATING ENGINE...": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "جارٍ التحضير..."
+          }
+        }
+      }
+    },
+    "USE OFFLINE LIBRARY": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "استخدام المكتبة بدون اتصال"
+          }
+        }
+      }
+    },
+    "NO MATCHES FOUND": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "لم يتم العثور على نتائج"
+          }
+        }
+      }
+    },
+    "Compound": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "مركّب"
+          }
+        }
+      }
+    },
+    "Isolation": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "عزل"
+          }
+        }
+      }
+    },
+    "Swap Exercise": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تبديل التمرين"
+          }
+        }
+      }
+    },
+    "No alternatives found for this muscle group": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "لم يتم العثور على بدائل لهذه المجموعة العضلية"
+          }
+        }
+      }
+    },
+    "Demonstration": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "عرض توضيحي"
+          }
+        }
+      }
+    },
+    "Animation Loading...": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "جارٍ تحميل الرسوم المتحركة..."
+          }
+        }
+      }
+    },
+    "BEGINNER GUIDES": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "أدلة المبتدئين"
+          }
+        }
+      }
+    },
+    "GOT IT": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "فهمت"
+          }
+        }
+      }
+    },
+    "Best Fit": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الأنسب"
+          }
+        }
+      }
+    },
+    "Workouts": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "التمارين"
+          }
+        }
+      }
+    },
+    "This Week": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "هذا الأسبوع"
+          }
+        }
+      }
+    },
+    "Workout in Progress": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تمرين قيد التنفيذ"
+          }
+        }
+      }
+    },
+    "Sessions": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "جلسات"
+          }
+        }
+      }
+    },
+    "Volume": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الحجم"
+          }
+        }
+      }
+    },
+    "Avg Time": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "متوسط الوقت"
+          }
+        }
+      }
+    },
+    "My Plans": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "خططي"
+          }
+        }
+      }
+    },
+    "New": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "جديد"
+          }
+        }
+      }
+    },
+    "No Plans Yet": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "لا توجد خطط بعد"
+          }
+        }
+      }
+    },
+    "Create your first workout plan\nor let AI generate one for you": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "أنشئ أول خطة تمرين\nأو دع الذكاء الاصطناعي ينشئ واحدة لك"
+          }
+        }
+      }
+    },
+    "Create Plan": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "إنشاء خطة"
+          }
+        }
+      }
+    },
+    "Start Workout": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ابدأ التمرين"
+          }
+        }
+      }
+    },
+    "Edit Plan": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تعديل الخطة"
+          }
+        }
+      }
+    },
+    "Delete": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "حذف"
+          }
+        }
+      }
+    },
+    "Exercise Library": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "مكتبة التمارين"
+          }
+        }
+      }
+    },
+    "See All": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "عرض الكل"
+          }
+        }
+      }
+    },
+    "Recent Workouts": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "التمارين الأخيرة"
+          }
+        }
+      }
+    },
+    "Add to Routine": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "إضافة إلى الروتين"
+          }
+        }
+      }
+    },
+    "AI Plan Generator": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "مولّد الخطط الذكي"
+          }
+        }
+      }
+    },
+    "Customized to your body & goals": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "مخصّص لجسمك وأهدافك"
+          }
+        }
+      }
+    },
+    "Cancel": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "إلغاء"
+          }
+        }
+      }
+    },
+    "Days per Week": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "أيام في الأسبوع"
+          }
+        }
+      }
+    },
+    "Primary Goal": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الهدف الرئيسي"
+          }
+        }
+      }
+    },
+    "Experience Level": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "مستوى الخبرة"
+          }
+        }
+      }
+    },
+    "Category": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الفئة"
+          }
+        }
+      }
+    },
+    "Target Exercises": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "التمارين المستهدفة"
+          }
+        }
+      }
+    },
+    "Select exercises": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "اختر التمارين"
+          }
+        }
+      }
+    },
+    "Modify selection": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تعديل الاختيار"
+          }
+        }
+      }
+    },
+    "Generate Plan": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "إنشاء الخطة"
+          }
+        }
+      }
+    },
+    "Building Your Plan": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "جارٍ بناء خطتك"
+          }
+        }
+      }
+    },
+    "Customizing exercises for your goals...": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تخصيص التمارين لأهدافك..."
+          }
+        }
+      }
+    },
+    "Generation Failed": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "فشل الإنشاء"
+          }
+        }
+      }
+    },
+    "Try Again": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "حاول مجدداً"
+          }
+        }
+      }
+    },
+    "CLOSE": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "إغلاق"
+          }
+        }
+      }
+    },
+    "Chest": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "صدر"
+          }
+        }
+      }
+    },
+    "Back": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ظهر"
+          }
+        }
+      }
+    },
+    "Legs": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "أرجل"
+          }
+        }
+      }
+    },
+    "Shoulders": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "أكتاف"
+          }
+        }
+      }
+    },
+    "Arms": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ذراعين"
+          }
+        }
+      }
+    },
+    "Core": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "بطن"
+          }
+        }
+      }
+    },
+    "%lld/%lld SETS": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld/%lld مجموعات"
+          }
+        }
+      }
+    },
+    "%lld workouts": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld تمارين"
+          }
+        }
+      }
+    },
+    "%lld days/week": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld أيام/أسبوع"
+          }
+        }
+      }
+    },
+    "~%lld min": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "~%lld دقيقة"
+          }
+        }
+      }
+    },
+    "%lld sets": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld مجموعات"
+          }
+        }
+      }
+    },
+    "%lld DAYS": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld أيام"
+          }
+        }
+      }
+    },
+    "%lld EXERCISES": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld تمارين"
+          }
+        }
+      }
+    },
+    "%lld exercises": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld تمارين"
+          }
+        }
+      }
+    },
+    "%lld selected": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld مختار"
+          }
+        }
+      }
+    },
+    "Replace %@": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "استبدال %@"
+          }
+        }
+      }
+    },
+    "%lld days/wk": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld أيام/أسبوع"
+          }
+        }
+      }
+    },
+    "%lld min": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld دقيقة"
+          }
+        }
+      }
+    },
+    "Align barcode within the square": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ضع الباركود داخل المربع"
+          }
+        }
+      }
+    },
+    "Scanning not supported": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "المسح غير مدعوم"
+          }
+        }
+      }
+    },
+    "Your device does not support scanning a barcode from an item. Please use a device with a camera.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "جهازك لا يدعم مسح الباركود. يرجى استخدام جهاز مزود بكاميرا."
+          }
+        }
+      }
+    },
+    "OK": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "حسناً"
+          }
+        }
+      }
+    },
+    "Food Info": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "معلومات الطعام"
+          }
+        }
+      }
+    },
+    "Food Name *": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "اسم الطعام *"
+          }
+        }
+      }
+    },
+    "Brand (optional)": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "العلامة التجارية (اختياري)"
+          }
+        }
+      }
+    },
+    "Serving": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الحصة"
+          }
+        }
+      }
+    },
+    "Size": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الحجم"
+          }
+        }
+      }
+    },
+    "Unit": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الوحدة"
+          }
+        }
+      }
+    },
+    "Nutrition (per serving)": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "القيم الغذائية (لكل حصة)"
+          }
+        }
+      }
+    },
+    "Calories *": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "السعرات الحرارية *"
+          }
+        }
+      }
+    },
+    "Preview": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "معاينة"
+          }
+        }
+      }
+    },
+    "Edit Food": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تعديل الطعام"
+          }
+        }
+      }
+    },
+    "Custom Food": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "طعام مخصص"
+          }
+        }
+      }
+    },
+    "Save": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "حفظ"
+          }
+        }
+      }
+    },
+    "Food Details": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تفاصيل الطعام"
+          }
+        }
+      }
+    },
+    "Edit Nutrition": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تعديل القيم الغذائية"
+          }
+        }
+      }
+    },
+    "Per 100g": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "لكل 100 غرام"
+          }
+        }
+      }
+    },
+    "Portion Size (grams)": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "حجم الحصة (غرام)"
+          }
+        }
+      }
+    },
+    "Grams": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "غرام"
+          }
+        }
+      }
+    },
+    "Meal": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "وجبة"
+          }
+        }
+      }
+    },
+    "USDA Verified": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "معتمد من USDA"
+          }
+        }
+      }
+    },
+    "Database": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "قاعدة البيانات"
+          }
+        }
+      }
+    },
+    "My Recipes": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "وصفاتي"
+          }
+        }
+      }
+    },
+    "Mode": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الوضع"
+          }
+        }
+      }
+    },
+    "Search foods (e.g. chicken breast)...": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ابحث عن الأطعمة (مثلاً صدر دجاج)..."
+          }
+        }
+      }
+    },
+    "Let AI parse this meal": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "دع الذكاء الاصطناعي يحلل هذه الوجبة"
+          }
+        }
+      }
+    },
+    "Analyzing your meal...": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "جارٍ تحليل وجبتك..."
+          }
+        }
+      }
+    },
+    "Searching offline database...": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "جارٍ البحث في قاعدة البيانات..."
+          }
+        }
+      }
+    },
+    "Retry": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "إعادة المحاولة"
+          }
+        }
+      }
+    },
+    "No results found": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "لا توجد نتائج"
+          }
+        }
+      }
+    },
+    "Create Custom Food": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "إنشاء طعام مخصص"
+          }
+        }
+      }
+    },
+    "Recent & Frequent": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الأخيرة والمتكررة"
+          }
+        }
+      }
+    },
+    "Search to log food": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ابحث لتسجيل الطعام"
+          }
+        }
+      }
+    },
+    "Or create a custom food": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "أو أنشئ طعاماً مخصصاً"
+          }
+        }
+      }
+    },
+    "USDA": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "USDA"
+          }
+        }
+      }
+    },
+    "AI Food Scanner": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ماسح الطعام بالذكاء الاصطناعي"
+          }
+        }
+      }
+    },
+    "Scan Your Plate": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "امسح طبقك"
+          }
+        }
+      }
+    },
+    "Take a photo of your food and AI will\nprecisely identify items and macros.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "التقط صورة لطعامك وسيحدد الذكاء\nالاصطناعي العناصر والقيم الغذائية بدقة."
+          }
+        }
+      }
+    },
+    "LOGGING FOR": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تسجيل في"
+          }
+        }
+      }
+    },
+    "Take Photo": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "التقط صورة"
+          }
+        }
+      }
+    },
+    "Choose from Library": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "اختر من المكتبة"
+          }
+        }
+      }
+    },
+    "Analyzing Plate...": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "جارٍ تحليل الطبق..."
+          }
+        }
+      }
+    },
+    "Identifying distinct foods and scaling": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تحديد الأطعمة المختلفة وقياس"
+          }
+        }
+      }
+    },
+    "portion dimensions to calculate macros.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "أبعاد الحصص لحساب القيم الغذائية."
+          }
+        }
+      }
+    },
+    "Scan Results": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "نتائج المسح"
+          }
+        }
+      }
+    },
+    "Tap the + icon to add an item individually, or tap the item to edit its details.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "اضغط على + لإضافة عنصر فردي، أو اضغط على العنصر لتعديل تفاصيله."
+          }
+        }
+      }
+    },
+    "Add All": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "إضافة الكل"
+          }
+        }
+      }
+    },
+    "Add Remaining": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "إضافة المتبقي"
+          }
+        }
+      }
+    },
+    "Scan Another Plate": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "مسح طبق آخر"
+          }
+        }
+      }
+    },
+    "Discard & Rescan": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تجاهل وإعادة المسح"
+          }
+        }
+      }
+    },
+    "EDIT": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تعديل"
+          }
+        }
+      }
+    },
+    "Scan Failed": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "فشل المسح"
+          }
+        }
+      }
+    },
+    "Daily limit reached": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تم الوصول للحد اليومي"
+          }
+        }
+      }
+    },
+    "Nutrition Breakdown": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تفاصيل التغذية"
+          }
+        }
+      }
+    },
+    "Total / Goal / Left": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "المجموع / الهدف / المتبقي"
+          }
+        }
+      }
+    },
+    "Plan Generation Failed": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "فشل إنشاء الخطة"
+          }
+        }
+      }
+    },
+    "Recipes": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الوصفات"
+          }
+        }
+      }
+    },
+    "Planning...": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "جارٍ التخطيط..."
+          }
+        }
+      }
+    },
+    "Auto-Plan": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "خطة تلقائية"
+          }
+        }
+      }
+    },
+    "left": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "متبقي"
+          }
+        }
+      }
+    },
+    "eaten": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "مأكول"
+          }
+        }
+      }
+    },
+    "Food": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "طعام"
+          }
+        }
+      }
+    },
+    "Meal Type": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "نوع الوجبة"
+          }
+        }
+      }
+    },
+    "Details": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "التفاصيل"
+          }
+        }
+      }
+    },
+    "Food Name (Optional)": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "اسم الطعام (اختياري)"
+          }
+        }
+      }
+    },
+    "Total Protein (g)": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "إجمالي البروتين (غ)"
+          }
+        }
+      }
+    },
+    "Save Quick Add": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "حفظ الإضافة السريعة"
+          }
+        }
+      }
+    },
+    "Quick Add": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "إضافة سريعة"
+          }
+        }
+      }
+    },
+    "Nutrients": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "العناصر الغذائية"
+          }
+        }
+      }
+    },
+    "Day View": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "عرض اليوم"
+          }
+        }
+      }
+    },
+    "By Meal": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "حسب الوجبة"
+          }
+        }
+      }
+    },
+    "Total": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "المجموع"
+          }
+        }
+      }
+    },
+    "Left": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "المتبقي"
+          }
+        }
+      }
+    },
+    "Fiber": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ألياف"
+          }
+        }
+      }
+    },
+    "AI Meal Breakdown": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تحليل الوجبة بالذكاء الاصطناعي"
+          }
+        }
+      }
+    },
+    "AI": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AI"
+          }
+        }
+      }
+    },
+    "Log to": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تسجيل في"
+          }
+        }
+      }
+    },
+    "grams": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "غرام"
+          }
+        }
+      }
+    },
+    "Your AI Meal Plan": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "خطة وجباتك الذكية"
+          }
+        }
+      }
+    },
+    "Log Entire Day": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تسجيل اليوم كاملاً"
+          }
+        }
+      }
+    },
+    "Portion Details": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تفاصيل الحصة"
+          }
+        }
+      }
+    },
+    "Quantity": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الكمية"
+          }
+        }
+      }
+    },
+    "Amount": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "المقدار"
+          }
+        }
+      }
+    },
+    "Save Changes": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "حفظ التغييرات"
+          }
+        }
+      }
+    },
+    "Edit Entry": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تعديل الإدخال"
+          }
+        }
+      }
+    },
+    "Recipe Name": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "اسم الوصفة"
+          }
+        }
+      }
+    },
+    "No ingredients added yet.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "لم تُضاف مكونات بعد."
+          }
+        }
+      }
+    },
+    "Ingredients": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "المكونات"
+          }
+        }
+      }
+    },
+    "Add Ingredient": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "إضافة مكون"
+          }
+        }
+      }
+    },
+    "Save Recipe": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "حفظ الوصفة"
+          }
+        }
+      }
+    },
+    "New Recipe": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "وصفة جديدة"
+          }
+        }
+      }
+    },
+    "My Recipe": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "وصفتي"
+          }
+        }
+      }
+    },
+    "Search ingredient...": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ابحث عن مكون..."
+          }
+        }
+      }
+    },
+    "No Saved Recipes": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "لا توجد وصفات محفوظة"
+          }
+        }
+      }
+    },
+    "Group ingredients into a single meal for easy logging.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "اجمع المكونات في وجبة واحدة لتسجيل سهل."
+          }
+        }
+      }
+    },
+    "Create Recipe": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "إنشاء وصفة"
+          }
+        }
+      }
+    },
+    "Create New Recipe": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "إنشاء وصفة جديدة"
+          }
+        }
+      }
+    },
+    "Log": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تسجيل"
+          }
+        }
+      }
+    },
+    "Loading Analytics...": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "جارٍ تحميل التحليلات..."
+          }
+        }
+      }
+    },
+    "No Data Available": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "لا تتوفر بيانات"
+          }
+        }
+      }
+    },
+    "Log food for a few days to see your trends.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "سجّل طعامك لبضعة أيام لرؤية اتجاهاتك."
+          }
+        }
+      }
+    },
+    "Weekly Trends": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الاتجاهات الأسبوعية"
+          }
+        }
+      }
+    },
+    "Macros Focus": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تركيز العناصر الغذائية"
+          }
+        }
+      }
+    },
+    "Hydration": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الترطيب"
+          }
+        }
+      }
+    },
+    "Add Food": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "إضافة طعام"
+          }
+        }
+      }
+    },
+    "Delete Entry?": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "حذف الإدخال؟"
+          }
+        }
+      }
+    },
+    "What's for breakfast?": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ماذا على الفطور؟"
+          }
+        }
+      }
+    },
+    "Time to log lunch!": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "حان وقت تسجيل الغداء!"
+          }
+        }
+      }
+    },
+    "What's for dinner?": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ماذا على العشاء؟"
+          }
+        }
+      }
+    },
+    "Any snacks today?": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "أي وجبات خفيفة اليوم؟"
+          }
+        }
+      }
+    },
+    "Good Morning": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "صباح الخير"
+          }
+        }
+      }
+    },
+    "Good Afternoon": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "مساء الخير"
+          }
+        }
+      }
+    },
+    "Good Evening": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "مساء الخير"
           }
         }
       }
     }
   },
-  "version" : "1.0"
+  "version": "1.0"
 }

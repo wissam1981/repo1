@@ -149,7 +149,7 @@ struct WorkoutDashboardView: View {
                     .font(.system(size: 18, weight: .bold))
                     .foregroundStyle(ThemeColors.textPrimary)
                 Spacer()
-                Text("\(workoutsThisWeek(vm)) workouts")
+                Text(String(localized: "\(workoutsThisWeek(vm)) workouts"))
                     .font(.system(size: 14, weight: .medium))
                     .foregroundStyle(ThemeColors.textSecondary)
             }
@@ -359,13 +359,13 @@ struct WorkoutDashboardView: View {
                             HStack(spacing: 5) {
                                 Image(systemName: "calendar")
                                     .font(.system(size: 12))
-                                Text("\(plan.days.count) days/week")
+                                Text(String(localized: "\(plan.days.count) days/week"))
                                     .font(.system(size: 13, weight: .medium))
                             }
                             HStack(spacing: 5) {
                                 Image(systemName: "clock")
                                     .font(.system(size: 12))
-                                Text("~\(plan.estimatedDurationMin) min")
+                                Text(String(localized: "~\(plan.estimatedDurationMin) min"))
                                     .font(.system(size: 13, weight: .medium))
                             }
                         }
@@ -629,7 +629,7 @@ struct WorkoutDashboardView: View {
                 Text(session.formattedDuration)
                     .font(.system(size: 15, weight: .bold, design: .rounded))
                     .foregroundStyle(ThemeColors.textPrimary)
-                Text("\(session.totalSets) sets")
+                Text(String(localized: "\(session.totalSets) sets"))
                     .font(.system(size: 12, weight: .medium))
                     .foregroundStyle(ThemeColors.textSecondary)
             }
@@ -712,9 +712,9 @@ struct WorkoutDashboardView: View {
 
     private var greetingText: String {
         let hour = Calendar.current.component(.hour, from: Date())
-        if hour < 12 { return "Good Morning" }
-        else if hour < 17 { return "Good Afternoon" }
-        else { return "Good Evening" }
+        if hour < 12 { return String(localized: "Good Morning") }
+        else if hour < 17 { return String(localized: "Good Afternoon") }
+        else { return String(localized: "Good Evening") }
     }
 
     private func currentStreak(_ vm: WorkoutViewModel) -> Int {
@@ -893,7 +893,7 @@ private struct AddExerciseDayPickerSheet: View {
                                             Text(day.label)
                                                 .font(.system(size: 16, weight: .bold))
                                                 .foregroundStyle(ThemeColors.textPrimary)
-                                            Text("\(day.exercises.count) exercises")
+                                            Text(String(localized: "\(day.exercises.count) exercises"))
                                                 .font(.system(size: 13, weight: .medium))
                                                 .foregroundStyle(ThemeColors.textSecondary)
                                         }
@@ -1055,7 +1055,7 @@ private struct AIGenerateWorkoutSheet: View {
                         .foregroundStyle(ThemeColors.textSecondary)
                     Spacer()
                     if !viewModel.selectedSeedExercises.isEmpty {
-                        Text("\(viewModel.selectedSeedExercises.count) selected")
+                        Text(String(localized: "\(viewModel.selectedSeedExercises.count) selected"))
                             .font(.system(size: 13, weight: .semibold))
                             .foregroundStyle(ThemeColors.primary)
                     }
