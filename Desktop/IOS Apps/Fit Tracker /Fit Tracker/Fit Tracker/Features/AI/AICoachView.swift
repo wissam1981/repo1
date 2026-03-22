@@ -97,7 +97,7 @@ struct AICoachView: View {
                         .frame(width: 36, height: 36)
                         .shadow(color: ThemeColors.primary.opacity(0.4), radius: 8, x: 0, y: 2)
 
-                    Image(systemName: "brain.head.profile.fill")
+                    Image(systemName: "cpu.fill")
                         .font(.system(size: 16, weight: .semibold))
                         .foregroundStyle(.white)
                 }
@@ -182,6 +182,11 @@ struct AICoachView: View {
                     ForEach(viewModel.messages) { message in
                         if message.role != .system {
                             CoachBubble(message: message)
+                                .transition(.asymmetric(
+                                    insertion: .move(edge: message.role == .user ? .trailing : .leading)
+                                        .combined(with: .opacity),
+                                    removal: .opacity
+                                ))
                         }
                     }
 
@@ -196,6 +201,7 @@ struct AICoachView: View {
                 .padding(.horizontal, 16)
                 .padding(.top, 16)
                 .padding(.bottom, 8)
+                .animation(.spring(response: 0.4, dampingFraction: 0.8), value: viewModel.messages.count)
             }
             .onChange(of: viewModel.messages.count) { _, _ in
                 scrollDown(proxy)
@@ -218,7 +224,7 @@ struct AICoachView: View {
                         )
                     )
                     .frame(width: 38, height: 38)
-                Image(systemName: "brain.head.profile.fill")
+                Image(systemName: "cpu.fill")
                     .font(.system(size: 16))
                     .foregroundStyle(.white)
             }
@@ -377,7 +383,7 @@ private struct CoachBubble: View {
                         .frame(width: 38, height: 38)
                         .shadow(color: ThemeColors.primary.opacity(0.3), radius: 6, x: 0, y: 2)
 
-                    Image(systemName: "brain.head.profile.fill")
+                    Image(systemName: "cpu.fill")
                         .font(.system(size: 17, weight: .semibold))
                         .foregroundStyle(.white)
                 }
@@ -385,52 +391,40 @@ private struct CoachBubble: View {
             }
 
             VStack(alignment: isUser ? .trailing : .leading, spacing: 6) {
-                HStack(spacing: 0) {
-                    // Gradient accent bar for coach messages
-                    if !isUser {
-                        RoundedRectangle(cornerRadius: 2)
-                            .fill(
-                                LinearGradient(
-                                    colors: [
-                                        NutrientColor.protein,
-                                        NutrientColor.carbs,
-                                        NutrientColor.calories
-                                    ],
-                                    startPoint: .top,
-                                    endPoint: .bottom
-                                )
-                            )
-                            .frame(width: 3)
-                            .padding(.vertical, 8)
+                // Message content — no more HStack with accent bar
+                Group {
+                    if isUser {
+                        Text(message.content)
+                            .font(.system(size: 17, weight: .regular))
+                            .lineSpacing(6)
+                            .foregroundStyle(.white)
+                    } else {
+                        StyledCoachText(text: message.content)
                     }
-
-                    // Message content
-                    Group {
-                        if isUser {
-                            Text(message.content)
-                                .font(.system(size: 17, weight: .regular))
-                                .lineSpacing(6)
-                                .foregroundStyle(.white)
-                        } else {
-                            StyledCoachText(text: message.content)
-                        }
-                    }
-                    .padding(.horizontal, 16)
-                    .padding(.vertical, 14)
                 }
-                .background(
-                    isUser
-                    ? AnyShapeStyle(
+                .padding(.horizontal, 16)
+                .padding(.vertical, 14)
+                .background {
+                    if isUser {
                         LinearGradient(
                             colors: [ThemeColors.primary, .cyan.opacity(0.7)],
                             startPoint: .topLeading,
                             endPoint: .bottomTrailing
                         )
-                    )
-                    : AnyShapeStyle(ThemeColors.surfaceColor)
-                )
+                    } else {
+                        let isLight = ThemeManager.shared.currentTheme.isLightTheme
+                        LinearGradient(
+                            colors: [
+                                ThemeColors.primary.opacity(isLight ? 0.18 : 0.15),
+                                Color.cyan.opacity(isLight ? 0.10 : 0.10)
+                            ],
+                            startPoint: .topLeading,
+                            endPoint: .bottomTrailing
+                        )
+                    }
+                }
                 .clipShape(
-                    .rect(
+                    UnevenRoundedRectangle(
                         topLeadingRadius: isUser ? 22 : 4,
                         bottomLeadingRadius: 22,
                         bottomTrailingRadius: isUser ? 4 : 22,
@@ -438,20 +432,22 @@ private struct CoachBubble: View {
                     )
                 )
                 .overlay(
-                    // Subtle border glow for coach bubbles
-                    !isUser ?
-                    RoundedRectangle(cornerRadius: 16)
-                        .stroke(
-                            LinearGradient(
-                                colors: [ThemeColors.primary.opacity(0.2), ThemeColors.surfaceBorder],
-                                startPoint: .topLeading,
-                                endPoint: .bottomTrailing
-                            ),
-                            lineWidth: 0.5
-                        )
-                    : nil
+                    UnevenRoundedRectangle(
+                        topLeadingRadius: isUser ? 22 : 4,
+                        bottomLeadingRadius: 22,
+                        bottomTrailingRadius: isUser ? 4 : 22,
+                        topTrailingRadius: 22
+                    )
+                    .stroke(
+                        LinearGradient(
+                            colors: [ThemeColors.primary.opacity(0.4), ThemeColors.primary.opacity(0.15)],
+                            startPoint: .topLeading,
+                            endPoint: .bottomTrailing
+                        ),
+                        lineWidth: isUser ? 0 : 1
+                    )
                 )
-                .shadow(color: isUser ? ThemeColors.primary.opacity(0.15) : .clear, radius: 8, x: 0, y: 4)
+                .shadow(color: ThemeColors.primary.opacity(0.15), radius: 12, x: 0, y: 4)
 
                 Text(message.timestamp, style: .time)
                     .font(.system(size: 12, weight: .medium))
