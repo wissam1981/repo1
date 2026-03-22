@@ -46,11 +46,15 @@ struct AuraFloatingNavBar: View {
                 selectedTab = route
             }
         } label: {
-            VStack(spacing: 4) {
+            VStack(spacing: 2) {
                 Image(systemName: route.systemImage)
                     .font(.system(size: 20, weight: selectedTab == route ? .bold : .medium))
                     .foregroundStyle(selectedTab == route ? ThemeColors.primary : ThemeColors.textSecondary)
-                
+
+                Text(route.title)
+                    .font(.system(size: 11, weight: .semibold))
+                    .foregroundStyle(selectedTab == route ? ThemeColors.primary : ThemeColors.textSecondary)
+
                 if selectedTab == route {
                     Circle()
                         .fill(ThemeColors.primary)
