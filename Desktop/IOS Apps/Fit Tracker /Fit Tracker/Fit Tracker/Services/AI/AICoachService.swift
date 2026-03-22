@@ -37,7 +37,8 @@ actor AICoachService {
         let prot = user.targetProteinG
         let carbs = user.targetCarbsG
         let fat = user.targetFatG
-        let systemPrompt = Self.constructSystemPrompt(age: age, gender: gender, weight: weight, height: height, activity: activity, goal: goal, calories: cal, protein: prot, carbs: carbs, fat: fat, todaySnapshot: todaySnapshot)
+        let language = await MainActor.run { LanguageManager.shared.currentLanguage.rawValue }
+        let systemPrompt = Self.constructSystemPrompt(age: age, gender: gender, weight: weight, height: height, activity: activity, goal: goal, calories: cal, protein: prot, carbs: carbs, fat: fat, todaySnapshot: todaySnapshot, language: language)
 
         let systemMsg = ChatMessage(role: .system, content: systemPrompt)
         var allMessages = [systemMsg]
@@ -106,7 +107,7 @@ actor AICoachService {
 
     // MARK: - Prompt Helpers
 
-    nonisolated private static func constructSystemPrompt(age: Int, gender: String, weight: Double, height: Double, activity: String, goal: String, calories: Int, protein: Int, carbs: Int, fat: Int, todaySnapshot: TodayNutritionSnapshot?) -> String {
+    nonisolated private static func constructSystemPrompt(age: Int, gender: String, weight: Double, height: Double, activity: String, goal: String, calories: Int, protein: Int, carbs: Int, fat: Int, todaySnapshot: TodayNutritionSnapshot?, language: String = "en") -> String {
         var prompt = """
         You are a direct, no-fluff fitness and nutrition coach inside the FuelIQ app.
 
@@ -135,6 +136,10 @@ actor AICoachService {
         - Never repeat information the user already knows from previous messages.
         - Respond in the same language the user writes in.
         """
+
+        if language == "ar" {
+            prompt += "\nIMPORTANT: Always respond in Arabic (العربية). Use Arabic for all text."
+        }
 
         return prompt
     }

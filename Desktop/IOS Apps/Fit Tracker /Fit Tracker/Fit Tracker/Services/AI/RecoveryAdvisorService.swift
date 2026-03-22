@@ -4,7 +4,8 @@ import FirebaseFunctions
 // MARK: - Recovery Advisor Service
 // Analyzes recent workout intensity against recent nutritional intake to provide a recovery recommendation.
 
-actor RecoveryAdvisorService {
+@MainActor
+final class RecoveryAdvisorService {
 
     static let shared = RecoveryAdvisorService()
 
@@ -12,7 +13,7 @@ actor RecoveryAdvisorService {
 
     private init() {}
 
-    nonisolated func assessRecovery(yesterdayWorkout: WorkoutSession?, yesterdayNutrition: NutritionLog?, todayNutrition: NutritionLog?) async throws -> RecoveryAdvice {
+    func assessRecovery(yesterdayWorkout: WorkoutSession?, yesterdayNutrition: NutritionLog?, todayNutrition: NutritionLog?) async throws -> RecoveryAdvice {
         
         // 1. Prepare data Context
         var contextStr = ""
@@ -55,10 +56,14 @@ actor RecoveryAdvisorService {
         }
         """
 
+        let languageDirective = LanguageManager.shared.isArabic
+            ? "\nIMPORTANT: Write the \"message\" field in Arabic (العربية)."
+            : ""
+
         let userPrompt = "Here is my recent data:\n\(contextStr)\nEvaluate my recovery."
 
         let messagesPayload: [[String: String]] = [
-            ["role": "system", "content": systemPrompt],
+            ["role": "system", "content": systemPrompt + languageDirective],
             ["role": "user", "content": userPrompt]
         ]
         

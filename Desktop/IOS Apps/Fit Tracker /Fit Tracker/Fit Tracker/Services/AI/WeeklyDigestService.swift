@@ -105,11 +105,15 @@ final class WeeklyDigestService {
         4. Be encouraging but honest
         """
 
+        let languageDirective = LanguageManager.shared.isArabic
+            ? "\nIMPORTANT: Write ALL text fields in Arabic (العربية)."
+            : ""
+
         let userPrompt = "Analyze this week's data and generate a weekly report:\n\n\(summary)"
 
         do {
             let rawResponse = try await aiService.generateJSON(
-                systemPrompt: systemPrompt,
+                systemPrompt: systemPrompt + languageDirective,
                 userPrompt: userPrompt
             )
 
