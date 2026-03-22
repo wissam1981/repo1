@@ -20,6 +20,1036 @@
           }
         }
       }
+    },
+    "FuelIQ" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "FuelIQ"
+          }
+        }
+      }
+    },
+    "Eat Smart · Train Hard" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "كُل بذكاء · تمرّن بقوة"
+          }
+        }
+      }
+    },
+    "FUELIQ" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "FUELIQ"
+          }
+        }
+      }
+    },
+    "ELITE" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ELITE"
+          }
+        }
+      }
+    },
+    "AI-POWERED PERFORMANCE" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "أداء مدعوم بالذكاء الاصطناعي"
+          }
+        }
+      }
+    },
+    "YOUR AI COACH IS READY" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "مدربك الذكي جاهز"
+          }
+        }
+      }
+    },
+    "Smart Plans · AI Coach · Real Results" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "خطط ذكية · مدرب ذكي · نتائج حقيقية"
+          }
+        }
+      }
+    },
+    "START YOUR JOURNEY" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ابدأ رحلتك"
+          }
+        }
+      }
+    },
+    "AI COACH · SMART PLANS · ELITE RESULTS" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "مدرب ذكي · خطط ذكية · نتائج متميّزة"
+          }
+        }
+      }
+    },
+    "SIGN IN" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تسجيل الدخول"
+          }
+        }
+      }
+    },
+    "Unlock Your AI-Powered Fitness Coach" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "افتح مدرب اللياقة المدعوم بالذكاء الاصطناعي"
+          }
+        }
+      }
+    },
+    "Continue with Google" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "المتابعة بحساب Google"
+          }
+        }
+      }
+    },
+    "FUELIQ™ ELITE" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "FUELIQ™ ELITE"
+          }
+        }
+      }
+    },
+    "Create Account" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "إنشاء حساب"
+          }
+        }
+      }
+    },
+    "Start your fitness transformation" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ابدأ تحولك في اللياقة"
+          }
+        }
+      }
+    },
+    "Full Name" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الاسم الكامل"
+          }
+        }
+      }
+    },
+    "Your name" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اسمك"
+          }
+        }
+      }
+    },
+    "Email" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "البريد الإلكتروني"
+          }
+        }
+      }
+    },
+    "you@example.com" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "you@example.com"
+          }
+        }
+      }
+    },
+    "Password" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "كلمة المرور"
+          }
+        }
+      }
+    },
+    "At least 6 characters" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "٦ أحرف على الأقل"
+          }
+        }
+      }
+    },
+    "Confirm Password" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تأكيد كلمة المرور"
+          }
+        }
+      }
+    },
+    "Re-enter password" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "أعد إدخال كلمة المرور"
+          }
+        }
+      }
+    },
+    "Passwords match" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "كلمتا المرور متطابقتان"
+          }
+        }
+      }
+    },
+    "Passwords don't match" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "كلمتا المرور غير متطابقتين"
+          }
+        }
+      }
+    },
+    "or" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "أو"
+          }
+        }
+      }
+    },
+    "Already have an account?" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "لديك حساب بالفعل؟"
+          }
+        }
+      }
+    },
+    "Sign In" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تسجيل الدخول"
+          }
+        }
+      }
+    },
+    "Step %lld of %lld" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الخطوة %lld من %lld"
+          }
+        }
+      }
+    },
+    "Analyzing your results…" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "جارٍ تحليل نتائجك…"
+          }
+        }
+      }
+    },
+    "Start Your Journey" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ابدأ رحلتك"
+          }
+        }
+      }
+    },
+    "Continue" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "متابعة"
+          }
+        }
+      }
+    },
+    "What's your gender?" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ما هو جنسك؟"
+          }
+        }
+      }
+    },
+    "This helps us calculate your daily calorie needs accurately." : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يساعدنا هذا في حساب احتياجاتك اليومية من السعرات بدقة."
+          }
+        }
+      }
+    },
+    "Higher baseline metabolism" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "معدل أيض أساسي أعلى"
+          }
+        }
+      }
+    },
+    "Adjusted for female physiology" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "معدّل وفقاً للفسيولوجيا الأنثوية"
+          }
+        }
+      }
+    },
+    "Averaged calculation" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "حساب متوسط"
+          }
+        }
+      }
+    },
+    "When were you born?" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "متى وُلدت؟"
+          }
+        }
+      }
+    },
+    "Age affects your metabolism and daily calorie requirements." : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يؤثر العمر على عملية الأيض واحتياجاتك اليومية من السعرات."
+          }
+        }
+      }
+    },
+    "years old" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "سنة"
+          }
+        }
+      }
+    },
+    "Date of Birth" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تاريخ الميلاد"
+          }
+        }
+      }
+    },
+    "Your Body Metrics" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "قياسات جسمك"
+          }
+        }
+      }
+    },
+    "We use these to calculate your BMR and daily calorie needs." : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "نستخدم هذه البيانات لحساب معدل الأيض واحتياجاتك اليومية من السعرات."
+          }
+        }
+      }
+    },
+    "Metric (kg/cm)" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "متري (كغ/سم)"
+          }
+        }
+      }
+    },
+    "Imperial (lbs/ft)" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "إمبراطوري (رطل/قدم)"
+          }
+        }
+      }
+    },
+    "Height" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الطول"
+          }
+        }
+      }
+    },
+    "Weight" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الوزن"
+          }
+        }
+      }
+    },
+    "BMI" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "مؤشر كتلة الجسم"
+          }
+        }
+      }
+    },
+    "How active are you?" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ما مستوى نشاطك؟"
+          }
+        }
+      }
+    },
+    "Be honest — this directly affects your daily calorie target." : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "كن صريحاً — هذا يؤثر مباشرة على هدفك اليومي من السعرات."
+          }
+        }
+      }
+    },
+    "What's your goal?" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ما هو هدفك؟"
+          }
+        }
+      }
+    },
+    "We'll adjust your calorie and macro targets based on this." : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "سنعدّل أهداف السعرات والماكرو بناءً على هذا."
+          }
+        }
+      }
+    },
+    "Protein" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "البروتين"
+          }
+        }
+      }
+    },
+    "Calories" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "السعرات"
+          }
+        }
+      }
+    },
+    "High (1.8g/kg)" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "عالي (١.٨غ/كغ)"
+          }
+        }
+      }
+    },
+    "Moderate (1.4g/kg)" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "متوسط (١.٤غ/كغ)"
+          }
+        }
+      }
+    },
+    "High (2.0g/kg)" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "عالي (٢.٠غ/كغ)"
+          }
+        }
+      }
+    },
+    "Deficit" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "عجز"
+          }
+        }
+      }
+    },
+    "Maintenance" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ثبات"
+          }
+        }
+      }
+    },
+    "Surplus" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "فائض"
+          }
+        }
+      }
+    },
+    "How fast?" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ما السرعة؟"
+          }
+        }
+      }
+    },
+    "A moderate pace helps preserve muscle while losing fat." : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الوتيرة المعتدلة تساعد في الحفاظ على العضلات أثناء خسارة الدهون."
+          }
+        }
+      }
+    },
+    "A moderate pace minimizes unwanted fat gain." : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الوتيرة المعتدلة تقلل من اكتساب الدهون غير المرغوب فيه."
+          }
+        }
+      }
+    },
+    "This is approximately %lld kcal/day %@" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "هذا يعادل تقريباً %lld سعرة/يوم %@"
+          }
+        }
+      }
+    },
+    "Aggressive goals may impact energy and performance" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الأهداف القوية قد تؤثر على الطاقة والأداء"
+          }
+        }
+      }
+    },
+    "deficit" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "عجز"
+          }
+        }
+      }
+    },
+    "surplus" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "فائض"
+          }
+        }
+      }
+    },
+    "Set Your Goal Weight" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "حدد وزنك المستهدف"
+          }
+        }
+      }
+    },
+    "How much do you want to %@ ? We'll build your plan around this." : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "كم تريد أن %@؟ سنبني خطتك حول هذا."
+          }
+        }
+      }
+    },
+    "lose" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تخسر"
+          }
+        }
+      }
+    },
+    "gain" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تكسب"
+          }
+        }
+      }
+    },
+    "Current weight" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الوزن الحالي"
+          }
+        }
+      }
+    },
+    "Target Weight" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الوزن المستهدف"
+          }
+        }
+      }
+    },
+    "Target Weight (lbs)" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الوزن المستهدف (رطل)"
+          }
+        }
+      }
+    },
+    "Target Date (Optional)" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "التاريخ المستهدف (اختياري)"
+          }
+        }
+      }
+    },
+    "By when?" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "بحلول متى؟"
+          }
+        }
+      }
+    },
+    "Estimated %lld weeks at current pace" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يُقدّر بـ %lld أسبوع بالوتيرة الحالية"
+          }
+        }
+      }
+    },
+    "You've got this!" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يمكنك تحقيق ذلك!"
+          }
+        }
+      }
+    },
+    "Consistent daily tracking is the #1 predictor of success." : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "التتبع اليومي المنتظم هو المؤشر الأول للنجاح."
+          }
+        }
+      }
+    },
+    "Meal Reminders" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تذكيرات الوجبات"
+          }
+        }
+      }
+    },
+    "How often and when would you like to be reminded to log your meals?" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "كم مرة ومتى تريد أن نذكّرك بتسجيل وجباتك؟"
+          }
+        }
+      }
+    },
+    "Reminder Time" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "وقت التذكير"
+          }
+        }
+      }
+    },
+    "Your Personalized Plan" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "خطتك المخصصة"
+          }
+        }
+      }
+    },
+    "Based on your body metrics and goals, here's your daily targets." : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "بناءً على قياسات جسمك وأهدافك، إليك أهدافك اليومية."
+          }
+        }
+      }
+    },
+    "Daily Calories" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "السعرات اليومية"
+          }
+        }
+      }
+    },
+    "kcal / day" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "سعرة / يوم"
+          }
+        }
+      }
+    },
+    "Daily Macro Targets" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "أهداف الماكرو اليومية"
+          }
+        }
+      }
+    },
+    "%lldg" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lldغ"
+          }
+        }
+      }
+    },
+    "Carbs" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الكربوهيدرات"
+          }
+        }
+      }
+    },
+    "Fat" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الدهون"
+          }
+        }
+      }
+    },
+    "Gender" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الجنس"
+          }
+        }
+      }
+    },
+    "Age" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "العمر"
+          }
+        }
+      }
+    },
+    "Activity" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "النشاط"
+          }
+        }
+      }
+    },
+    "Goal" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الهدف"
+          }
+        }
+      }
+    },
+    "Goal Weight" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الوزن المستهدف"
+          }
+        }
+      }
+    },
+    "Est. Time" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الوقت المقدّر"
+          }
+        }
+      }
+    },
+    "Target Date" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "التاريخ المستهدف"
+          }
+        }
+      }
+    },
+    "Pace" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الوتيرة"
+          }
+        }
+      }
+    },
+    "BMR" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "معدل الأيض"
+          }
+        }
+      }
+    },
+    "TDEE" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "إجمالي الطاقة"
+          }
+        }
+      }
+    },
+    "Target" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الهدف"
+          }
+        }
+      }
+    },
+    "Units" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الوحدات"
+          }
+        }
+      }
+    },
+    "(%@)" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "(%@)"
+          }
+        }
+      }
     }
   },
   "version" : "1.0"

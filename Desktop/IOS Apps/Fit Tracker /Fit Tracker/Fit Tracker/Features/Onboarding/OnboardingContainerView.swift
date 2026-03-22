@@ -68,7 +68,7 @@ struct OnboardingContainerView: View {
 
                 Spacer()
 
-                Text("Step \(viewModel.currentStep.rawValue + 1) of \(OnboardingStep.allCases.count)")
+                Text(String(localized: "Step \(viewModel.currentStep.rawValue + 1) of \(OnboardingStep.allCases.count)"))
                     .font(.caption.bold())
                     .foregroundStyle(.white.opacity(0.5))
                     .padding(.horizontal, 14)
@@ -166,7 +166,7 @@ struct OnboardingContainerView: View {
                     .controlSize(.large)
                     .tint(ThemeColors.primary)
                 
-                Text("Analyzing your results...")
+                Text("Analyzing your results…")
                     .font(.headline)
                     .foregroundStyle(.white.opacity(0.8))
             }
