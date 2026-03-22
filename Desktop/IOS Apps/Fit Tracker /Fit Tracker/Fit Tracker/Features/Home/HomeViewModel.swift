@@ -16,6 +16,29 @@ final class HomeViewModel {
     var stepsToday: Int = 0
     var healthMessage: String?
 
+    // MARK: - Recovery Advisor
+
+    var isLoadingRecovery: Bool = false
+    var recoveryAdvice: RecoveryAdvice?
+
+    // MARK: - Contextual Insight
+
+    var contextualInsight: String = ""
+
+    // MARK: - Goal Suggestion
+
+    var goalSuggestion: GoalSuggestion?
+
+    func dismissGoalSuggestion() {
+        goalSuggestion = nil
+    }
+
+    func applyGoalSuggestion() {
+        guard let suggestion = goalSuggestion else { return }
+        user.targetCalories = suggestion.newCalories
+        goalSuggestion = nil
+    }
+
     // MARK: - Dependencies
 
     private let coreDataService: CoreDataService
@@ -205,6 +228,45 @@ final class HomeViewModel {
                 await MainActor.run { self.stepsToday = Int(steps) }
             } catch {
                 await MainActor.run { self.stepsToday = 0 }
+            }
+        }
+    }
+
+    // MARK: - Recovery Advisor
+
+    func fetchRecoveryAdvice(workoutVM: WorkoutViewModel) {
+        guard !isLoadingRecovery else { return }
+        isLoadingRecovery = true
+
+        let calendar = Calendar.current
+        let yesterday = calendar.date(byAdding: .day, value: -1, to: calendar.startOfDay(for: .now))!
+
+        // Yesterday's workout (if any)
+        let yesterdayWorkout = workoutVM.recentSessions.first { session in
+            calendar.isDate(session.startedAt, inSameDayAs: yesterday)
+        }
+
+        // Yesterday's nutrition
+        let yesterdayNutrition = coreDataService.fetchNutritionLogDomain(for: yesterday)
+
+        // Today's nutrition
+        let todayNutrition = coreDataService.fetchNutritionLogDomain(for: .now)
+
+        Task {
+            do {
+                let advice = try await RecoveryAdvisorService.shared.assessRecovery(
+                    yesterdayWorkout: yesterdayWorkout,
+                    yesterdayNutrition: yesterdayNutrition,
+                    todayNutrition: todayNutrition
+                )
+                await MainActor.run {
+                    self.recoveryAdvice = advice
+                    self.isLoadingRecovery = false
+                }
+            } catch {
+                await MainActor.run {
+                    self.isLoadingRecovery = false
+                }
             }
         }
     }
@@ -433,4 +495,18 @@ final class HomeViewModel {
         default:      return "Good Night, \(firstName)"
         }
     }
+}
+
+// MARK: - Goal Suggestion Model
+
+struct GoalSuggestion {
+    enum Severity {
+        case info
+        case warning
+    }
+
+    let reason: String
+    let newCalories: Int
+    let severity: Severity
+    let icon: String
 }
