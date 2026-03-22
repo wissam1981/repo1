@@ -111,12 +111,14 @@ struct PaywallView: View {
                             .opacity(appear ? 1 : 0)
 
                             VStack(spacing: 6) {
-                                Text("FuelIQ ")
-                                    .font(.system(size: 36, weight: .heavy, design: .rounded))
-                                    .foregroundStyle(.white)
-                                + Text("Elite")
-                                    .font(.system(size: 36, weight: .heavy, design: .rounded))
-                                    .foregroundStyle(Color(hex: "#fba24f")) // lighter orange
+                                HStack(spacing: 4) {
+                                    Text("FuelIQ")
+                                        .font(.system(size: 36, weight: .heavy, design: .rounded))
+                                        .foregroundStyle(.white)
+                                    Text("Elite")
+                                        .font(.system(size: 36, weight: .heavy, design: .rounded))
+                                        .foregroundStyle(Color(hex: "#fba24f")) // lighter orange
+                                }
 
                                 Text("Unlock all AI-powered tracking, planning, and contextual coaching features.")
                                     .font(.system(size: 16, weight: .medium))
