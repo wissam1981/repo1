@@ -238,7 +238,7 @@ Find and replace all 3 occurrences of `"brain.head.profile.fill"` with `"cpu.fil
 
 - [ ] **Step 2: Rewrite CoachBubble background — remove accent bar, add gradient**
 
-In the `CoachBubble` struct's `body`, replace the entire `VStack(alignment:)` content. The current code has an `HStack(spacing: 0)` containing the accent bar and message content. Replace it with:
+In the `CoachBubble` struct's `body`, replace ONLY the `VStack(alignment: isUser ? .trailing : .leading, spacing: 6) { ... }` block. **Keep the outer `HStack(alignment: .top, spacing: 10)`, the `Spacer(minLength: 50)` elements, and the coach avatar `ZStack` intact.** Only the `VStack` and its contents (the `HStack(spacing: 0)` with accent bar, background, clipShape, overlay, shadow, and timestamp) get replaced with:
 
 ```swift
 VStack(alignment: isUser ? .trailing : .leading, spacing: 6) {
@@ -381,5 +381,5 @@ Expected: Should find `Capsule().fill(color.opacity(0.15))` in `pillView`.
 - [ ] **Step 4: Commit if any fixes needed**
 
 ```bash
-cd "/Users/wissam/Desktop/IOS Apps/Fit Tracker /Fit Tracker" && git add -A && git commit -m "fix: AI Coach styling final fixes"
+cd "/Users/wissam/Desktop/IOS Apps/Fit Tracker /Fit Tracker" && git add "Fit Tracker/Features/AI/AICoachView.swift" "Fit Tracker/Features/AI/StyledCoachText.swift" && git commit -m "fix: AI Coach styling final fixes"
 ```

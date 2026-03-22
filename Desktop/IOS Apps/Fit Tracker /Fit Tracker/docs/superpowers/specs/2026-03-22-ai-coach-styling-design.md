@@ -46,9 +46,9 @@ LinearGradient(
 // Border — must use the SAME asymmetric shape as the clip
 let bubbleShape = UnevenRoundedRectangle(
     topLeadingRadius: 4,
-    bottomLeadingRadius: 20,
-    bottomTrailingRadius: 20,
-    topTrailingRadius: 20
+    bottomLeadingRadius: 22,
+    bottomTrailingRadius: 22,
+    topTrailingRadius: 22
 )
 
 // Border stroke uses the same shape
