@@ -111,7 +111,7 @@ struct PaywallView: View {
                             .opacity(appear ? 1 : 0)
 
                             VStack(spacing: 6) {
-                                Text("BiteBurn ")
+                                Text("FuelIQ ")
                                     .font(.system(size: 36, weight: .heavy, design: .rounded))
                                     .foregroundStyle(.white)
                                 + Text("Elite")
