@@ -72,6 +72,7 @@ struct AppRootView: View {
     let subscriptionManager: SubscriptionManager
     
     @AppStorage("appTheme") private var appTheme = AppTheme.oceanBlue.rawValue
+    @State private var languageManager = LanguageManager.shared
     
     var body: some View {
         RootView()
@@ -79,7 +80,9 @@ struct AppRootView: View {
             .environment(router)
             .environment(subscriptionManager)
             .environment(DependencyContainer.shared)
-            .id(appTheme) // Redraw everything when theme changes
+            .environment(\.locale, languageManager.locale)
+            .environment(\.layoutDirection, languageManager.layoutDirection)
+            .id("\(appTheme)-\(languageManager.currentLanguage.rawValue)")
             .task {
                 // Wire up AppState for notification tap handling
                 AppDelegate.sharedAppState = appState
