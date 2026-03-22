@@ -65,7 +65,7 @@ struct MealSectionView: View {
 
                     Spacer()
 
-                    Text("\(totalCalories) kcal")
+                    Text(String(localized: "\(totalCalories) kcal"))
                         .font(.system(size: 16, weight: .semibold).monospacedDigit())
                         .foregroundStyle(mealColor.opacity(0.8))
 
@@ -139,7 +139,7 @@ struct MealSectionView: View {
             }
             Button("Cancel", role: .cancel) {}
         } message: { entry in
-            Text("Remove \(entry.foodName) from \(mealType.displayName)?")
+            Text(String(localized: "Remove \(entry.foodName) from \(mealType.displayName)?"))
         }
     }
 

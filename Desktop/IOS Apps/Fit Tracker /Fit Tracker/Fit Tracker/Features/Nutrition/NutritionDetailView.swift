@@ -213,7 +213,7 @@ struct NutritionDetailView: View {
             Spacer()
 
             VStack(alignment: .trailing, spacing: 2) {
-                Text("\(calories) cal")
+                Text(String(localized: "\(calories) cal"))
                     .font(.subheadline.bold())
                     .foregroundStyle(ThemeColors.textPrimary)
                 Text("P:\(protein) C:\(carbs) F:\(fat)")
@@ -433,11 +433,11 @@ struct NutritionDetailView: View {
             }
             .frame(height: 4)
 
-            Text("\(grams)/\(target)g")
+            Text(String(localized: "\(grams)/\(target)g"))
                 .font(.system(size: 10, weight: .semibold, design: .rounded))
                 .foregroundStyle(ThemeColors.textSecondary)
 
-            Text("\(max(0, target - grams))g left")
+            Text(String(localized: "\(max(0, target - grams))g left"))
                 .font(.system(size: 9))
                 .foregroundStyle(ThemeColors.textSecondary)
         }

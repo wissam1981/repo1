@@ -93,7 +93,7 @@ struct SmartMealPlanView: View {
                     .font(.system(size: 18, weight: .bold))
                     .foregroundStyle(.white)
                 Spacer()
-                Text("\(meal.totalCalories) kcal")
+                Text(String(localized: "\(meal.totalCalories) kcal"))
                     .font(.system(size: 14, weight: .bold, design: .rounded))
                     .foregroundStyle(ThemeColors.primary)
             }

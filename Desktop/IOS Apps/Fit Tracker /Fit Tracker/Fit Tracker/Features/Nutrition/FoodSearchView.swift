@@ -63,7 +63,7 @@ struct FoodSearchView: View {
                     RecipeListView(viewModel: viewModel)
                 }
             }
-            .navigationTitle("Add \(viewModel.selectedMealType.displayName)")
+            .navigationTitle(String(localized: "Add \(viewModel.selectedMealType.displayName)"))
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .cancellationAction) {
@@ -215,7 +215,7 @@ struct FoodSearchView: View {
                                 Circle()
                                     .fill(remaining > 0 ? Color.green : Color.red)
                                     .frame(width: 6, height: 6)
-                                Text("\(remaining) left")
+                                Text(String(localized: "\(remaining) left"))
                                     .font(.system(size: 12, weight: .semibold))
                                     .foregroundStyle(ThemeColors.textSecondary)
                             }
@@ -416,7 +416,7 @@ private struct FoodSearchRow: View {
                 .font(.caption)
                 .foregroundStyle(.secondary)
 
-                Text("per \(formattedServing(food))")
+                Text(String(localized: "per \(formattedServing(food))"))
                     .font(.caption2)
                     .foregroundStyle(.tertiary)
             }

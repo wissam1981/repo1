@@ -55,7 +55,7 @@ struct FoodDetailView: View {
                 Button {
                     onAdd(food, quantity, selectedMeal)
                 } label: {
-                    Text("Add to \(selectedMeal.displayName)")
+                    Text(String(localized: "Add to \(selectedMeal.displayName)"))
                         .fontWeight(.semibold)
                         .frame(maxWidth: .infinity)
                         .frame(height: 54)
@@ -230,12 +230,12 @@ struct FoodDetailView: View {
 
     private var portionMacroSection: some View {
         VStack(spacing: 12) {
-            Text("Your Portion (\(Int(quantity))g)")
+            Text(String(localized: "Your Portion (\(Int(quantity))g)"))
                 .font(.caption.bold())
                 .foregroundStyle(.secondary)
 
             // Calories prominent
-            Text("\(Int(macros.calories)) kcal")
+            Text(String(localized: "\(Int(macros.calories)) kcal"))
                 .font(.title.bold())
                 .foregroundStyle(.cyan)
 

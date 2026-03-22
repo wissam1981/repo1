@@ -53,7 +53,7 @@ struct RecipeBuilderView: View {
                                     VStack(alignment: .leading) {
                                         Text(entry.foodName)
                                             .font(.subheadline.bold())
-                                        Text("\(Int(entry.servingQuantity)) \(entry.servingUnit) • \(Int(entry.calories)) kcal")
+                                        Text(String(localized: "\(Int(entry.servingQuantity)) \(entry.servingUnit) • \(Int(entry.calories)) kcal"))
                                             .font(.caption)
                                             .foregroundStyle(.secondary)
                                     }
@@ -169,7 +169,7 @@ struct BuilderIngredientSearchView: View {
                                 HStack {
                                     VStack(alignment: .leading) {
                                         Text(food.name).font(.subheadline.bold())
-                                        Text("\(Int(food.calories)) kcal per \(Int(food.servingSizeG))\(food.servingUnit)")
+                                        Text(String(localized: "\(Int(food.calories)) kcal per \(Int(food.servingSizeG))\(food.servingUnit)"))
                                             .font(.caption).foregroundStyle(.secondary)
                                     }
                                 }

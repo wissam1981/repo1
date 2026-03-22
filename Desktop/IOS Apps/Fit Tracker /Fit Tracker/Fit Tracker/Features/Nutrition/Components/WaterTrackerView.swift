@@ -28,7 +28,7 @@ struct WaterTrackerView: View {
                     VStack(alignment: .leading, spacing: 1) {
                         Text("Water")
                             .font(.subheadline.bold())
-                        Text("\(Int(viewModel.todayLog.waterMl)) / \(Int(dailyTargetMl)) ml")
+                        Text(String(localized: "\(Int(viewModel.todayLog.waterMl)) / \(Int(dailyTargetMl)) ml"))
                             .font(.caption)
                             .foregroundStyle(.secondary)
                     }

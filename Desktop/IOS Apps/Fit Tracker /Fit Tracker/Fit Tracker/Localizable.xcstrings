@@ -4660,6 +4660,186 @@
           }
         }
       }
+    },
+    "Add to %@": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "إضافة إلى %@"
+          }
+        }
+      }
+    },
+    "Your Portion (%lldg)": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "حصتك (%lld غ)"
+          }
+        }
+      }
+    },
+    "%lld kcal": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld سعرة"
+          }
+        }
+      }
+    },
+    "of %lld kcal goal": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "من هدف %lld سعرة"
+          }
+        }
+      }
+    },
+    "%lld/%lldg": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld/%lld غ"
+          }
+        }
+      }
+    },
+    "Log your usual: %@?": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "سجّل المعتاد: %@؟"
+          }
+        }
+      }
+    },
+    "%lld items found": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تم العثور على %lld عنصر"
+          }
+        }
+      }
+    },
+    "Log All to %@": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تسجيل الكل في %@"
+          }
+        }
+      }
+    },
+    "%lld items identified": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تم تحديد %lld عنصر"
+          }
+        }
+      }
+    },
+    "Remove %@ from %@?": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "إزالة %@ من %@؟"
+          }
+        }
+      }
+    },
+    "%lld / %lld ml": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld / %lld مل"
+          }
+        }
+      }
+    },
+    "%lld ingredients": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld مكون"
+          }
+        }
+      }
+    },
+    "Add %@": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "إضافة %@"
+          }
+        }
+      }
+    },
+    "per %@": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "لكل %@"
+          }
+        }
+      }
+    },
+    "%lld left": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld متبقي"
+          }
+        }
+      }
+    },
+    "%lld cal": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld سعرة"
+          }
+        }
+      }
+    },
+    "%lld/%lldg left": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "متبقي %lld/%lld غ"
+          }
+        }
+      }
+    },
+    "%lldg left": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "متبقي %lld غ"
+          }
+        }
+      }
     }
   },
   "version": "1.0"

@@ -407,7 +407,7 @@ struct FoodScannerView: View {
                 VStack(alignment: .leading, spacing: 4) {
                     Text("Scan Results")
                         .font(.system(size: 26, weight: .bold, design: .rounded))
-                    Text("\(scannedFoods.count) items identified")
+                    Text(String(localized: "\(scannedFoods.count) items identified"))
                         .font(.system(size: 14, weight: .medium))
                         .foregroundStyle(ThemeColors.textSecondary)
                 }
@@ -422,7 +422,7 @@ struct FoodScannerView: View {
                     Button {
                         addAllFoods()
                     } label: {
-                        Text(pendingCount == totalCount ? "Add All" : "Add Remaining")
+                        Text(pendingCount == totalCount ? String(localized: "Add All") : String(localized: "Add Remaining"))
                             .font(.system(size: 14, weight: .bold))
                             .padding(.horizontal, 22)
                             .padding(.vertical, 10)
@@ -468,7 +468,7 @@ struct FoodScannerView: View {
                 } label: {
                     HStack(spacing: 10) {
                         Image(systemName: "camera.viewfinder")
-                        Text(addedItems.count == scannedFoods.count ? "Scan Another Plate" : "Discard & Rescan")
+                        Text(addedItems.count == scannedFoods.count ? String(localized: "Scan Another Plate") : String(localized: "Discard & Rescan"))
                     }
                     .font(.system(size: 16, weight: .bold))
                     .foregroundStyle(addedItems.count == scannedFoods.count ? ThemeColors.textPrimary : .red.opacity(0.8))
@@ -696,8 +696,8 @@ struct FoodScannerView: View {
                 Image(systemName: remaining > 0 ? "sparkles" : "lock.fill")
                     .font(.caption2.bold())
                 Text(remaining > 0
-                     ? "\(remaining) scan\(remaining == 1 ? "" : "s") left today"
-                     : "Daily limit reached")
+                     ? String(localized: "\(remaining) scan\(remaining == 1 ? "" : "s") left today")
+                     : String(localized: "Daily limit reached"))
                     .font(.caption.weight(.medium))
             }
             .foregroundStyle(remaining > 0 ? ThemeColors.textSecondary : .orange)

@@ -104,7 +104,7 @@ private struct RecipeRow: View {
                 Text(recipe.name)
                     .font(.headline)
                 
-                Text("\(recipe.ingredients.count) ingredients")
+                Text(String(localized: "\(recipe.ingredients.count) ingredients"))
                     .font(.caption)
                     .foregroundStyle(.secondary)
                 

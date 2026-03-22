@@ -115,7 +115,7 @@ struct AIParsedMealSheet: View {
                 Text("AI Meal Breakdown")
                     .font(.system(size: 20, weight: .bold))
                     .foregroundStyle(ThemeColors.textPrimary)
-                Text("\(viewModel.parsedFoodItems.count) items found")
+                Text(String(localized: "\(viewModel.parsedFoodItems.count) items found"))
                     .font(.system(size: 14, weight: .medium))
                     .foregroundStyle(ThemeColors.textSecondary)
             }
@@ -326,7 +326,7 @@ struct AIParsedMealSheet: View {
                         Text("Total")
                             .font(.system(size: 13, weight: .medium))
                             .foregroundStyle(ThemeColors.textSecondary)
-                        Text("\(Int(totalCalories)) kcal")
+                        Text(String(localized: "\(Int(totalCalories)) kcal"))
                             .font(.system(size: 22, weight: .bold, design: .rounded))
                             .foregroundStyle(ThemeColors.textPrimary)
                     }
@@ -354,7 +354,7 @@ struct AIParsedMealSheet: View {
                     HStack(spacing: 10) {
                         Image(systemName: "plus.circle.fill")
                             .font(.system(size: 18))
-                        Text("Log All to \(selectedMeal.displayName)")
+                        Text(String(localized: "Log All to \(selectedMeal.displayName)"))
                             .font(.system(size: 17, weight: .bold))
                     }
                     .foregroundStyle(.white)

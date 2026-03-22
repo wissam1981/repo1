@@ -120,7 +120,7 @@ struct NutritionDashboardView: View {
                                     Image(systemName: "sparkles")
                                         .font(.system(size: 13, weight: .bold))
                                         .foregroundStyle(ThemeColors.primary)
-                                    Text("Log your usual: \(pattern.entries.map(\.foodName).joined(separator: ", "))?")
+                                    Text(String(localized: "Log your usual: \(pattern.entries.map(\.foodName).joined(separator: ", "))?"))
                                         .font(.system(size: 13, weight: .semibold))
                                         .foregroundStyle(ThemeColors.textSecondary)
                                         .lineLimit(1)
@@ -358,7 +358,7 @@ struct NutritionDashboardView: View {
                             .font(.system(size: 14, weight: .medium))
                             .foregroundStyle(.secondary)
                     }
-                    Text("of \(vm.targetCalories) kcal goal")
+                    Text(String(localized: "of \(vm.targetCalories) kcal goal"))
                         .font(.system(size: 14, weight: .medium))
                         .foregroundStyle(.secondary)
                 }
@@ -385,7 +385,7 @@ struct NutritionDashboardView: View {
                     .font(.system(size: 12, weight: .medium))
                     .foregroundStyle(.secondary)
             }
-            Text("\(consumed)/\(target)g")
+            Text(String(localized: "\(consumed)/\(target)g"))
                 .font(.system(size: 14, weight: .bold, design: .rounded).monospacedDigit())
                 .foregroundStyle(color)
             ProgressView(value: min(max(Double(consumed), 0.0), Double(max(target, 1))), total: Double(max(target, 1)))
