@@ -11,9 +11,7 @@ final class AndroidTVDriver: TVProtocol, @unchecked Sendable {
 
     var state: TVState {
         get async {
-            stateLock.lock()
-            defer { stateLock.unlock() }
-            return _state
+            return stateLock.withLock { _state }
         }
     }
 
