@@ -1,0 +1,94 @@
+<h2>Section 1: Architecture & Branding</h2>
+<p class="subtitle">Overall system structure and app identity</p>
+
+<div class="section">
+  <h3>App Name & Branding</h3>
+  <div class="cards" style="display:grid; grid-template-columns: repeat(3, 1fr); gap: 16px;">
+    <div class="card" data-choice="name-a" onclick="toggleSelect(this)">
+      <div class="card-body" style="text-align:center; padding: 24px;">
+        <div style="font-size: 48px; margin-bottom: 12px;">📡</div>
+        <h3 style="margin:0;">Zapper</h3>
+        <p style="color:#888; margin-top:8px;">Fun, memorable, action-oriented</p>
+      </div>
+    </div>
+    <div class="card" data-choice="name-b" onclick="toggleSelect(this)">
+      <div class="card-body" style="text-align:center; padding: 24px;">
+        <div style="font-size: 48px; margin-bottom: 12px;">🎯</div>
+        <h3 style="margin:0;">Castly</h3>
+        <p style="color:#888; margin-top:8px;">Modern, cast/control connotation</p>
+      </div>
+    </div>
+    <div class="card" data-choice="name-c" onclick="toggleSelect(this)">
+      <div class="card-body" style="text-align:center; padding: 24px;">
+        <div style="font-size: 48px; margin-bottom: 12px;">🔮</div>
+        <h3 style="margin:0;">Orbi</h3>
+        <p style="color:#888; margin-top:8px;">Short, universal, premium feel</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <h3>Architecture Overview</h3>
+  <div class="mockup">
+    <div class="mockup-header">Protocol Abstraction Layer — System Diagram</div>
+    <div class="mockup-body" style="padding: 24px; font-family: monospace; font-size: 13px; line-height: 1.8;">
+      <div style="text-align:center; margin-bottom: 20px;">
+        <div style="background:#2563eb; color:white; padding:12px 24px; border-radius:12px; display:inline-block; font-size:16px; font-weight:bold;">
+          SwiftUI Views (Context-Adaptive UI)
+        </div>
+      </div>
+      <div style="text-align:center; color:#666; margin: 8px 0;">▼</div>
+      <div style="text-align:center; margin-bottom: 20px;">
+        <div style="background:#7c3aed; color:white; padding:12px 24px; border-radius:12px; display:inline-block; font-size:14px; font-weight:bold;">
+          RemoteViewModel (@Observable)
+        </div>
+      </div>
+      <div style="text-align:center; color:#666; margin: 8px 0;">▼</div>
+      <div style="text-align:center; margin-bottom: 20px;">
+        <div style="background:#059669; color:white; padding:14px 24px; border-radius:12px; display:inline-block; font-size:14px; font-weight:bold;">
+          TVProtocol (Unified Interface)
+        </div>
+      </div>
+      <div style="text-align:center; color:#666; margin: 8px 0;">▼ ▼ ▼ ▼ ▼</div>
+      <div style="display:flex; justify-content:center; gap:10px; flex-wrap:wrap; margin-top: 12px;">
+        <div style="background:#ea580c; color:white; padding:10px 14px; border-radius:8px; font-size:12px; font-weight:bold;">Android TV<br><span style="font-weight:normal; font-size:11px;">ADB + gRPC</span></div>
+        <div style="background:#888; color:white; padding:10px 14px; border-radius:8px; font-size:12px; opacity:0.5;">Roku<br><span style="font-weight:normal; font-size:11px;">REST ECP</span></div>
+        <div style="background:#888; color:white; padding:10px 14px; border-radius:8px; font-size:12px; opacity:0.5;">Samsung<br><span style="font-weight:normal; font-size:11px;">WebSocket</span></div>
+        <div style="background:#888; color:white; padding:10px 14px; border-radius:8px; font-size:12px; opacity:0.5;">LG webOS<br><span style="font-weight:normal; font-size:11px;">SSAP/WS</span></div>
+        <div style="background:#888; color:white; padding:10px 14px; border-radius:8px; font-size:12px; opacity:0.5;">Fire TV<br><span style="font-weight:normal; font-size:11px;">ADB</span></div>
+      </div>
+      <div style="text-align:center; color:#666; font-size:11px; margin-top:16px;">
+        (Grayed out = future phases. Orange = Phase 1)
+      </div>
+
+      <div style="margin-top: 28px; border-top: 1px solid #333; padding-top: 20px;">
+        <div style="display:flex; gap: 20px; justify-content:center; flex-wrap:wrap;">
+          <div style="background:#1e293b; border:1px solid #334155; border-radius:8px; padding:12px 16px; min-width:140px;">
+            <div style="color:#60a5fa; font-weight:bold; font-size:12px;">Discovery Service</div>
+            <div style="color:#94a3b8; font-size:11px; margin-top:4px;">mDNS / SSDP scanning<br>Device fingerprinting<br>Saved devices cache</div>
+          </div>
+          <div style="background:#1e293b; border:1px solid #334155; border-radius:8px; padding:12px 16px; min-width:140px;">
+            <div style="color:#60a5fa; font-weight:bold; font-size:12px;">Connection Manager</div>
+            <div style="color:#94a3b8; font-size:11px; margin-top:4px;">Pairing handshake<br>Keep-alive / reconnect<br>Auth token storage</div>
+          </div>
+          <div style="background:#1e293b; border:1px solid #334155; border-radius:8px; padding:12px 16px; min-width:140px;">
+            <div style="color:#60a5fa; font-weight:bold; font-size:12px;">State Observer</div>
+            <div style="color:#94a3b8; font-size:11px; margin-top:4px;">Current app detection<br>Playback state<br>Input field focus</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <h3>Key Architecture Decisions</h3>
+  <ul style="line-height:2; color:#ccc;">
+    <li><strong>TVProtocol</strong> — defines: <code>connect()</code>, <code>disconnect()</code>, <code>sendCommand()</code>, <code>getState()</code>, <code>launchApp()</code>, <code>sendText()</code></li>
+    <li><strong>TVDevice</strong> — model: name, IP, platform, MAC address, capabilities, pairing status</li>
+    <li><strong>TVState</strong> — observable: current app, playback status, volume, power, input field focused</li>
+    <li><strong>DiscoveryService</strong> — scans via mDNS (Android TV, LG) + SSDP (Samsung, Roku) simultaneously</li>
+    <li><strong>ConnectionManager</strong> — handles pairing, reconnection, and auth persistence per device</li>
+  </ul>
+</div>

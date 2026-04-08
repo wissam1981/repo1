@@ -7,8 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		081DA67CFEDF4260B0C18434 /* TVDeviceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE960B4B80C313E49C366DA5 /* TVDeviceTests.swift */; };
+		28557D6337D05266601ECD3C /* KeychainServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE0DCC14DF48200A1C27AFE /* KeychainServiceTests.swift */; };
+		3A45094303790D7EE8436E7B /* TVCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6100DA4D61043C5E36A372A /* TVCommand.swift */; };
+		50EB05037FBA1C79434079DC /* TVProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AB6CC9B043D0EF8D5278E4 /* TVProtocol.swift */; };
+		5600386B1230AE0EBE1C8621 /* KeychainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F055B97804A2E6E790963B15 /* KeychainService.swift */; };
+		58F9244BED29285B2A9B8D63 /* TVCommandTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AEB71120CA2FDBAAC10D763 /* TVCommandTests.swift */; };
+		64C7163FA79337561EB640E4 /* TVApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3725BD8516863CCFBD3B8410 /* TVApp.swift */; };
 		6CBD8212EDCEFA8EB4392324 /* SwiftProtobuf in Frameworks */ = {isa = PBXBuildFile; productRef = CBBBB460ECB42CBAFE3FF02D /* SwiftProtobuf */; };
+		7D6934A6C12B076621603213 /* TVState.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A8BDFF42E80EED33112B2C /* TVState.swift */; };
+		803F11FB615FFE43239FCA55 /* TVStateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B0E2B058BD673B60D4CE15 /* TVStateTests.swift */; };
+		98A5003497D275C6EF1E9EE6 /* MediaInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2801E2C13CDDE235F8F45A36 /* MediaInfo.swift */; };
 		AC093E9178A94386E6C3A0EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C97699D6E443850529DE24A /* Assets.xcassets */; };
+		B671FECC3E8CC3D9B84E560D /* TVDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C564196DB8B99B694E98C5D /* TVDevice.swift */; };
 		C44FEA2770ECFC1FB8D0F771 /* ZapperApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9644C3F0202F243EEE30CE0 /* ZapperApp.swift */; };
 		EB0EBB7747B827055326BF28 /* ZapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC847D37FFF88B0210FE0E13 /* ZapperTests.swift */; };
 /* End PBXBuildFile section */
@@ -25,11 +36,22 @@
 
 /* Begin PBXFileReference section */
 		0A2FF1FA10733CA4F2A7E67A /* Zapper.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Zapper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AE0DCC14DF48200A1C27AFE /* KeychainServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainServiceTests.swift; sourceTree = "<group>"; };
+		2801E2C13CDDE235F8F45A36 /* MediaInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaInfo.swift; sourceTree = "<group>"; };
+		35B0E2B058BD673B60D4CE15 /* TVStateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVStateTests.swift; sourceTree = "<group>"; };
+		3725BD8516863CCFBD3B8410 /* TVApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVApp.swift; sourceTree = "<group>"; };
+		60AB6CC9B043D0EF8D5278E4 /* TVProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVProtocol.swift; sourceTree = "<group>"; };
 		67C913C7EA4F871D04CD09D4 /* ZapperTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = ZapperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C564196DB8B99B694E98C5D /* TVDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVDevice.swift; sourceTree = "<group>"; };
 		7C97699D6E443850529DE24A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8AEB71120CA2FDBAAC10D763 /* TVCommandTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVCommandTests.swift; sourceTree = "<group>"; };
 		A3A0EE33057F61A57F2EC35A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		A9644C3F0202F243EEE30CE0 /* ZapperApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZapperApp.swift; sourceTree = "<group>"; };
+		CE960B4B80C313E49C366DA5 /* TVDeviceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVDeviceTests.swift; sourceTree = "<group>"; };
 		DC847D37FFF88B0210FE0E13 /* ZapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZapperTests.swift; sourceTree = "<group>"; };
+		F055B97804A2E6E790963B15 /* KeychainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainService.swift; sourceTree = "<group>"; };
+		F2A8BDFF42E80EED33112B2C /* TVState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVState.swift; sourceTree = "<group>"; };
+		F6100DA4D61043C5E36A372A /* TVCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVCommand.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +66,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E4D63333A57D759A1773432 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				1AE0DCC14DF48200A1C27AFE /* KeychainServiceTests.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		4856097ECF80A6852569253A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				CC9FCA529896032D9FD4319D /* Connection */,
+				E645D1301EAE72765390278E /* Protocol */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		5F31A9BE422A10519F7E96A5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -57,6 +96,8 @@
 			isa = PBXGroup;
 			children = (
 				DC847D37FFF88B0210FE0E13 /* ZapperTests.swift */,
+				C12CC574137275D9968E9AE8 /* Models */,
+				0E4D63333A57D759A1773432 /* Services */,
 			);
 			path = ZapperTests;
 			sourceTree = "<group>";
@@ -70,14 +111,54 @@
 			);
 			sourceTree = "<group>";
 		};
+		8F59418B5866B975A8777B8D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2801E2C13CDDE235F8F45A36 /* MediaInfo.swift */,
+				3725BD8516863CCFBD3B8410 /* TVApp.swift */,
+				F6100DA4D61043C5E36A372A /* TVCommand.swift */,
+				6C564196DB8B99B694E98C5D /* TVDevice.swift */,
+				F2A8BDFF42E80EED33112B2C /* TVState.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C12CC574137275D9968E9AE8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8AEB71120CA2FDBAAC10D763 /* TVCommandTests.swift */,
+				CE960B4B80C313E49C366DA5 /* TVDeviceTests.swift */,
+				35B0E2B058BD673B60D4CE15 /* TVStateTests.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CC9FCA529896032D9FD4319D /* Connection */ = {
+			isa = PBXGroup;
+			children = (
+				F055B97804A2E6E790963B15 /* KeychainService.swift */,
+			);
+			path = Connection;
+			sourceTree = "<group>";
+		};
 		E4C5BD0BEB10EBE48059B051 /* Zapper */ = {
 			isa = PBXGroup;
 			children = (
 				7C97699D6E443850529DE24A /* Assets.xcassets */,
 				A3A0EE33057F61A57F2EC35A /* Info.plist */,
 				A9644C3F0202F243EEE30CE0 /* ZapperApp.swift */,
+				8F59418B5866B975A8777B8D /* Models */,
+				4856097ECF80A6852569253A /* Services */,
 			);
 			path = Zapper;
+			sourceTree = "<group>";
+		};
+		E645D1301EAE72765390278E /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				60AB6CC9B043D0EF8D5278E4 /* TVProtocol.swift */,
+			);
+			path = Protocol;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,6 +250,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5600386B1230AE0EBE1C8621 /* KeychainService.swift in Sources */,
+				98A5003497D275C6EF1E9EE6 /* MediaInfo.swift in Sources */,
+				64C7163FA79337561EB640E4 /* TVApp.swift in Sources */,
+				3A45094303790D7EE8436E7B /* TVCommand.swift in Sources */,
+				B671FECC3E8CC3D9B84E560D /* TVDevice.swift in Sources */,
+				50EB05037FBA1C79434079DC /* TVProtocol.swift in Sources */,
+				7D6934A6C12B076621603213 /* TVState.swift in Sources */,
 				C44FEA2770ECFC1FB8D0F771 /* ZapperApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -177,6 +265,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28557D6337D05266601ECD3C /* KeychainServiceTests.swift in Sources */,
+				58F9244BED29285B2A9B8D63 /* TVCommandTests.swift in Sources */,
+				081DA67CFEDF4260B0C18434 /* TVDeviceTests.swift in Sources */,
+				803F11FB615FFE43239FCA55 /* TVStateTests.swift in Sources */,
 				EB0EBB7747B827055326BF28 /* ZapperTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,0 +1,143 @@
+<h2>Official Design Reference — Zapper</h2>
+<p class="subtitle">High-fidelity mockups provided by user — these are the source of truth</p>
+
+<div class="section">
+  <h3>Design System Extracted from Mockups</h3>
+  <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:12px;">
+    <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.06);border-radius:12px;padding:16px;">
+      <div style="color:#60a5fa;font-size:10px;font-weight:700;letter-spacing:1.5px;margin-bottom:10px;">COLOR SYSTEM (Material 3)</div>
+      <div style="display:flex;flex-wrap:wrap;gap:8px;">
+        <div style="text-align:center;">
+          <div style="width:40px;height:40px;border-radius:8px;background:#131318;border:1px solid #434655;"></div>
+          <div style="color:#888;font-size:8px;margin-top:2px;">Surface<br>#131318</div>
+        </div>
+        <div style="text-align:center;">
+          <div style="width:40px;height:40px;border-radius:8px;background:#1f1f25;border:1px solid #434655;"></div>
+          <div style="color:#888;font-size:8px;margin-top:2px;">Container<br>#1f1f25</div>
+        </div>
+        <div style="text-align:center;">
+          <div style="width:40px;height:40px;border-radius:8px;background:#2563eb;"></div>
+          <div style="color:#888;font-size:8px;margin-top:2px;">Primary<br>#2563eb</div>
+        </div>
+        <div style="text-align:center;">
+          <div style="width:40px;height:40px;border-radius:8px;background:#b4c5ff;"></div>
+          <div style="color:#888;font-size:8px;margin-top:2px;">Primary Light<br>#b4c5ff</div>
+        </div>
+        <div style="text-align:center;">
+          <div style="width:40px;height:40px;border-radius:8px;background:#a4c9ff;"></div>
+          <div style="color:#888;font-size:8px;margin-top:2px;">Secondary<br>#a4c9ff</div>
+        </div>
+        <div style="text-align:center;">
+          <div style="width:40px;height:40px;border-radius:8px;background:#ffb4ab;"></div>
+          <div style="color:#888;font-size:8px;margin-top:2px;">Error/Power<br>#ffb4ab</div>
+        </div>
+      </div>
+    </div>
+    <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.06);border-radius:12px;padding:16px;">
+      <div style="color:#60a5fa;font-size:10px;font-weight:700;letter-spacing:1.5px;margin-bottom:10px;">TYPOGRAPHY & COMPONENTS</div>
+      <div style="color:#94a3b8;font-size:11px;line-height:1.8;">
+        • <strong>Headlines:</strong> Manrope (600-800 weight)<br>
+        • <strong>Body/Labels:</strong> Inter (400-600 weight)<br>
+        • <strong>Icons:</strong> Material Symbols Outlined<br>
+        • <strong>Glass panels:</strong> rgba bg + blur(24px) + inset highlight<br>
+        • <strong>Jewel buttons:</strong> scale(0.92) on active<br>
+        • <strong>Corners:</strong> 2rem-2.5rem for cards, full for pills<br>
+        • <strong>Nav bar:</strong> slate-900/60 + blur-2xl + rounded-t-[2rem]
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <h3>4 Screens Provided</h3>
+  <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
+    <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.06);border-radius:16px;padding:20px;">
+      <div style="color:#b4c5ff;font-size:13px;font-weight:700;margin-bottom:8px;">1. Navigation Mode</div>
+      <div style="color:#94a3b8;font-size:11px;line-height:1.7;">
+        • Full-screen circular touchpad with dot-grid texture<br>
+        • Gradient inner glow (primary/secondary)<br>
+        • OK center button with glass border<br>
+        • D-pad directional overlays on touchpad<br>
+        • Power button with red glow + error-container<br>
+        • Voice & keyboard quick-access buttons<br>
+        • Back / Home / Menu as glass pill buttons<br>
+        • Signal strength indicator + connection dot<br>
+        • Mode indicator dots at bottom
+      </div>
+    </div>
+    <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.06);border-radius:16px;padding:20px;">
+      <div style="color:#b4c5ff;font-size:13px;font-weight:700;margin-bottom:8px;">2. Media Mode</div>
+      <div style="color:#94a3b8;font-size:11px;line-height:1.7;">
+        • Ambient radial gradient background from primary<br>
+        • Large poster/artwork card with gradient overlay<br>
+        • Quality badge (4K Ultra HD + 5.1)<br>
+        • Show title + episode info<br>
+        • Gradient progress bar with glow scrubber<br>
+        • Bento grid layout: playback cluster + volume column<br>
+        • Glass panel playback controls (±10s, pause)<br>
+        • Vertical volume slider with fill indicator<br>
+        • CC and playback speed toggles
+      </div>
+    </div>
+    <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.06);border-radius:16px;padding:20px;">
+      <div style="color:#b4c5ff;font-size:13px;font-weight:700;margin-bottom:8px;">3. Device Discovery</div>
+      <div style="color:#94a3b8;font-size:11px;line-height:1.7;">
+        • Scanning animation: pulsing router icon with orbit rings<br>
+        • "Searching for TVs..." headline<br>
+        • Wi-Fi network reminder text<br>
+        • Device cards: 2rem rounded, glass bg, hover highlight<br>
+        • TV icon + device name + IP (mono font)<br>
+        • Chevron right for navigation<br>
+        • "Add by IP Address" manual entry button<br>
+        • Ambient background blurs (primary + secondary)
+      </div>
+    </div>
+    <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.06);border-radius:16px;padding:20px;">
+      <div style="color:#b4c5ff;font-size:13px;font-weight:700;margin-bottom:8px;">4. App Launcher</div>
+      <div style="color:#94a3b8;font-size:11px;line-height:1.7;">
+        • Search bar in top app bar<br>
+        • Favorites: horizontal scroll, wide glass tiles (48x28)<br>
+        • Color-tinted gradients per app brand<br>
+        • All Apps: responsive grid (2-5 columns)<br>
+        • Square glass cards with 3xl rounded corners<br>
+        • Scale-up hover animation (1.05)<br>
+        • Dashed border "Store" card for discovering new apps<br>
+        • Pagination dots under section header
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <h3>Bottom Navigation (Shared Across All Modes)</h3>
+  <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.06);border-radius:12px;padding:16px;">
+    <div style="display:flex;justify-content:center;gap:32px;align-items:center;">
+      <div style="text-align:center;color:#64748b;font-size:11px;">
+        <div style="font-size:20px;margin-bottom:4px;">🎮</div>
+        Navigation
+      </div>
+      <div style="text-align:center;color:#64748b;font-size:11px;">
+        <div style="font-size:20px;margin-bottom:4px;">▶</div>
+        Media
+      </div>
+      <div style="text-align:center;color:#64748b;font-size:11px;">
+        <div style="font-size:20px;margin-bottom:4px;">⌨</div>
+        Keyboard
+      </div>
+      <div style="text-align:center;color:#64748b;font-size:11px;">
+        <div style="font-size:20px;margin-bottom:4px;">⊞</div>
+        Apps
+      </div>
+    </div>
+    <div style="color:#94a3b8;font-size:10px;text-align:center;margin-top:12px;">
+      Active tab: blue-600/20 bg + blue-200 text + ring-1 ring-blue-400/30 + FILL 1 icon
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <h3>Missing Screen: Keyboard Mode</h3>
+  <div style="background:rgba(37,99,235,0.08);border:1px solid rgba(37,99,235,0.2);border-radius:12px;padding:16px;color:#94a3b8;font-size:12px;">
+    No keyboard mode mockup was provided. We'll design it to match the same design system — glass panels, Material Symbols, Manrope/Inter typography. It should follow the pattern from the brainstorm (context label showing what field is focused on TV, text input field, autocomplete suggestions, and Send/Clear actions).
+  </div>
+</div>

@@ -1,0 +1,64 @@
+<h2>Architecture Approaches</h2>
+<p class="subtitle">How should we structure the multi-platform remote control app?</p>
+
+<div class="options">
+  <div class="option" data-choice="a" onclick="toggleSelect(this)" style="border-left: 3px solid #4ade80;">
+    <div class="letter">A</div>
+    <div class="content">
+      <h3>Protocol Abstraction Layer (Recommended)</h3>
+      <p>A unified <code>TVProtocol</code> interface with platform-specific drivers behind it. The UI talks to one API — the driver handles platform differences.</p>
+      <div class="pros-cons">
+        <div class="pros"><h4>Pros</h4><ul>
+          <li>Clean separation — UI never knows which platform it's talking to</li>
+          <li>Adding a new platform = adding a new driver, no UI changes</li>
+          <li>Easy to test each driver independently</li>
+          <li>Context-adaptive UI works naturally — drivers report TV state uniformly</li>
+        </ul></div>
+        <div class="cons"><h4>Cons</h4><ul>
+          <li>Upfront abstraction design takes thought</li>
+          <li>Some platform-specific features may not fit the common interface</li>
+        </ul></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="option" data-choice="b" onclick="toggleSelect(this)">
+    <div class="letter">B</div>
+    <div class="content">
+      <h3>Platform-Specific Views</h3>
+      <p>Each TV platform gets its own UI and connection logic. Shared only at the design-system level (colors, fonts, components).</p>
+      <div class="pros-cons">
+        <div class="pros"><h4>Pros</h4><ul>
+          <li>Can leverage platform-specific features fully</li>
+          <li>Simpler to start — no abstraction needed</li>
+          <li>Each platform can have a tailored experience</li>
+        </ul></div>
+        <div class="cons"><h4>Cons</h4><ul>
+          <li>Massive code duplication across 5 platforms</li>
+          <li>Every UI change must be replicated 5 times</li>
+          <li>Context-adaptive UI is harder — different state models per platform</li>
+        </ul></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="option" data-choice="c" onclick="toggleSelect(this)">
+    <div class="letter">C</div>
+    <div class="content">
+      <h3>Hybrid — Shared UI + Platform Modules (SPM)</h3>
+      <p>Each platform is a Swift Package. A thin orchestrator picks the right package at runtime. UI is shared but can be extended per platform.</p>
+      <div class="pros-cons">
+        <div class="pros"><h4>Pros</h4><ul>
+          <li>Best modularity — platforms can be developed/tested in isolation</li>
+          <li>SPM packages can be reused in other apps</li>
+          <li>Build times improve — only compile what you need</li>
+        </ul></div>
+        <div class="cons"><h4>Cons</h4><ul>
+          <li>Most complex setup</li>
+          <li>Package dependency management overhead</li>
+          <li>Overkill if you're a solo developer</li>
+        </ul></div>
+      </div>
+    </div>
+  </div>
+</div>
