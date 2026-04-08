@@ -128,7 +128,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
-				LastUpgradeCheck = 1600;
+				LastUpgradeCheck = 1430;
 			};
 			buildConfigurationList = 86B2B7055F639B678F17FCB9 /* Build configuration list for PBXProject "Zapper" */;
 			compatibilityVersion = "Xcode 14.0";

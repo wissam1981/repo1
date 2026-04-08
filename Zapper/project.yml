@@ -3,8 +3,9 @@ options:
   bundleIdPrefix: com.zapper
   deploymentTarget:
     iOS: "17.0"
-  xcodeVersion: "16"
   createIntermediateGroups: true
+  buildSettings:
+    SWIFT_VERSION: "6.0"
 
 packages:
   SwiftProtobuf:
