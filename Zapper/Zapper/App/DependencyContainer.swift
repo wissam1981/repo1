@@ -1,7 +1,7 @@
 import Foundation
 
 @Observable
-final class DependencyContainer {
+final class DependencyContainer: @unchecked Sendable {
     let discoveryService = DiscoveryService()
     let connectionManager = ConnectionManager()
     let appState = AppState()

@@ -31,6 +31,28 @@
 		B671FECC3E8CC3D9B84E560D /* TVDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C564196DB8B99B694E98C5D /* TVDevice.swift */; };
 		C44FEA2770ECFC1FB8D0F771 /* ZapperApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9644C3F0202F243EEE30CE0 /* ZapperApp.swift */; };
 		EB0EBB7747B827055326BF28 /* ZapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC847D37FFF88B0210FE0E13 /* ZapperTests.swift */; };
+		4D2DA6F3E87746AC9B7A9715 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4713EE228F3A4B198FD3D539 /* AppState.swift */; };
+		1550FF768E604F0A9285AAA4 /* DependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414B685440EB4DCD9BF9A854 /* DependencyContainer.swift */; };
+		75318CB82AB64D1C87470FB5 /* HapticEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93854883F0E46E89C3859A9 /* HapticEngine.swift */; };
+		E0083B2B8B734784885FFF56 /* GlassModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17338D97DEB5421DBAE99DD9 /* GlassModifiers.swift */; };
+		F44197015F474A4C919BEE9D /* TouchpadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C2AC8E3BC284B69887D7D6A /* TouchpadView.swift */; };
+		227A337AB67448E999C79B98 /* BottomNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1834C5431AB4547B5B49B51 /* BottomNavBar.swift */; };
+		183CB48701BF4610B065104A /* VolumeSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F2F17B392164797A02FF6DE /* VolumeSlider.swift */; };
+		32DCB878267844179F60E8A8 /* ModeIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A31BA4896B4B04BB5FF589 /* ModeIndicator.swift */; };
+		2AB254477DEF4B7F9CA8E44E /* DeviceCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285A46C0792D4D0E83F6B7CE /* DeviceCard.swift */; };
+		F337A614B2384025924F7305 /* ZapperTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A7ADF5FABF4BB2AF3673BA /* ZapperTheme.swift */; };
+		9EDC84375AAB4E84B1175FE6 /* ConnectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13FC0703DFBD427DAD13B5DA /* ConnectionManager.swift */; };
+		11BC2BD252E047F6B6E08024 /* DiscoveryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DCE643D017246F4A53CD9EB /* DiscoveryViewModel.swift */; };
+		A9D78FF4B2E24D739CC20AB1 /* DiscoveryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52E3E64B1274CB3AEB349C8 /* DiscoveryView.swift */; };
+		AB71EFFAF3BB49D8A44C144D /* PairingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3712770C80164415A448EF5C /* PairingView.swift */; };
+		C146235E6406488B8616670B /* RemoteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72436E3B907C497088B5E642 /* RemoteViewModel.swift */; };
+		D15568CC7C4446A6A98149A8 /* RemoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447A73BADF8A4F80905453DB /* RemoteView.swift */; };
+		374AF5A41E694154BAF90778 /* NavigationModeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620F27424F3E4C55A3AFDCC6 /* NavigationModeView.swift */; };
+		20B8FD70DF25420591AF22F0 /* MediaModeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438697B600B747EDAE50249C /* MediaModeView.swift */; };
+		9044E9B140644131BE9E2A75 /* KeyboardModeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A627B648175C4F5A9430A205 /* KeyboardModeView.swift */; };
+		3C542CF7B4A946C08C96C224 /* AppLauncherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23FF39382C64B8483BAFA99 /* AppLauncherView.swift */; };
+		079BD4E5A5FC4D9FB1FB103F /* DiscoveryViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDDDBF2A8BA4AEEBB593B23 /* DiscoveryViewModelTests.swift */; };
+		A74B615137A54E24A2E641F7 /* RemoteViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288D7ABDACB942F3A3E847A6 /* RemoteViewModelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +92,28 @@
 		F2A8BDFF42E80EED33112B2C /* TVState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVState.swift; sourceTree = "<group>"; };
 		F6100DA4D61043C5E36A372A /* TVCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVCommand.swift; sourceTree = "<group>"; };
 		FD4316FA85CF813B7626401E /* AndroidTVDriver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AndroidTVDriver.swift; sourceTree = "<group>"; };
+		4713EE228F3A4B198FD3D539 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		414B685440EB4DCD9BF9A854 /* DependencyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyContainer.swift; sourceTree = "<group>"; };
+		D93854883F0E46E89C3859A9 /* HapticEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticEngine.swift; sourceTree = "<group>"; };
+		17338D97DEB5421DBAE99DD9 /* GlassModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlassModifiers.swift; sourceTree = "<group>"; };
+		1C2AC8E3BC284B69887D7D6A /* TouchpadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchpadView.swift; sourceTree = "<group>"; };
+		A1834C5431AB4547B5B49B51 /* BottomNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomNavBar.swift; sourceTree = "<group>"; };
+		2F2F17B392164797A02FF6DE /* VolumeSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeSlider.swift; sourceTree = "<group>"; };
+		D0A31BA4896B4B04BB5FF589 /* ModeIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModeIndicator.swift; sourceTree = "<group>"; };
+		285A46C0792D4D0E83F6B7CE /* DeviceCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceCard.swift; sourceTree = "<group>"; };
+		F2A7ADF5FABF4BB2AF3673BA /* ZapperTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZapperTheme.swift; sourceTree = "<group>"; };
+		13FC0703DFBD427DAD13B5DA /* ConnectionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionManager.swift; sourceTree = "<group>"; };
+		7DCE643D017246F4A53CD9EB /* DiscoveryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoveryViewModel.swift; sourceTree = "<group>"; };
+		A52E3E64B1274CB3AEB349C8 /* DiscoveryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoveryView.swift; sourceTree = "<group>"; };
+		3712770C80164415A448EF5C /* PairingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairingView.swift; sourceTree = "<group>"; };
+		72436E3B907C497088B5E642 /* RemoteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteViewModel.swift; sourceTree = "<group>"; };
+		447A73BADF8A4F80905453DB /* RemoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteView.swift; sourceTree = "<group>"; };
+		620F27424F3E4C55A3AFDCC6 /* NavigationModeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationModeView.swift; sourceTree = "<group>"; };
+		438697B600B747EDAE50249C /* MediaModeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaModeView.swift; sourceTree = "<group>"; };
+		A627B648175C4F5A9430A205 /* KeyboardModeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardModeView.swift; sourceTree = "<group>"; };
+		F23FF39382C64B8483BAFA99 /* AppLauncherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLauncherView.swift; sourceTree = "<group>"; };
+		DDDDDBF2A8BA4AEEBB593B23 /* DiscoveryViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoveryViewModelTests.swift; sourceTree = "<group>"; };
+		288D7ABDACB942F3A3E847A6 /* RemoteViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteViewModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +184,7 @@
 				DC847D37FFF88B0210FE0E13 /* ZapperTests.swift */,
 				C12CC574137275D9968E9AE8 /* Models */,
 				0E4D63333A57D759A1773432 /* Services */,
+				4A1B5EBCF8214441A69EE0FE /* Features */,
 			);
 			path = ZapperTests;
 			sourceTree = "<group>";
@@ -195,6 +240,7 @@
 			isa = PBXGroup;
 			children = (
 				F055B97804A2E6E790963B15 /* KeychainService.swift */,
+				13FC0703DFBD427DAD13B5DA /* ConnectionManager.swift */,
 			);
 			path = Connection;
 			sourceTree = "<group>";
@@ -206,6 +252,9 @@
 				A3A0EE33057F61A57F2EC35A /* Info.plist */,
 				A9644C3F0202F243EEE30CE0 /* ZapperApp.swift */,
 				8F59418B5866B975A8777B8D /* Models */,
+				4DAF34A646F0441889C3FB12 /* App */,
+				77D7181B42C441C38478A68F /* Common */,
+				7509C5662F284E3EB625CDB2 /* Features */,
 				4856097ECF80A6852569253A /* Services */,
 			);
 			path = Zapper;
@@ -226,6 +275,104 @@
 				DDA1F1465FFF68FF6FAD405C /* AndroidTVMessageHandlerTests.swift */,
 			);
 			path = AndroidTV;
+			sourceTree = "<group>";
+		};
+
+		4DAF34A646F0441889C3FB12 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				4713EE228F3A4B198FD3D539 /* AppState.swift */,
+				414B685440EB4DCD9BF9A854 /* DependencyContainer.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		737C5955EAD946D08AA48F83 /* Haptics */ = {
+			isa = PBXGroup;
+			children = (
+				D93854883F0E46E89C3859A9 /* HapticEngine.swift */,
+			);
+			path = Haptics;
+			sourceTree = "<group>";
+		};
+		E757ABCFCA0D428DACE178BA /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				17338D97DEB5421DBAE99DD9 /* GlassModifiers.swift */,
+			);
+			path = Modifiers;
+			sourceTree = "<group>";
+		};
+		F0A93A9635FA4B729B121342 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				1C2AC8E3BC284B69887D7D6A /* TouchpadView.swift */,
+				A1834C5431AB4547B5B49B51 /* BottomNavBar.swift */,
+				2F2F17B392164797A02FF6DE /* VolumeSlider.swift */,
+				D0A31BA4896B4B04BB5FF589 /* ModeIndicator.swift */,
+				285A46C0792D4D0E83F6B7CE /* DeviceCard.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		E50B30E9C6CE49B7B8EF1969 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				F2A7ADF5FABF4BB2AF3673BA /* ZapperTheme.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		54C79FC4451F4DFB8C88CFDC /* Discovery (Features) */ = {
+			isa = PBXGroup;
+			children = (
+				7DCE643D017246F4A53CD9EB /* DiscoveryViewModel.swift */,
+				A52E3E64B1274CB3AEB349C8 /* DiscoveryView.swift */,
+				3712770C80164415A448EF5C /* PairingView.swift */,
+			);
+			path = Discovery;
+			sourceTree = "<group>";
+		};
+		856EF8DFC22944E19F8F7C2F /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+				72436E3B907C497088B5E642 /* RemoteViewModel.swift */,
+				447A73BADF8A4F80905453DB /* RemoteView.swift */,
+				620F27424F3E4C55A3AFDCC6 /* NavigationModeView.swift */,
+				438697B600B747EDAE50249C /* MediaModeView.swift */,
+				A627B648175C4F5A9430A205 /* KeyboardModeView.swift */,
+				F23FF39382C64B8483BAFA99 /* AppLauncherView.swift */,
+			);
+			path = Remote;
+			sourceTree = "<group>";
+		};
+		7509C5662F284E3EB625CDB2 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				54C79FC4451F4DFB8C88CFDC /* Discovery */,
+				856EF8DFC22944E19F8F7C2F /* Remote */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		77D7181B42C441C38478A68F /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				737C5955EAD946D08AA48F83 /* Haptics */,
+				E757ABCFCA0D428DACE178BA /* Modifiers */,
+				F0A93A9635FA4B729B121342 /* Components */,
+				E50B30E9C6CE49B7B8EF1969 /* Theme */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		4A1B5EBCF8214441A69EE0FE /* Features (Tests) */ = {
+			isa = PBXGroup;
+			children = (
+				DDDDDBF2A8BA4AEEBB593B23 /* DiscoveryViewModelTests.swift */,
+				288D7ABDACB942F3A3E847A6 /* RemoteViewModelTests.swift */,
+			);
+			path = Features;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -331,6 +478,27 @@
 				50EB05037FBA1C79434079DC /* TVProtocol.swift in Sources */,
 				7D6934A6C12B076621603213 /* TVState.swift in Sources */,
 				C44FEA2770ECFC1FB8D0F771 /* ZapperApp.swift in Sources */,
+				4D2DA6F3E87746AC9B7A9715 /* AppState.swift in Sources */,
+				1550FF768E604F0A9285AAA4 /* DependencyContainer.swift in Sources */,
+				75318CB82AB64D1C87470FB5 /* HapticEngine.swift in Sources */,
+				E0083B2B8B734784885FFF56 /* GlassModifiers.swift in Sources */,
+				F44197015F474A4C919BEE9D /* TouchpadView.swift in Sources */,
+				227A337AB67448E999C79B98 /* BottomNavBar.swift in Sources */,
+				183CB48701BF4610B065104A /* VolumeSlider.swift in Sources */,
+				32DCB878267844179F60E8A8 /* ModeIndicator.swift in Sources */,
+				2AB254477DEF4B7F9CA8E44E /* DeviceCard.swift in Sources */,
+				F337A614B2384025924F7305 /* ZapperTheme.swift in Sources */,
+				9EDC84375AAB4E84B1175FE6 /* ConnectionManager.swift in Sources */,
+				11BC2BD252E047F6B6E08024 /* DiscoveryViewModel.swift in Sources */,
+				A9D78FF4B2E24D739CC20AB1 /* DiscoveryView.swift in Sources */,
+				AB71EFFAF3BB49D8A44C144D /* PairingView.swift in Sources */,
+				C146235E6406488B8616670B /* RemoteViewModel.swift in Sources */,
+				D15568CC7C4446A6A98149A8 /* RemoteView.swift in Sources */,
+				374AF5A41E694154BAF90778 /* NavigationModeView.swift in Sources */,
+				20B8FD70DF25420591AF22F0 /* MediaModeView.swift in Sources */,
+				9044E9B140644131BE9E2A75 /* KeyboardModeView.swift in Sources */,
+				3C542CF7B4A946C08C96C224 /* AppLauncherView.swift in Sources */,
+
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,6 +514,9 @@
 				081DA67CFEDF4260B0C18434 /* TVDeviceTests.swift in Sources */,
 				803F11FB615FFE43239FCA55 /* TVStateTests.swift in Sources */,
 				EB0EBB7747B827055326BF28 /* ZapperTests.swift in Sources */,
+				079BD4E5A5FC4D9FB1FB103F /* DiscoveryViewModelTests.swift in Sources */,
+				A74B615137A54E24A2E641F7 /* RemoteViewModelTests.swift in Sources */,
+
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
