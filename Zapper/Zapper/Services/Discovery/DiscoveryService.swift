@@ -39,11 +39,13 @@ final class DiscoveryService: @unchecked Sendable {
                 guard case .service(let name, _, _, _) = result.endpoint else {
                     return nil
                 }
-                return TVDevice(
+                var device = TVDevice(
                     name: name,
                     ipAddress: "",
                     platform: .androidTV
                 )
+                device.endpoint = result.endpoint
+                return device
             }
             Task { @MainActor in
                 self.discoveredDevices = devices

@@ -1,4 +1,5 @@
 import Foundation
+import Network
 
 enum TVPlatform: String, Codable, Sendable {
     case androidTV
@@ -31,4 +32,13 @@ struct TVDevice: Identifiable, Equatable, Codable, Sendable {
     var macAddress: String?
     var capabilities: Set<TVCapability> = []
     var pairingStatus: PairingStatus = .unpaired
+    var endpoint: NWEndpoint?
+
+    enum CodingKeys: String, CodingKey {
+        case id, name, ipAddress, platform, macAddress, capabilities, pairingStatus
+    }
+
+    static func == (lhs: TVDevice, rhs: TVDevice) -> Bool {
+        lhs.id == rhs.id
+    }
 }

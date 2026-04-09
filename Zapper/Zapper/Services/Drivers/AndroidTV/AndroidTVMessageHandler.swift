@@ -58,6 +58,7 @@ struct AndroidTVMessageHandler: Sendable {
                 var value: Int = 0
                 var shift = 0
                 while offset < data.count {
+                    if shift > 35 { break }
                     let b = data[offset]
                     value |= Int(b & 0x7F) << shift
                     offset += 1
@@ -90,8 +91,16 @@ struct AndroidTVMessageHandler: Sendable {
 
             if wireType == 2 {
                 guard offset < data.count else { break }
-                let length = Int(data[offset])
-                offset += 1
+                var length = 0
+                var shift = 0
+                while offset < data.count {
+                    if shift > 35 { break }
+                    let b = data[offset]
+                    length |= Int(b & 0x7F) << shift
+                    offset += 1
+                    if b & 0x80 == 0 { break }
+                    shift += 7
+                }
                 guard offset + length <= data.count else { break }
                 let stringData = data.subdata(in: offset..<(offset + length))
                 let string = String(data: stringData, encoding: .utf8) ?? ""

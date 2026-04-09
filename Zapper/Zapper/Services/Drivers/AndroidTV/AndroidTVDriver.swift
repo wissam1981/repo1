@@ -3,7 +3,11 @@ import Foundation
 final class AndroidTVDriver: TVProtocol, @unchecked Sendable {
     private let connection = AndroidTVConnection()
     private let messageHandler = AndroidTVMessageHandler()
-    private var pairing: AndroidTVPairing?
+    private var _pairing: AndroidTVPairing?
+    private var pairing: AndroidTVPairing? {
+        get { stateLock.withLock { _pairing } }
+        set { stateLock.withLock { _pairing = newValue } }
+    }
     private var _state = TVState()
     private let stateLock = NSLock()
 
@@ -65,11 +69,22 @@ final class AndroidTVDriver: TVProtocol, @unchecked Sendable {
         try await connection.send(data)
     }
 
+    private static func encodeVarint(_ value: Int) -> Data {
+        var data = Data()
+        var v = value
+        while v > 127 {
+            data.append(UInt8(v & 0x7F) | 0x80)
+            v >>= 7
+        }
+        data.append(UInt8(v))
+        return data
+    }
+
     func sendText(_ text: String) async throws {
         guard let textData = text.data(using: .utf8) else { return }
         var message = Data()
         message.append(0x0a)
-        message.append(UInt8(min(textData.count, 255)))
+        message.append(contentsOf: Self.encodeVarint(textData.count))
         message.append(textData)
         try await connection.send(message)
     }
@@ -89,7 +104,7 @@ final class AndroidTVDriver: TVProtocol, @unchecked Sendable {
         guard let appData = app.id.data(using: .utf8) else { return }
         var message = Data()
         message.append(0x0a)
-        message.append(UInt8(min(appData.count, 255)))
+        message.append(contentsOf: Self.encodeVarint(appData.count))
         message.append(appData)
         try await connection.send(message)
     }

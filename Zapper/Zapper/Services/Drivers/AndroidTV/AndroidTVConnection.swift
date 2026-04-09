@@ -64,10 +64,13 @@ actor AndroidTVConnection {
             connection.stateUpdateHandler = { state in
                 switch state {
                 case .ready:
+                    connection.stateUpdateHandler = nil
                     continuation.resume()
                 case .failed(let error):
+                    connection.stateUpdateHandler = nil
                     continuation.resume(throwing: ConnectionError.connectionFailed(error.localizedDescription))
                 case .cancelled:
+                    connection.stateUpdateHandler = nil
                     continuation.resume(throwing: ConnectionError.connectionFailed("Cancelled"))
                 default:
                     break

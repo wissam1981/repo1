@@ -38,7 +38,8 @@ actor AndroidTVPairing {
 
         var pairingRequest = Data()
         let serviceName = "Zapper".data(using: .utf8)!
-        let deviceName = await UIDevice.current.name.data(using: .utf8)!
+        let deviceNameString = await MainActor.run { UIDevice.current.name }
+        let deviceName = deviceNameString.data(using: .utf8) ?? "iPhone".data(using: .utf8)!
 
         pairingRequest.append(0x0a)
         pairingRequest.append(UInt8(serviceName.count))
