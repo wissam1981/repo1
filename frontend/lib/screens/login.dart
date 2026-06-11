@@ -44,34 +44,6 @@ class _LoginScreenState extends State<LoginScreen> {
               const SizedBox(height: 32),
               // Google/Apple sign-in intentionally hidden until real OAuth
               // is configured — guest is the single entry point for now.
-              ElevatedButton.icon(
-                onPressed: () => _loginWithGoogle(context),
-                icon: const Icon(Icons.g_mobiledata, size: 28), // Placeholder for Google Icon
-                label: Text(s.signInGoogle),
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.white,
-                  foregroundColor: Colors.black,
-                  padding: const EdgeInsets.symmetric(vertical: 14),
-                  textStyle: const TextStyle(
-                      fontSize: 16, fontWeight: FontWeight.w600),
-                ),
-              ),
-              const SizedBox(height: 12),
-              ElevatedButton.icon(
-                onPressed: () => _loginWithApple(context),
-                icon: const Icon(Icons.apple, size: 28),
-                label: Text(s.signInApple),
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.black,
-                  foregroundColor: Colors.white,
-                  padding: const EdgeInsets.symmetric(vertical: 14),
-                  textStyle: const TextStyle(
-                      fontSize: 16, fontWeight: FontWeight.w600),
-                ),
-              ),
-              const SizedBox(height: 24),
-              const Divider(color: AppColors.navy700),
-              const SizedBox(height: 24),
               ElevatedButton(
                 onPressed: () => _loginAsGuest(context),
                 style: ElevatedButton.styleFrom(
@@ -109,13 +81,5 @@ class _LoginScreenState extends State<LoginScreen> {
     }
   }
 
-  Future<void> _loginWithGoogle(BuildContext context) async {
-    ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text('Google Sign-In coming soon...')));
-  }
 
-  Future<void> _loginWithApple(BuildContext context) async {
-    ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text('Apple Sign-In coming soon...')));
-  }
 }
