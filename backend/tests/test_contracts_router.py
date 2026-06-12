@@ -37,7 +37,7 @@ def test_upload_contract_returns_explained_clauses(client, fake_claude):
 
 
 def test_upload_unsupported_file_returns_400(client):
-    files = {"file": ("c.txt", b"hi", "text/plain")}
+    files = {"file": ("c.xyz", b"hi", "application/octet-stream")}
     resp = client.post("/contracts", files=files, data={"title": "X"})
     assert resp.status_code == 400
 

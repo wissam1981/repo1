@@ -14,6 +14,9 @@ def extract_text(data: bytes, filename: str) -> str:
         return _extract_pdf(data)
     if name.endswith(".docx"):
         return _extract_docx(data)
+    if name.endswith((".txt", ".md")):
+        # Pre-converted contracts (e.g. OCR output) — tiny and exact.
+        return data.decode("utf-8", errors="replace").strip()
     raise UnsupportedFileError(f"Unsupported file type: {filename}")
 
 

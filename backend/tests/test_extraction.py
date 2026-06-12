@@ -21,7 +21,7 @@ def test_extract_docx():
 
 def test_extract_unknown_extension_raises():
     with pytest.raises(UnsupportedFileError):
-        extract_text(b"x", "contract.txt")
+        extract_text(b"x", "f.xyz")
 
 
 def test_extract_pdf_empty_pages_ok():
@@ -31,3 +31,9 @@ def test_extract_pdf_empty_pages_ok():
     writer.write(buf)
     text = extract_text(buf.getvalue(), "contract.pdf")
     assert isinstance(text, str)
+
+
+def test_extract_txt_passthrough():
+    """Pre-converted (e.g. OCR'd) contracts upload as tiny .txt files."""
+    assert extract_text("عقد الخدمة A".encode(), "c.txt") == "عقد الخدمة A"
+    assert extract_text(b"# Contract\nBody", "c.md") == "# Contract\nBody"
