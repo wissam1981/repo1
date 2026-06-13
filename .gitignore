@@ -1,0 +1,10 @@
+backend/test.db
+backend/test.db-shm
+backend/test.db-wal
+
+frontend/android/build/
+frontend/build/
+
+frontend/ios/profiles/
+frontend/ios/certs/
+frontend/ios/fastlane/report.xml
