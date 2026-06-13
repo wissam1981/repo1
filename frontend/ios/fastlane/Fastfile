@@ -1,0 +1,65 @@
+default_platform(:ios)
+
+APP_ID = "com.pcld.contracttrainer"
+TEAM_ID = "K85BH663PX"
+
+def asc_key
+  app_store_connect_api_key(
+    key_id: "R5D7259BJX",
+    issuer_id: "41aca993-3cb0-4869-bada-c2fc64367bf0",
+    key_filepath: "/Users/wissam/Desktop/AuthKey_R5D7259BJX.p8",
+    in_house: false,
+  )
+end
+
+platform :ios do
+  # 1) Create the App Store Connect app record + register the bundle id.
+  lane :register do
+    asc_key  # sets the global App Store Connect API token Spaceship uses
+    produce(
+      app_identifier: APP_ID,
+      app_name: "Contract English Trainer",
+      language: "English",
+      sku: "contracttrainer2026",
+      team_id: TEAM_ID,
+      username: "wissam.pcld@gmail.com",
+    )
+  end
+
+  # 2) Create the distribution certificate + App Store provisioning profile.
+  lane :signing do
+    key = asc_key
+    cert(api_key: key, output_path: "./certs")
+    sigh(
+      api_key: key,
+      app_identifier: APP_ID,
+      platform: "ios",
+      output_path: "./profiles",
+    )
+  end
+
+  # 3) Upload an already-built ipa to TestFlight.
+  lane :ship do
+    upload_to_testflight(
+      api_key: asc_key,
+      ipa: "../build/ios/ipa/contract_english_trainer.ipa",
+      skip_waiting_for_build_processing: true,
+    )
+  end
+end
+
+platform :ios do
+  # Register the bundle id on the Developer portal via the API key (no password).
+  lane :reg_bundle do
+    asc_key
+    existing = Spaceship::ConnectAPI::BundleId.all.find { |b| b.identifier == APP_ID }
+    if existing
+      UI.success("Bundle id already exists: #{APP_ID}")
+    else
+      Spaceship::ConnectAPI::BundleId.create(
+        name: "Contract English Trainer", identifier: APP_ID, seed_id: TEAM_ID,
+      )
+      UI.success("Created bundle id: #{APP_ID}")
+    end
+  end
+end
