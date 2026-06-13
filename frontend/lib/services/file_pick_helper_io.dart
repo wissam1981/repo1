@@ -8,7 +8,7 @@ import 'picked_file.dart';
 Future<PickedFile?> pickContractFile() async {
   final result = await FilePicker.platform.pickFiles(
     type: FileType.custom,
-    allowedExtensions: ['pdf', 'doc', 'docx'],
+    allowedExtensions: ['pdf', 'doc', 'docx', 'txt', 'md'],
     withData: true,
   );
 

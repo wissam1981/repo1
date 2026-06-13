@@ -10,7 +10,7 @@ import 'picked_file.dart';
 /// when compiled for the browser.
 Future<PickedFile?> pickContractFile() async {
   final input = html.FileUploadInputElement()
-    ..accept = '.pdf,.doc,.docx'
+    ..accept = '.pdf,.doc,.docx,.txt,.md'
     ..multiple = false;
   input.click();
 

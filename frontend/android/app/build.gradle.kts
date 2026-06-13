@@ -6,7 +6,8 @@ plugins {
 
 android {
     namespace = "com.example.contract_english_trainer"
-    compileSdk = flutter.compileSdkVersion
+    // file_picker 8.x and androidx libs require compileSdk 36+.
+    compileSdk = 36
     ndkVersion = flutter.ndkVersion
 
     compileOptions {
