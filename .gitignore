@@ -1,3 +1,6 @@
 backend/test.db
 backend/test.db-shm
 backend/test.db-wal
+
+frontend/android/build/
+frontend/build/
