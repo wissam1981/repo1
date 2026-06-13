@@ -27,20 +27,24 @@ Base.metadata.create_all(engine)
 
 # Tiny additive migrations: create_all does not add new columns to existing
 # tables, so add any missing clause columns when upgrading an older database.
+# The PRAGMA-based column check is SQLite-only; on Postgres (Cloud Run)
+# create_all already builds the full schema, so we skip it there.
 with engine.connect() as _conn:
     from sqlalchemy import text as _text
-    cols = [row[1] for row in _conn.execute(_text("PRAGMA table_info(clauses)"))]
-    _new_cols = {
-        "completed_at": "DATETIME",
-        "is_definition": "BOOLEAN DEFAULT 0",
-        "related_orders": "JSON",
-    }
-    if cols:
-        for _name, _type in _new_cols.items():
-            if _name not in cols:
-                _conn.execute(
-                    _text(f"ALTER TABLE clauses ADD COLUMN {_name} {_type}"))
-        _conn.commit()
+    if engine.dialect.name == "sqlite":
+        cols = [row[1]
+                for row in _conn.execute(_text("PRAGMA table_info(clauses)"))]
+        _new_cols = {
+            "completed_at": "DATETIME",
+            "is_definition": "BOOLEAN DEFAULT 0",
+            "related_orders": "JSON",
+        }
+        if cols:
+            for _name, _type in _new_cols.items():
+                if _name not in cols:
+                    _conn.execute(
+                        _text(f"ALTER TABLE clauses ADD COLUMN {_name} {_type}"))
+            _conn.commit()
     # Background processing dies with the process: any contract still marked
     # 'processing' at boot is orphaned — fail it so clients stop waiting.
     _conn.execute(_text(
