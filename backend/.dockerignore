@@ -1,0 +1,11 @@
+.venv
+__pycache__
+*.pyc
+tests
+test.db
+test.db-shm
+test.db-wal
+*.db
+.env
+.pytest_cache
+reference_corpus
