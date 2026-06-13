@@ -4,6 +4,12 @@
 <dict>
 	<key>CADisableMinimumFrameDurationOnPhone</key>
 	<true/>
+	<key>NSCameraUsageDescription</key>
+	<string>This app may use the camera to scan or photograph contract documents for translation.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>This app may access your photo library to import contract images for translation.</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>This app does not require your location; this entry is included for SDK compliance.</string>
 	<key>NSAppTransportSecurity</key>
 	<dict>
 		<key>NSAllowsLocalNetworking</key>
